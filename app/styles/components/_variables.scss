@@ -1,12 +1,21 @@
 /*** Colors ***/
-$primary-color: color("light-green", "base") !default;
+$primary-color: color("yj-green", "base") !default;
 $primary-color-light: lighten($primary-color, 15%) !default;
 $primary-color-dark: darken($primary-color, 15%) !default;
 
-$secondary-color: color("teal", "lighten-1") !default;
+$secondary-color: color("grey", "base") !default;
 $success-color: color("green", "base") !default;
 $error-color: color("red", "base") !default;
 $link-color: color("light-blue", "darken-1") !default;
+
+$black: color("grey", "darken-3") !default;
+$yj-grey: color("grey", "darken-2") !default;
+
+$yj-light-grey: color("grey", "lighten-3") !default;
+$yj-less-light-grey: color("grey", "lighten-2") !default;
+$yj-even-less-light-grey: color("grey", "lighten-1") !default;
+
+$footer-color: color("yj-blue", "base") !default;
 
 /*** Badges ***/
 $badge-bg-color: $secondary-color !default;
@@ -55,7 +64,7 @@ $input-disabled-color: rgba(0,0,0, .26) !default;
 $input-disabled-solid-color: #BDBDBD !default;
 
 // Radio Buttons
-$radio-fill-color: $secondary-color !default;
+$radio-fill-color: $primary-color !default;
 $radio-empty-color: #5a5a5a !default;
 
 // Switches
@@ -134,7 +143,7 @@ $h5-fontsize: 1.64rem !default;
 $h6-fontsize: 1rem !default;
 
 // Footer
-$footer-bg-color: $primary-color !default;
+$footer-bg-color: $footer-color !default;
 
 // Flowtext
 $range : $large-screen - $small-screen !default;

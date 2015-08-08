@@ -1,0 +1,132 @@
+	/*Results*/
+
+	.results {
+
+		.form {
+			background-color: $yj-light-grey;
+			padding: 30px;
+		}
+
+		.row.clean {
+			margin-bottom: 0;
+		}
+
+		.blue-panel-wrapper {
+			margin-top: 0.5rem;
+		}
+
+		.blue-panel {
+			display: inline-block;
+			min-width: 50px;
+			background-color: $yj-blue;
+			padding: 5px;
+			border-radius: 3px;
+
+			@media #{$small-and-down} {
+				padding: 0.7rem;
+				width: 100%;
+			}
+
+			span {
+				color: white
+			}
+
+			p {
+				font-size: 0.6rem;
+				color: white;
+
+				@media #{$small-and-down} {
+					font-size: 1rem;
+				}
+			}
+
+			@media #{$small-and-down} {
+				margin: 1rem 0 0.1rem 0;
+			}
+
+			&.alt {
+				display: inline-block;
+				margin-top: 0.3rem;
+				
+				@media #{$small-and-down} {
+					width: 100%;
+				}
+			}
+
+			&.panel-grey {
+				background-color: $yj-light-grey;
+
+				p {
+					color: $yj-grey;
+					font-size: 0.8rem;
+
+					@media #{$small-and-down} {
+						font-size: 1rem;
+					}
+				}
+
+				span {
+					color: $primary-color;
+				}
+			}
+		}
+
+		.results-icon {
+			font-size: 24px;
+			color: $primary-color;
+		}
+
+		.btn-adjust {
+			margin-top: 0.7rem;
+
+			@media #{$small-and-down} {
+				margin-top: 1rem;
+			}
+		}
+
+		.icon-adjust {
+			margin-top: 10px!important;
+		}
+
+		.yj-card {
+			margin-bottom: 0;
+
+			.yj-name {
+				margin-top: 0.5rem;
+
+				.first-name {
+					color: $primary-color;
+					font-size: 1.4rem;
+					font-weight: 500;
+					letter-spacing: 1px;
+				}
+
+				.last-name {
+					color: $primary-color;
+					font-weight: 200;
+					font-size: 1.4rem;
+				}
+			}
+			
+			.distance-panel {
+				background-color: $yj-light-grey;
+				padding: 0.5rem;
+				border-radius: 3px;
+
+				.distance {
+					font-size: 0.8rem;
+				}
+			}
+		}
+
+		.results-row {
+			margin-bottom: 0;
+		}
+
+		.yj-search {
+
+			@media #{$medium-and-down} {
+				margin-top: 40px;
+			}
+		}
+	}

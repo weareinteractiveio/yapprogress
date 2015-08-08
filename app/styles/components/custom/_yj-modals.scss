@@ -1,0 +1,70 @@
+	/*Modals*/
+
+	.yj-modal {
+		max-width: 500px;
+
+		.exit {
+			margin-bottom: 1rem;
+
+			.col {
+				padding: 0;
+			}
+
+			p {
+				margin: 0;
+			}
+
+			a {
+				color: $yj-grey;
+				@include transition(.2s);
+
+				&:hover {
+					color: $primary-color;
+					@include transition(.2s);
+				}
+			}
+		}
+
+		.modal-header {
+			background: $primary-color;
+			padding: 1rem;
+		}
+
+		.modal-btns {
+
+			a {
+				margin-top: 0.5rem;
+				text-align: left;
+			}
+
+			i {
+				min-width: 30px;
+			}
+		}
+
+		.yj-modal-footer {
+
+		}
+
+		.modal-form {
+			margin-top: 2rem;
+			.col {
+				padding-left: 1rem;
+
+				&:first-child {
+					padding-left: 0;
+				}
+			}
+
+			.input-field {
+				label {
+					left: 0;
+				}
+			}
+		}
+
+		.p-terms {
+			margin: 0;
+		}
+
+	}

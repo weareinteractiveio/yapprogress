@@ -1,0 +1,53 @@
+	/*Employer Page*/
+
+	.img-wrapper {
+		margin: 0 auto;
+		max-width: 400px;
+		padding: 40px;
+		background: white;
+		opacity: 0.9;
+	}
+
+	.job-group {
+		
+		h5 {
+			float: left;
+			font-size: 1.2rem;
+			font-weight: 300;
+		}
+
+		ul {
+			float: left;
+			width: 100%;
+			margin-bottom: 0;
+
+			li {
+				display: inline-block;
+				margin-left: 25px;
+
+				&:first-child {
+					margin-left: 0;
+				}
+
+				span {
+					font-size: 1.5rem;
+				}
+
+				p {
+					margin-top: 0;
+					font-size: 0.8rem;
+				}
+			}
+		}
+
+		.location {
+			float: left;
+			margin: 11px 0 0 8px;;
+		}
+
+		.job-group-btn {
+			float: left;
+			width: 100%;
+			margin: 0;
+		}
+	}

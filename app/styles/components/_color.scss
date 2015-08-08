@@ -6,6 +6,31 @@
 
 // Google Color Palette defined: http://www.google.com/design/spec/style/color.html
 
+$yj-blue: (
+  "lighten-5":  #a8c73e,
+  "lighten-4":  #a8c73e,
+  "lighten-3":  #a8c73e,
+  "lighten-2":  #a8c73e,
+  "lighten-1":  #a8c73e,
+  "base":       #036786,
+  "darken-1":   #0a5f7b,
+  "darken-2":   #09566f,
+  "darken-3":   #074d63,
+  "darken-4":   #044357,
+);
+
+$yj-green: (
+  "lighten-5":  #a8c73e,
+  "lighten-4":  #a8c73e,
+  "lighten-3":  #a8c73e,
+  "lighten-2":  #a8c73e,
+  "lighten-1":  #a8c73e,
+  "base":       #a8c73e,
+  "darken-1":   #9bb838,
+  "darken-2":   #8eaa34,
+  "darken-3":   #819a2f,
+  "darken-4":   #748b2a,
+);
 
 $materialize-red: (
   "lighten-5":  #fdeaeb,
@@ -338,6 +363,8 @@ $shades: (
 );
 
 $colors: (
+  "yj-blue": $yj-blue,
+  "yj-green": $yj-green,
   "materialize-red": $materialize-red,
   "red": $red,
   "pink": $pink,

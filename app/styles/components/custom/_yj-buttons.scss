@@ -5,3 +5,89 @@
 		width: 140px;
 		line-height: 1rem;
 	}
+
+	.yj-btn-classy {
+		background: transparent;
+		border: 1px solid $primary-color;
+		color: $primary-color;
+		box-shadow: none;
+
+		&:hover {
+			background: $primary-color;
+			color: white;
+		}
+
+		&.yj-btn-classy-lg {
+			min-width: 200px;
+		}
+	}
+
+	.yj-btn-green {
+		background: $primary-color;
+
+		&:hover {
+			background: $primary-color-dark;
+		}
+	}
+
+	.yj-btn-blue {
+		background: $yj-blue;
+
+		&:hover {
+			background: darken($yj-blue, 15%);
+		}
+	}
+
+	.yj-btn-facebook {
+		background: $facebook;
+
+		&:hover {
+			background: darken($facebook, 15%);
+		}
+	}
+
+	.yj-btn-google {
+		background: $google;
+
+		&:hover {
+			background: darken($google, 15%);
+		}
+	}
+
+	.yj-btn-linkedin {
+		background: $linkedin;
+
+		&:hover {
+			background: darken($linkedin, 15%);
+		}
+	}
+
+	.yj-btn-db {
+		display: block;
+	}
+
+	.yj-btn-min-width {
+		min-width: 180px;
+	}
+
+	.yj-btn-rsp {
+		margin-top: 0;
+
+		@media #{$medium-and-down} {
+			margin-top: 10px;
+		}
+	}
+
+	.yj-simple-link {
+		color: $yj-blue;
+		@include transition(.2s);
+
+		&:hover {
+			color: darken($yj-blue, 15%);
+			@include transition(.2s);
+		}
+	}
+	
+	.yj-btn-signup-fix {
+		margin-bottom: 0.4rem;
+	}

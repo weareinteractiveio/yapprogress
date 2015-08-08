@@ -1,11 +1,13 @@
 	/*Nav*/
 
 	.yj-nav {
-		padding-right: 20px;
 		box-shadow: none;
+		line-height: 0;
+		background: transparent;
+		border-bottom: 1px solid $yj-less-light-grey;
 
 		a {
-			color: $primary-color;
+			color: $secondary-color;
 
 			&.yj-nav-btn {
 				color: white;
@@ -38,6 +40,35 @@
 				@include animation(.3s);
 			}
 		}
+
+		ul.social {
+			margin-top: 30px;
+			padding: 0 15px;
+			
+			li {
+				padding: 0;
+				float: left;
+				margin-right: 20px;
+
+				a {
+					padding: 0;
+				}
+			}
+		}
+
+		// .yj-logo {
+		// 	z-index: 1;
+		// 	position: relative;
+		// 	margin-top: 10px;
+		// 	width: 80px;
+		// 	height: 40px;
+		// 	color: $primary-color;
+
+		// 	@media #{$small-and-down} {
+		// 		width: 70px;
+		// 		height: 30px;
+		// 	}
+		// }
 	}
 
 	.yj-sidenav {
@@ -45,6 +76,10 @@
 			
 			&.li-push {
 				margin-top: 4rem;
+
+				@media #{$small-and-down} {
+					margin-top: 0;
+				}
 			}
 
 			&:hover {
@@ -55,8 +90,62 @@
 				@include transition(.2s);
 
 				&:hover {
-					color: darken($primary-color, 20%);
+					color: $primary-color;
 					@include transition(.2s);
+				}
+
+				&.yj-close {
+
+					&:hover {
+						color: $error-color;
+					}
+				}
+			}
+		}
+	}
+
+	.yj-logo {
+		z-index: 1;
+		position: relative;
+		margin-top: 10px;
+		width: 80px;
+		height: 40px;
+		color: $primary-color;
+
+		@media #{$small-and-down} {
+			width: 70px;
+			height: 30px;
+		}
+
+		&.alt {
+			width: 100px;
+			height: 50px;
+		}
+	}
+
+	.dashboard-nav {
+		box-shadow: none;
+
+		ul {
+
+			li {
+
+				a {
+					font-weight: 300;
+					text-transform: uppercase;
+					font-size: 0.9rem;
+					letter-spacing: 1px;
+
+					span {
+						font-size: 1.4rem;
+						padding-top: 10px;
+						// line-height: 4.1rem;
+
+						&.alt {
+							font-size: 1rem;
+							margin-left: 5px;
+						}
+					}
 				}
 			}
 		}

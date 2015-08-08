@@ -1,0 +1,43 @@
+	/*About Us*/
+
+	.intro {
+		background: $primary-color;
+		padding: 4rem;
+
+		.intro-content-wrapper {
+
+			h3, p {
+				color: white;
+				font-weight: 200;
+			}
+
+			p {
+				font-size: 1.2rem;
+			}
+		}
+	}
+
+	.approach {
+		padding: 60px 0;
+	}
+
+	.founders {
+		background: $yj-light-grey;
+		padding: 4rem;
+
+		.founders-card-content {
+			background: $yj-blue;
+			color: white;
+			padding: 2rem;
+
+			h5 {
+				color: white;
+				margin-top: 0;
+			}
+		}
+
+		p.founder-job-title {
+			font-size: 1.5rem;
+			font-weight: 200;
+		}
+	}

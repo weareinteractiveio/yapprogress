@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yap Jobs</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/linear-icons.css">
+    <link rel="stylesheet" href="styles/font-awesome.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Nav -->
+    <nav class="yj-nav">
+      <div class="container">
+        <ul id="slide-out" class="side-nav yj-sidenav">
+          <li class="close"><a href="#!" class="yj-close"><span class="icon-cross yj-icon lg"></span></a></li>
+          <li class="li-push"><a href="employer-dashboard.html">Dashboard</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="search-results.html">Jobs</a></li>
+          <li><a href="#!">Sign In</a></li>
+          <li><a href="#!">Sign Up</a></li>
+          <li><a href="postajob.html" class="waves-effect waves-light btn light-green yj-nav-btn yj-btn-small">Post A Job</a>
+          <li>
+            <ul class="social">
+              <li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin fa -lg"></i></a></li>
+            </ul>
+          </li>
+        </ul>
+        <a href="index.html" class="show-on-large left yj-logo"><img src="images/yapjobs-logo-green.svg"></a>
+        <a href="#" data-activates="slide-out" class="button-collapse show-on-large right yj-icon-animate"><span class="icon-menu yj-icon lg yj-icon-green"></span></a>
+      </div>
+    </nav>
+    <!-- END Nav -->
+
+    <!-- Page title -->
+    <section class="page-title">
+      <div class="container">
+        <div class="row">
+          <div class="col l9 offset-l3">
+            <h5 class="yj-page-title">Applicant Search Results</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Page title -->
+
+    <!-- Results -->
+    <section class="results">
+      <div class="container yj-results-container">
+        <div class="row">
+          <div class="col l3 m12 s12 form">
+            <div class="row">
+              <label>Location</label>
+              <select class="browser-default">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+              </select>
+            </div>
+            <div class="row">
+            <label>Distance within (miles)</label>
+              <form action="#">
+                <p class="range-field">
+                  <input type="range" id="test5" min="0" max="100" />
+                </p>
+              </form>
+            </div>
+            <div class="row">
+              <label>Location</label>
+              <select class="browser-default">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+              </select>
+            </div>
+            <!-- <div class="yj-breaker alt-dark"></div> -->
+            <div class="row row-clean">
+                <div class="yj-breaker alt-dark"></div>
+                <a class="waves-effect waves-light btn yj-btn-green yj-form-btn btn-large">Search</a>
+            </div>
+          </div>
+          <div class="col l9 m12 s12">
+            <div class="row yj-search">
+              <div class="input-field col l9 m6 s12">
+                  <input placeholder="eg. Waiter London" id="first_name" type="text" class="validate">
+                  <label for="first_name">Search</label>
+              </div>
+              <div class="col l3 m6 s12">
+                <a class="waves-effect waves-light btn yj-btn-green yj-form-btn">Search</a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col l12">
+                <div class="row results-row">
+                  <div class="col l2">
+                    <div class="results-stat">
+                      <p>102 Applicants found</p>
+                    </div>
+                  </div>
+                  <div class="col l4">
+                    <div class="yj-sort-by">
+                      <select class="browser-default">
+                        <option value="" disabled selected>Sort by</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col l6 s12">
+                    <ul class="pagination yj-pagination">
+                      <li class="disabled"><a href="#!"><span class="icon-chevron-left"></span></a></li>
+                      <li class="active"><a href="#!">1</a></li>
+                      <li class="waves-effect"><a href="#!">2</a></li>
+                      <li class="waves-effect"><a href="#!">3</a></li>
+                      <li class="waves-effect"><a href="#!">4</a></li>
+                      <li class="waves-effect"><a href="#!">5</a></li>
+                      <li><a href="#!"><span class="icon-chevron-right"></span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col m12 s12">
+                <div class="card yj-card">
+                  <div class="card-content">
+                    <div class="row clean">
+                      <div class="col m1 s4"><img class="responsive-img circle" src="images/shahzad.jpg"></div>
+                      <div class="col m2 s8">
+                        <div class="yj-name">
+                          <p class="first-name">Shahzad</p><p class="last-name">Ali</p></div>
+                        </div>
+                      <div class="col m4 s12 blue-panel-wrapper">
+                        <div class="blue-panel alt center-align">
+                          <p>Waiter/Waitress</p>
+                        </div>
+                        <div class="blue-panel alt center-align">
+                          <p>Catering Assistant</p>
+                        </div>
+                        <div class="blue-panel alt center-align">
+                          <p>Catering Assistant</p>
+                        </div>
+                      </div>
+                      <div class="col m2 s12 center-align blue-panel-wrapper">
+                        <div class="blue-panel panel-grey alt center-align">
+                          <p><span class="icon-map-marker yj-icon sm"></span> 11 miles away</p>
+                        </div>
+                      </div>
+                      <div class="col m3 s12"><p><a class="waves-effect waves-light btn yj-btn-green yj-btn-db btn-adjust">Invite</a></p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col m12 s12">
+                <div class="card yj-card">
+                  <div class="card-content">
+                    <div class="row clean">
+                      <div class="col m1 s4"><img class="responsive-img circle" src="images/shahzad.jpg"></div>
+                      <div class="col m2 s8">
+                        <div class="yj-name">
+                          <p class="first-name">Shahzad</p><p class="last-name">Ali</p></div>
+                        </div>
+                      <div class="col m4 s12 blue-panel-wrapper">
+                        <div class="blue-panel alt center-align">
+                          <p>Waiter/Waitress</p>
+                        </div>
+                        <div class="blue-panel alt center-align">
+                          <p>Catering Assistant</p>
+                        </div>
+                        <div class="blue-panel alt center-align">
+                          <p>Catering Assistant</p>
+                        </div>
+                      </div>
+                      <div class="col m2 s12 center-align blue-panel-wrapper">
+                        <div class="blue-panel panel-grey alt center-align">
+                          <p><span class="icon-map-marker yj-icon sm"></span> 11 miles away</p>
+                        </div>
+                      </div>
+                      <div class="col m3 s12"><p><a class="waves-effect waves-light btn yj-btn-green yj-btn-db btn-adjust">Invite</a></p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col m12 s12">
+                <div class="card yj-card">
+                  <div class="card-content">
+                    <div class="row clean">
+                      <div class="col m1 s4"><img class="responsive-img circle" src="images/shahzad.jpg"></div>
+                      <div class="col m2 s8">
+                        <div class="yj-name">
+                          <p class="first-name">Shahzad</p><p class="last-name">Ali</p></div>
+                        </div>
+                      <div class="col m4 s12 blue-panel-wrapper">
+                        <div class="blue-panel alt center-align">
+                          <p>Waiter/Waitress</p>
+                        </div>
+                        <div class="blue-panel alt center-align">
+                          <p>Catering Assistant</p>
+                        </div>
+                        <div class="blue-panel alt center-align">
+                          <p>Catering Assistant</p>
+                        </div>
+                      </div>
+                      <div class="col m2 s12 center-align blue-panel-wrapper">
+                        <div class="blue-panel panel-grey alt center-align">
+                          <p><span class="icon-map-marker yj-icon sm"></span> 11 miles away</p>
+                        </div>
+                      </div>
+                      <div class="col m3 s12"><p><a class="waves-effect waves-light btn yj-btn-green yj-btn-db btn-adjust">Invite</a></p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col m12 s12">
+                <div class="card yj-card">
+                  <div class="card-content">
+                    <div class="row clean">
+                      <div class="col m1 s4"><img class="responsive-img circle" src="images/shahzad.jpg"></div>
+                      <div class="col m2 s8">
+                        <div class="yj-name">
+                          <p class="first-name">Shahzad</p><p class="last-name">Ali</p></div>
+                        </div>
+                      <div class="col m4 s12 blue-panel-wrapper">
+                        <div class="blue-panel alt center-align">
+                          <p>Waiter/Waitress</p>
+                        </div>
+                        <div class="blue-panel alt center-align">
+                          <p>Catering Assistant</p>
+                        </div>
+                        <div class="blue-panel alt center-align">
+                          <p>Catering Assistant</p>
+                        </div>
+                      </div>
+                      <div class="col m2 s12 center-align blue-panel-wrapper">
+                        <div class="blue-panel panel-grey alt center-align">
+                          <p><span class="icon-map-marker yj-icon sm"></span> 11 miles away</p>
+                        </div>
+                      </div>
+                      <div class="col m3 s12"><p><a class="waves-effect waves-light btn yj-btn-green yj-btn-db btn-adjust">Invite</a></p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col m12 s12">
+                <div class="card yj-card">
+                  <div class="card-content">
+                    <div class="row clean">
+                      <div class="col m1 s4"><img class="responsive-img circle" src="images/shahzad.jpg"></div>
+                      <div class="col m2 s8">
+                        <div class="yj-name">
+                          <p class="first-name">Shahzad</p><p class="last-name">Ali</p></div>
+                        </div>
+                      <div class="col m4 s12 blue-panel-wrapper">
+                        <div class="blue-panel alt center-align">
+                          <p>Waiter/Waitress</p>
+                        </div>
+                        <div class="blue-panel alt center-align">
+                          <p>Catering Assistant</p>
+                        </div>
+                        <div class="blue-panel alt center-align">
+                          <p>Catering Assistant</p>
+                        </div>
+                      </div>
+                      <div class="col m2 s12 center-align blue-panel-wrapper">
+                        <div class="blue-panel panel-grey alt center-align">
+                          <p><span class="icon-map-marker yj-icon sm"></span> 11 miles away</p>
+                        </div>
+                      </div>
+                      <div class="col m3 s12"><p><a class="waves-effect waves-light btn yj-btn-green yj-btn-db btn-adjust">Invite</a></p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              <ul class="pagination yj-pagination">
+                <li class="disabled"><a href="#!"><span class="icon-chevron-left"></span></a></li>
+                <li class="active"><a href="#!">1</a></li>
+                <li class="waves-effect"><a href="#!">2</a></li>
+                <li class="waves-effect"><a href="#!">3</a></li>
+                <li class="waves-effect"><a href="#!">4</a></li>
+                <li class="waves-effect"><a href="#!">5</a></li>
+                <li><a href="#!"><span class="icon-chevron-right"></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Results -->
+
+    <!-- Footer -->
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <img class="footer-logo" src="images/yapjobs-logo-white.svg" width="90px" height="45px">
+            <h5 class="white-text">Find your job in London today</h5>
+            <!-- <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p> -->
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">About Us</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Jobs</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Sign In</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Sign Up</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Terms and Conditions</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2015 Yap Jobs Limited
+        <!-- <a class="grey-text text-lighten-4 right footer-logo" href="#!"><img src="images/yapjobs-logo-white.svg" width="70px" height="35px"></a> -->
+        </div>
+      </div>
+    </footer>
+    <!-- END footer -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+
+    <!-- JS for the page -->
+    <script>
+      $('.button-collapse').sideNav({
+          menuWidth: 260, // Default is 240
+          edge: 'right', // Choose the horizontal origin
+          closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+        }
+      );
+    </script>
+    <!-- END JS for the page
+</body>
+</html>
