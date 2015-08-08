@@ -2,13 +2,13 @@
 'use strict';
 // generated on 2015-07-30 using generator-gulp-webapp 0.3.0
 var gulp = require('gulp');
-var $ = require('gulp-load-plugins')();
-var browserSync = require('browser-sync');
+var $ = require('gulp-load-plugins')(); // This loads all dependancies from package.json rather than manually adding them
+var browserSync = require('browser-sync'); // Set of testing tools
 var reload = browserSync.reload;
 
 gulp.task('styles', function () {
   return gulp.src('app/styles/main.scss')
-    .pipe($.sourcemaps.init())
+    .pipe($.sourcemaps.init()) // This helps us map minified code to line numbers to debug production code
     .pipe($.sass({
       outputStyle: 'nested', // libsass doesn't support expanded yet
       precision: 10,
@@ -23,6 +23,25 @@ gulp.task('styles', function () {
     .pipe(reload({stream: true}));
 });
 
+gulp.task('styles-images', function () {
+  return gulp.src('app/styles/images/**/*')
+    .pipe($.cache($.imagemin({
+      progressive: true,
+      interlaced: true,
+      // don't remove IDs from SVGs, they are often used
+      // as hooks for embedding and styling
+      svgoPlugins: [{cleanupIDs: false}]
+    })))
+    .pipe(gulp.dest('dist/styles/images'));
+});
+
+gulp.task('custom-styles', function() {
+    return gulp.src('app/styles/*.css')        
+        //.pipe(minify()) // minify 
+        //.pipe(concat('custom.css')) // combine all files into 1
+        .pipe(gulp.dest('.tmp/styles'));        
+}); 
+
 gulp.task('jshint', function () {
   return gulp.src('app/scripts/**/*.js')
     .pipe(reload({stream: true, once: true}))
@@ -31,7 +50,8 @@ gulp.task('jshint', function () {
     .pipe($.if(!browserSync.active, $.jshint.reporter('fail')));
 });
 
-gulp.task('html', ['styles'], function () {
+
+gulp.task('html', ['styles','custom-styles'], function () {
   var assets = $.useref.assets({searchPath: ['.tmp', 'app', '.']});
 
   return gulp.src('app/*.html')
@@ -62,6 +82,14 @@ gulp.task('fonts', function () {
   }).concat('app/fonts/**/*'))
     .pipe(gulp.dest('.tmp/fonts'))
     .pipe(gulp.dest('dist/fonts'));
+});
+
+gulp.task('custom-fonts', function () {
+  return gulp.src(require('main-bower-files')({
+    filter: '**/*.{eot,svg,ttf,woff,woff2}'
+  }).concat('app/styles/fonts/**/*'))
+    .pipe(gulp.dest('.tmp/styles/fonts'))
+    .pipe(gulp.dest('dist/styles/fonts'));
 });
 
 gulp.task('extras', function () {
@@ -117,7 +145,7 @@ gulp.task('wiredep', function () {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['jshint', 'html', 'images', 'fonts', 'extras'], function () {
+gulp.task('build', [/*'jshint',*/ 'html', 'images', 'styles-images', 'fonts', 'custom-fonts', 'extras'], function () {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
