@@ -27,9 +27,9 @@
     <!-- Dashboard Nav -->
     <!-- Dropdowns -->
     <ul id="dropdown1" class="dropdown-content">
-      <li><a href="#!"><span class="icon-cog yj-icon icon-space sm"></span>Edit Profile</a></li>
+      <li><a href="edit-profile.html"><span class="icon-cog yj-icon icon-space sm"></span>Edit Profile</a></li>
       <li class="divider"></li>
-      <li><a href="#!"><span class="icon-exit yj-icon icon-space sm"></span>Sign Out</a></li>
+      <li><a href="index.html"><span class="icon-exit yj-icon icon-space sm"></span>Sign Out</a></li>
     </ul>
     <!-- Nav -->
     <nav class="dashboard-nav">
@@ -37,7 +37,7 @@
       <div class="nav-wrapper">
         <a href="index.html" class="brand-logo yj-logo"><img src="images/yapjobs-logo-white.svg"></a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="sass.html"><span class="icon-home"></span></a></li>
+          <li><a href="index.html"><span class="icon-home"></span></a></li>
           <!-- <li><a href="sass.html"><span class="icon-speed-medium"></span></a></li> -->
           <!-- Dropdown Trigger -->
           <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Business Name <span class="icon-chevron-down alt"></span></a></li>
@@ -108,16 +108,45 @@
             </div>
           </div>
         </div>
+        <div class="row">
+          <div class="col s12">
+            <div class="yj-breaker"></div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- END Stats -->
 
+    <!-- Tabs -->
+    <div class="yj-tabs">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m6 l4">
+            <ul class="tabs">
+              <li class="tab yj-tab col s6"><a href="#test1">Jobs</a></li>
+              <li class="tab yj-tab col s6"><a class="active" href="#test2">Businesses</a></li>
+            </ul>
+          </div>
+          <!-- <div id="test1" class="col s12">Test 1</div>
+          <div id="test2" class="col s12">Test 2</div>
+          <div id="test3" class="col s12">Test 3</div>
+          <div id="test4" class="col s12">Test 4</div> -->
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <div class="yj-breaker"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END Tabs -->
+
     <!-- Page Title -->
-    <section class="page-title">
+    <section class="page-title alt">
       <div class="container">
         <div class="row">
           <div class="col l12">
-            <h5 class="yj-page-title alt">Current Positions</h5>
+            <h5 class="yj-page-title">Current Positions</h5>
           </div>
         </div>
       </div>
@@ -162,7 +191,7 @@
                 <div class="yj-breaker"></div>
                 <div class="row">
                   <div class="col l6 s12">
-                    <a class="waves-effect waves-light btn yj-btn-db">Edit Job</a>
+                    <a href="postajob.html" class="waves-effect waves-light btn yj-btn-db">Edit Job</a>
                   </div>
                   <div class="col l6 s12">
                     <a class="waves-effect waves-light btn yj-btn-db yj-btn-green yj-btn-rsp">Publish</a>
@@ -205,7 +234,7 @@
                 I am convenient because I require little markup to use effectively.</p> -->
                 <div class="row">
                   <div class="col l6 s12">
-                    <a class="waves-effect waves-light btn yj-btn-db">Edit Job</a>
+                    <a href="postajob.html" class="waves-effect waves-light btn yj-btn-db">Edit Job</a>
                   </div>
                   <div class="col l6 s12">
                     <a class="waves-effect waves-light btn yj-btn-db yj-btn-green yj-btn-rsp">Publish</a>
@@ -248,7 +277,7 @@
                 I am convenient because I require little markup to use effectively.</p> -->
                 <div class="row">
                   <div class="col l6 s12">
-                    <a class="waves-effect waves-light btn yj-btn-db">Edit Job</a>
+                    <a href="postajob.html" class="waves-effect waves-light btn yj-btn-db">Edit Job</a>
                   </div>
                   <div class="col l6 s12">
                     <a class="waves-effect waves-light btn yj-btn-db yj-btn-green yj-btn-rsp">Publish</a>
@@ -263,22 +292,22 @@
     <!-- END Current Positions -->
 
     <!-- Footer -->
-    <footer class="page-footer">
+    <footer class="page-footer yj-footer">
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
-            <img class="footer-logo" src="images/yapjobs-logo-white.svg" width="90px" height="45px">
+            <a href="index.html"><img class="footer-logo" src="images/yapjobs-logo-white.svg" width="90px" height="45px"></a>
             <h5 class="white-text">Find your job in London today</h5>
             <!-- <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p> -->
           </div>
           <div class="col l4 offset-l2 s12">
             <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">About Us</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Jobs</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Sign In</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Sign Up</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Terms and Conditions</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Privacy Policy</a></li>
+              <li><a class="grey-text text-lighten-3" href="about-us.html">About Us</a></li>
+              <li><a class="grey-text text-lighten-3" href="search-results.html">Jobs</a></li>
+              <li><a class="grey-text text-lighten-3 modal-trigger" href="#sign-in">Sign In</a></li>
+              <li><a class="grey-text text-lighten-3 modal-trigger" href="#sign-up">Sign Up</a></li>
+              <li><a class="grey-text text-lighten-3" href="terms.html">Terms and Conditions</a></li>
+              <li><a class="grey-text text-lighten-3" href="privacy.html">Privacy Policy</a></li>
             </ul>
           </div>
         </div>

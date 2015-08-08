@@ -1,0 +1,16 @@
+	/*Tabs*/
+
+	.yj-tabs {
+		ul.tabs {
+			li.tab {
+
+				a {
+					background: $yj-light-grey;
+
+					&:hover {
+						color: darken($primary-color, 10%);
+					}
+				}
+			}
+		}
+	}

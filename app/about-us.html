@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/linear-icons.css">
     <link rel="stylesheet" href="styles/font-awesome.css">
+    <link rel="stylesheet" href="styles/animate.css">
     <!-- endbuild -->
   </head>
   <body>
@@ -32,22 +33,146 @@
           <li class="li-push"><a href="employer-dashboard.html">Dashboard</a></li>
           <li><a href="about-us.html">About Us</a></li>
           <li><a href="search-results.html">Jobs</a></li>
-          <li><a href="#!">Sign In</a></li>
-          <li><a href="#!">Sign Up</a></li>
+          <li><a class="modal-trigger" href="#sign-in">Sign In</a></li>
+          <li><a class="modal-trigger" href="#sign-up">Sign Up</a></li>
           <li><a href="postajob.html" class="waves-effect waves-light btn light-green yj-nav-btn yj-btn-small">Post A Job</a>
           <li>
             <ul class="social">
-              <li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
-              <li><a href="#"><i class="fa fa-linkedin fa-lg"></i></a></li>
+              <li><a href="https://www.facebook.com/yapjobs"><i class="fa fa-facebook fa-lg"></i></a></li>
+              <li><a href="https://twitter.com/yapjobs"><i class="fa fa-twitter fa-lg"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/yapjobs"><i class="fa fa-linkedin fa-lg"></i></a></li>
             </ul>
           </li>
         </ul>
         <a href="index.html" class="show-on-large left yj-logo"><img src="images/yapjobs-logo-green.svg"></a>
         <a href="#" data-activates="slide-out" class="button-collapse show-on-large right yj-icon-animate"><span class="icon-menu yj-icon lg yj-icon-green"></span></a>
+        <a href="postajob.html" class="waves-effect waves-light btn light-green yj-nav-btn yj-nav-btn-alt yj-btn-small right hide-on-small-only">Post A Job</a></li>
       </div>
     </nav>
     <!-- END Nav -->
+
+    <!-- Modals -->
+    <div id="sign-in" class="modal yj-modal">
+      <div class="modal-content">
+        <div class="exit">
+          <div class="row row-clean">
+            <div class="col s6"><p>Sign In</p></div>
+            <div class="col s6"><p class="right-align"><a href="#!"><span class="icon-cross2 modal-close"></span></a></p></div>
+          </div>
+        </div>
+        <div class="modal-header center-align">
+          <img class="yj-logo alt" src="images/yapjobs-logo-white.svg">
+        </div>
+        <div class="modal-btns">
+          <a href="#!" class="waves-effect waves-light btn yj-btn-db yj-btn-facebook"><i class="fa fa-facebook"></i> Facebook</a>
+          <a href="#!" class="waves-effect waves-light btn yj-btn-db yj-btn-google"><i class="fa fa-google-plus"></i> Google</a>
+          <a href="#!" class="waves-effect waves-light btn yj-btn-db yj-btn-linkedin"><i class="fa fa-linkedin"></i> LinkedIn</a>
+          <a href="#!" class="waves-effect waves-light btn yj-btn-db yj-btn-blue"><i class="fa fa-envelope"></i> Email</a>
+        </div>
+        <div class="yj-modal-footer center-align">
+          <p>Don't have an account yet?</p>
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn yj-btn-green">Sign Up</a>
+        </div>
+      </div>
+    </div>
+    
+    <div id="sign-up" class="modal yj-modal">
+      <div class="modal-content">
+        <div class="exit">
+          <div class="row row-clean">
+            <div class="col s6"><p>Sign Up</p></div>
+            <div class="col s6"><p class="right-align"><a href="#!"><span class="icon-cross2 modal-close"></span></a></p></div>
+          </div>
+        </div>
+        <div class="modal-header center-align">
+          <img class="yj-logo alt" src="images/yapjobs-logo-white.svg">
+        </div>
+        <div class="modal-btns">
+          <a href="#!" class="waves-effect waves-light btn yj-btn-db yj-btn-facebook"><i class="fa fa-facebook"></i> Facebook</a>
+          <a href="#!" class="waves-effect waves-light btn yj-btn-db yj-btn-google"><i class="fa fa-google-plus"></i> Google</a>
+          <a href="#!" class="waves-effect waves-light btn yj-btn-db yj-btn-linkedin"><i class="fa fa-linkedin"></i> LinkedIn</a>
+          <a href="#sign-up-form" class="waves-effect waves-light btn yj-btn-db yj-btn-blue modal-trigger modal-close"><i class="fa fa-envelope"></i> Email</a>
+        </div>
+        <div class="yj-modal-footer center-align">
+          <p>By signing up for Yap Jobs, you acknowledge that you have read and agree to yap Jobs Career's <a class="yj-simple-link" href="#!">Terms of Use</a> and <a class="yj-simple-link" href="#!">Privacy Policy.</a></p>
+          <!-- <a href="#!" class=" modal-action modal-close waves-effect waves-green btn yj-btn-green">Sign Up</a> -->
+        </div>
+      </div>
+    </div>
+
+    <div id="sign-up-form" class="modal yj-modal">
+      <div class="modal-content">
+        <div class="exit">
+          <div class="row row-clean">
+            <div class="col s6"><p>Email Sign Up</p></div>
+            <div class="col s6"><p class="right-align"><a href="#!"><span class="icon-cross2 modal-close"></span></a></p></div>
+          </div>
+        </div>
+        <div class="modal-header center-align">
+          <img class="yj-logo alt" src="images/yapjobs-logo-white.svg">
+        </div>
+        <div class="modal-form">
+          <div class="row">
+            <div class="col s6">
+              <div class="input-field col s12">
+                <input placeholder="Enter first name here" id="first_name" type="text" class="validate">
+                <label for="first_name">First Name</label>
+              </div>
+            </div>
+            <div class="col s6">
+              <div class="input-field col s12">
+                <input placeholder="Enter last name here" id="first_name" type="text" class="validate">
+                <label for="first_name">Last Name</label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s6">
+              <div class="input-field col s12">
+                <input placeholder="Enter email here" id="first_name" type="text" class="validate">
+                <label for="first_name">Email</label>
+              </div>
+            </div>
+            <div class="col s6">
+              <div class="input-field col s12">
+                <input placeholder="Confirm email here" id="first_name" type="text" class="validate">
+                <label for="first_name">Confirm Email</label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s6">
+              <div class="input-field">
+                <input id="password" type="password" class="validate" placeholder="Enter password here">
+                <label for="password">Password</label>
+              </div>
+            </div>
+            <div class="col s6">
+              <div class="input-field">
+                <input id="password" type="password" class="validate" placeholder="Confirm password here">
+                <label for="password">Confirm Password</label>
+              </div>
+            </div>
+          </div>
+          <div class="row clean">
+            <div class="col s12">
+              <form action="#">
+                <p class="p-terms">
+                  <input name="group1" type="radio" id="test1" />
+                  <label for="test1">I Agree to the <a class="yj-simple-link" href="#!">Terms of Use</a> and <a class="yj-simple-link" href="#!">Privacy Policy.</a></label>
+                </p>
+              </form>
+            </div>
+          </div>
+          <div class="row row-clean">
+            <div class="col s12">
+              <a class="waves-effect waves-light btn yj-btn-green yj-btn-db btn-large yj-btn-signup-fix">Sign Up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END Modals -->
 
     <!-- Hero -->
     <section class="hero about-us-hero valign-wrapper">
@@ -191,22 +316,22 @@
     <!-- END Partners -->
 
     <!-- Footer -->
-    <footer class="page-footer">
+    <footer class="page-footer yj-footer">
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
-            <img class="footer-logo" src="images/yapjobs-logo-white.svg" width="90px" height="45px">
+            <a href="index.html"><img class="footer-logo" src="images/yapjobs-logo-white.svg" width="90px" height="45px"></a>
             <h5 class="white-text">Find your job in London today</h5>
             <!-- <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p> -->
           </div>
           <div class="col l4 offset-l2 s12">
             <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">About Us</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Jobs</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Sign In</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Sign Up</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Terms and Conditions</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Privacy Policy</a></li>
+              <li><a class="grey-text text-lighten-3" href="about-us.html">About Us</a></li>
+              <li><a class="grey-text text-lighten-3" href="search-results.html">Jobs</a></li>
+              <li><a class="grey-text text-lighten-3 modal-trigger" href="#sign-in">Sign In</a></li>
+              <li><a class="grey-text text-lighten-3 modal-trigger" href="#sign-up">Sign Up</a></li>
+              <li><a class="grey-text text-lighten-3" href="terms.html">Terms and Conditions</a></li>
+              <li><a class="grey-text text-lighten-3" href="privacy.html">Privacy Policy</a></li>
             </ul>
           </div>
         </div>
@@ -238,6 +363,7 @@
 
         <!-- build:js scripts/main.js -->
         <script src="scripts/main.js"></script>
+        <script src="scripts/wow.min.js"></script>
         <!-- endbuild -->
 
     <!-- JS for the page -->
@@ -252,6 +378,26 @@
       $('.datepicker').pickadate({
         selectMonths: true, // Creates a dropdown to control month
         selectYears: 15 // Creates a dropdown of 15 years to control year
+      });
+
+      var wow = new WOW(
+        {
+          boxClass:     'wow',      // animated element css class (default is wow)
+          animateClass: 'animated', // animation css class (default is animated)
+          offset:       0,          // distance to the element when triggering the animation (default is 0)
+          mobile:       true,       // trigger animations on mobile devices (default is true)
+          live:         true,       // act on asynchronously loaded content (default is true)
+          callback:     function(box) {
+            // the callback is fired every time an animation is started
+            // the argument that is passed in is the DOM node being animated
+          }
+        }
+      );
+      wow.init();
+
+      $(document).ready(function(){
+        // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+        $('.modal-trigger').leanModal();
       });
     </script>
     <!-- END JS for the page

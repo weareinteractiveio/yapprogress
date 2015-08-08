@@ -2,4 +2,8 @@
 
 	.page-title {
 		margin-top: 60px;
+
+		&.alt {
+			margin-top: 0;
+		}
 	}
