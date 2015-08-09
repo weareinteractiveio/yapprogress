@@ -24,22 +24,24 @@ gulp.task('styles', function () {
 });
 
 gulp.task('styles-images', function () {
-  return gulp.src('app/styles/images/**/*')
+  return gulp.src('app/styles/images/**/*')    
     .pipe($.cache($.imagemin({
       progressive: true,
       interlaced: true,
       // don't remove IDs from SVGs, they are often used
       // as hooks for embedding and styling
       svgoPlugins: [{cleanupIDs: false}]
-    })))
-    .pipe(gulp.dest('dist/styles/images'));
+    })))    
+    .pipe(gulp.dest('dist/styles/images'))
+    .pipe(reload({stream: true}));
 });
 
 gulp.task('custom-styles', function() {
     return gulp.src('app/styles/*.css')        
         //.pipe(minify()) // minify 
         //.pipe(concat('custom.css')) // combine all files into 1
-        .pipe(gulp.dest('.tmp/styles'));        
+        .pipe(gulp.dest('.tmp/styles'))
+        .pipe(gulp.dest('dist/styles'));        
 }); 
 
 gulp.task('jshint', function () {
@@ -65,7 +67,7 @@ gulp.task('html', ['styles','custom-styles'], function () {
 });
 
 gulp.task('images', function () {
-  return gulp.src('app/images/**/*')
+  return gulp.src('app/images/**/*')    
     .pipe($.cache($.imagemin({
       progressive: true,
       interlaced: true,
@@ -78,18 +80,19 @@ gulp.task('images', function () {
 
 gulp.task('fonts', function () {
   return gulp.src(require('main-bower-files')({
-    filter: '**/*.{eot,svg,ttf,woff,woff2}'
+    filter: '**/*.{eot,svg,ttf,otf,woff,woff2}'
   }).concat('app/fonts/**/*'))
     .pipe(gulp.dest('.tmp/fonts'))
     .pipe(gulp.dest('dist/fonts'));
 });
 
 gulp.task('custom-fonts', function () {
-  return gulp.src(require('main-bower-files')({
-    filter: '**/*.{eot,svg,ttf,woff,woff2}'
-  }).concat('app/styles/fonts/**/*'))
+  return gulp.src(  require('main-bower-files')()
+    .concat('app/styles/fonts/**/*'))
     .pipe(gulp.dest('.tmp/styles/fonts'))
     .pipe(gulp.dest('dist/styles/fonts'));
+    //.pipe(gulp.dest('.tmp/fonts'))
+    //.pipe(gulp.dest('dist/fonts'));  
 });
 
 gulp.task('extras', function () {
@@ -138,6 +141,13 @@ gulp.task('wiredep', function () {
     }))
     .pipe(gulp.dest('app/styles'));
 
+  gulp.src('app/styles/*.css')
+    .pipe(wiredep({
+      ignorePath: /^(\.\.\/)+/
+    }))
+    .pipe(gulp.dest('app/styles'));
+    
+    
   gulp.src('app/*.html')
     .pipe(wiredep({
       ignorePath: /^(\.\.\/)*\.\./
