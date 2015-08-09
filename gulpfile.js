@@ -91,8 +91,6 @@ gulp.task('custom-fonts', function () {
     .concat('app/styles/fonts/**/*'))
     .pipe(gulp.dest('.tmp/styles/fonts'))
     .pipe(gulp.dest('dist/styles/fonts'));
-    //.pipe(gulp.dest('.tmp/fonts'))
-    //.pipe(gulp.dest('dist/fonts'));  
 });
 
 gulp.task('extras', function () {
