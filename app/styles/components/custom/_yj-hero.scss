@@ -10,6 +10,16 @@
 			padding: 20px 0;
 		}
 
+		&.hero-blue {
+			background: url(images/hero-busy-london-blue.jpg) no-repeat center center;
+			background-size: cover;
+		}
+
+		&.hero-black {
+			background: url(images/hero-busy-london-black.jpg) no-repeat center center;
+			background-size: cover;
+		}
+
 		// &:after {
 		// 	position: absolute;
 		// 	top: 0;
@@ -99,4 +109,50 @@
 				text-transform: uppercase;
 			}
 		}
+
+		&.austin {
+			background: url(images/austin.jpg) no-repeat center center;
+			background-size: cover;
+		}
+
+		.notify-wrapper {
+			background: white;
+			padding: 2rem;
+
+			.notify-padding {
+				padding: 0 0.75rem;
+			}
+		}
+
+		&.hero-profile {
+			.yj-circle {
+				border: 2px solid white;
+			}
+
+			ul {
+
+				li {
+					color: white;
+				}
+
+				&.hero-results {
+
+					li {
+						color: $primary-color;
+					}
+				}
+			}
+
+			.employee-name {
+				color: white;
+				font-weight: 200;
+				font-size: 2rem;
+			}
+		}
+	}
+
+	p.get-notified {
+		font-weight: 500;
+		font-size: 1.4rem;
+		color: $yj-blue;
 	}

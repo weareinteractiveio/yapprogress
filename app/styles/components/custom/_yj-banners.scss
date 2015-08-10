@@ -1,0 +1,16 @@
+	/*Banners*/
+
+	.banner {
+		background: $yj-light-grey;
+		padding: 1rem;
+
+		a {
+			color: lighten($yj-blue, 15%);
+			@include transition(.2s);
+
+			&:hover {
+				color: $yj-blue;
+				@include transition(.2s);
+			}
+		}
+	}

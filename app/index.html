@@ -30,29 +30,31 @@
     <![endif]-->
 
     <!-- Nav -->
-    <nav class="yj-nav">
-      <div class="container">
-        <ul id="slide-out" class="side-nav yj-sidenav">
-          <li class="close"><a href="#!" class="yj-close"><span class="icon-cross yj-icon lg"></span></a></li>
-          <li class="li-push"><a href="employer-dashboard.html">Dashboard</a></li>
-          <li><a href="about-us.html">About Us</a></li>
-          <li><a href="search-results.html">Jobs</a></li>
-          <li><a class="modal-trigger" href="#sign-in">Sign In</a></li>
-          <li><a class="modal-trigger" href="#sign-up">Sign Up</a></li>
-          <li><a href="postajob.html" class="waves-effect waves-light btn light-green yj-nav-btn yj-btn-small">Post A Job</a>
-          <li>
-            <ul class="social">
-              <li><a href="https://www.facebook.com/yapjobs"><i class="fa fa-facebook fa-lg"></i></a></li>
-              <li><a href="https://twitter.com/yapjobs"><i class="fa fa-twitter fa-lg"></i></a></li>
-              <li><a href="https://www.linkedin.com/company/yapjobs"><i class="fa fa-linkedin fa-lg"></i></a></li>
-            </ul>
-          </li>
-        </ul>
-        <a href="index.html" class="show-on-large left yj-logo"><img src="images/yapjobs-logo-green.svg"></a>
-        <a href="#" data-activates="slide-out" class="button-collapse show-on-large right yj-icon-animate"><span class="icon-menu yj-icon lg yj-icon-green"></span></a>
-        <a href="postajob.html" class="waves-effect waves-light btn light-green yj-nav-btn yj-nav-btn-alt yj-btn-small right hide-on-small-only">Post A Job</a></li>
-      </div>
-    </nav>
+    <div class="navbar-fixed">
+      <nav class="yj-nav yj-navbar-fixed">
+        <div class="container">
+          <ul id="slide-out" class="side-nav yj-sidenav">
+            <li class="close"><a href="#!" class="yj-close"><span class="icon-cross yj-icon lg"></span></a></li>
+            <li class="li-push"><a href="employer-dashboard.html">Dashboard</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="search-results.html">Jobs</a></li>
+            <li><a class="modal-trigger" href="#sign-in">Sign In</a></li>
+            <li><a class="modal-trigger" href="#sign-up">Sign Up</a></li>
+            <li><a href="postajob.html" class="waves-effect waves-light btn yj-nav-btn yj-btn-small yj-btn-green">Post A Job</a>
+            <li>
+              <ul class="social">
+                <li><a href="https://www.facebook.com/yapjobs"><i class="fa fa-facebook fa-lg"></i></a></li>
+                <li><a href="https://twitter.com/yapjobs"><i class="fa fa-twitter fa-lg"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/yapjobs"><i class="fa fa-linkedin fa-lg"></i></a></li>
+              </ul>
+            </li>
+          </ul>
+          <a href="index.html" class="show-on-large left yj-logo yj-logo-switch"><img src="images/yapjobs-logo-green.svg"></a>
+          <a href="#" data-activates="slide-out" class="button-collapse show-on-large right yj-icon-animate"><span class="icon-menu yj-icon lg yj-icon-green"></span></a>
+          <a href="postajob.html" class="waves-effect waves-light btn yj-btn-green yj-nav-btn yj-nav-btn-alt yj-btn-small right hide-on-small-only">Post A Job</a></li>
+        </div>
+      </nav>
+    </div>
     <!-- END Nav -->
 
     <!-- Modals -->
@@ -179,7 +181,7 @@
     <!-- END Modals -->
 
     <!-- Hero -->
-    <section class="hero valign-wrapper">
+    <section class="hero hero-black valign-wrapper">
       <div class="container center-align valign">
         <div class="row">
           <div class="col s12">
@@ -203,8 +205,15 @@
           </div>
         </div>
         <div class="row">
-          <div class="col s12">
-            <a href="#" class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s"><img src="images/apple-download-btn.svg" width="133px" height="38px"></a>
+          <div class="col s12 m12 l12">
+            <!-- <ul class="hero-download-btn-list">
+              <li><a class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s"><img src="images/android-app-grey.png"><span class="coming-soon wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">Coming Soon</span></a></li>
+              <li><a href="#" class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s"><img src="images/apple-download-btn.svg" width="133px" height="38px"><span class="coming-soon wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">Available Now</span></a></li>
+            </ul> -->
+            <ul class="ctc-list-hero">
+              <li><a  href="postajob.html" class="waves-effect waves-light btn btn-large yj-btn-blue yj-btn-min-width wow fadeInUp">Start Hiring</a></li>
+              <li><a  href="search-results.html" class="waves-effect waves-light btn btn-large yj-btn-green yj-btn-min-width wow fadeInUp">Find a job</a></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -402,23 +411,23 @@
             We are working with leading businesses to find andrecruit the right talent.</p>
           </div>
         </div>
-        <div class="row partner-logos">
-          <div class="col l2">
+        <div class="row partner-logos center-align">
+          <div class="col l2 m6 s6">
             <img class="responsive-img" src="images/holiday-inn-logo.png">
           </div>
-          <div class="col l2">
+          <div class="col l2 m6 s6">
             <img class="responsive-img" src="images/subway-logo.png">
           </div>
-          <div class="col l2">
+          <div class="col l2 m6 s6">
             <img class="responsive-img" src="images/hilton-logo.png">
           </div>
-          <div class="col l2">
+          <div class="col l2 m6 s6">
             <img class="responsive-img" src="images/gails-logo.png">
           </div>
-          <div class="col l2">
+          <div class="col l2 m6 s6">
             <img class="responsive-img" src="images/hush-logo.png">
           </div>
-          <div class="col l2">
+          <div class="col l2 m6 s6">
             <img class="responsive-img" src="images/cabana-logo.png">
           </div>
         </div>
@@ -448,6 +457,11 @@
           <div class="col l6 s12">
             <a href="index.html"><img class="footer-logo" src="images/yapjobs-logo-white.svg" width="90px" height="45px"></a>
             <h5 class="white-text">Find your job in London today</h5>
+            <ul class="footer-social">
+              <li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin fa-lg"></i></a></li>
+            </ul>
             <!-- <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p> -->
           </div>
           <div class="col l4 offset-l2 s12">
@@ -520,6 +534,14 @@
         // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
         $('.modal-trigger').leanModal();
       });
+
+      $(window).scroll(function () {
+          if ($(document).scrollTop() == 0) {
+              $('.yj-logo-switch img').attr('src', 'images/yapjobs-logo-green.svg');
+          } else {
+              $('.yj-logo-switch img').attr('src', 'images/yapjobs-logo-colour.svg');
+          }
+      }); 
     </script>
     <!-- END JS for the page
 </body>

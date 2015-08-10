@@ -10,6 +10,10 @@
 		&.p-green {
 			color: $primary-color;
 		}
+
+		&.p-no-marin-top {
+			margin-top: 0;
+		}
 	}
 
 	.yj-hero-title {
@@ -68,6 +72,10 @@
 			color: $primary-color;
 			text-transform: uppercase;
 			letter-spacing: 0.1rem;
+		}
+
+		&.yj-page-title-green {
+			color: $primary-color;
 		}
 	}
 

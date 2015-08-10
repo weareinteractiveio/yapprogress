@@ -1,0 +1,62 @@
+	/*Lists*/
+
+	ul.ctc-list-hero {
+		li{
+			display: inline-block;
+			margin-left: 8px;
+
+			&:first-child {
+				margin-left: 0;
+			}
+
+			@media #{$small-and-down} {
+				margin-top: 0.5rem;
+				margin-left: 0;
+			}
+		}
+	}
+
+	ul.interests {
+
+		li {
+			background: $yj-blue;
+			padding: 0.7rem;
+			margin-bottom: 0.4rem;
+			color: white;
+			border-radius: 3px;
+		}
+	}
+
+	ul.footer-social {
+		margin-top: 1.4rem;
+
+		li {
+			display: inline-block;
+			color: white;
+			margin-right: 1rem;
+
+			a {
+				color: white;
+				@include transition(.2s);
+
+				&:hover {
+					color: $primary-color;
+					@include transition(.2s);
+				}
+			}
+		}
+	}
+
+	ul.hero-download-btn-list {
+
+		li {
+			display: inline-block;
+			margin-right: 8px;
+
+			span.coming-soon {
+				display: block;
+				color: white;
+				font-size: 0.8rem;
+			}
+		}
+	}
