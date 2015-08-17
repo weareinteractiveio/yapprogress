@@ -1,9 +1,24 @@
 	/*Buttons*/
 
+	.yj-btn-global-sm {
+		height: 30px;
+		font-size: 0.8rem;
+		line-height: 2.2rem;
+		max-width: 90px;
+
+		&.alt {
+			margin-left: 10px;
+		}
+	}
+
 	.yj-btn-small {
 		height: 40px;
 		width: 140px;
 		line-height: 1rem;
+
+		&.yj-btn-small-alt {
+			width: 100%;
+		}
 	}
 
 	.yj-btn-classy {
@@ -86,6 +101,10 @@
 			color: darken($yj-blue, 15%);
 			@include transition(.2s);
 		}
+
+		&.alt {
+			text-decoration: underline;
+		}
 	}
 	
 	.yj-btn-signup-fix {
@@ -94,4 +113,13 @@
 
 	.yj-btn-margin-top {
 		margin-top: 1.6rem;
+	}
+
+	.stat-btn {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	.yj-btn-bulk-actions {
+		height: 40px;
 	}

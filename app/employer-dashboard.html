@@ -26,7 +26,7 @@
 
     <!-- Dashboard Nav -->
     <!-- Dropdowns -->
-    <ul id="dropdown1" class="dropdown-content">
+    <ul id="dropdown1" class="dropdown-content dropdown-min-width">
       <li><a href="edit-profile.html"><span class="icon-cog yj-icon icon-space sm"></span>Edit Profile</a></li>
       <li class="divider"></li>
       <li><a href="index.html"><span class="icon-exit yj-icon icon-space sm"></span>Sign Out</a></li>
@@ -37,10 +37,11 @@
       <div class="nav-wrapper">
         <a href="index.html" class="brand-logo yj-logo"><img src="images/yapjobs-logo-white.svg"></a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="index.html"><span class="icon-home"></span></a></li>
+          <li><a href="index.html"><span class="icon-home2 yj-icon icon-space"></span> Home</a></li>
+          <li><a href="employer-dashboard.html"><span class="icon-icons2 yj-icon icon-space"></span> Dashboard</a></li>
           <!-- <li><a href="sass.html"><span class="icon-speed-medium"></span></a></li> -->
           <!-- Dropdown Trigger -->
-          <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Business Name <span class="icon-chevron-down alt"></span></a></li>
+          <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Cabana <span class="icon-chevron-down alt"></span></a></li>
         </ul>
       </div>
     </div>
@@ -90,10 +91,22 @@
           <div class="col s12 m6 l4">
             <div class="card yj-card-alt">
               <div class="card-content center-align">
-                <span class="icon-coin-pound yj-icon lg"></span>
-                <h5>Average Wage Per Hour</h5>
+                <span class="icon-users yj-icon lg"></span>
+                <h5>All Applicants</h5>
                 <!-- <div class="yj-breaker"></div> -->
-                <p class="stat-result">£9</p>
+                <p class="stat-result">20</p>
+                <a  href="employer-dashboard-applicants.html" class="waves-effect waves-light btn yj-btn-green stat-btn">View All</a>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="card yj-card-alt">
+              <div class="card-content center-align">
+                <span class="icon-users2 yj-icon lg"></span>
+                <h5>Scheduled Interviews</h5>
+                <!-- <div class="yj-breaker"></div> -->
+                <p class="stat-result">4</p>
+                <a class="waves-effect waves-light btn yj-btn-green stat-btn">View All</a>
               </div>
             </div>
           </div>
@@ -101,9 +114,10 @@
             <div class="card yj-card-alt">
               <div class="card-content center-align">
                 <span class="icon-user yj-icon lg"></span>
-                <h5>Average Applicants</h5>
+                <h5>Shortlisted Applicants</h5>
                 <!-- <div class="yj-breaker"></div> -->
-                <p class="stat-result">2</p>
+                <p class="stat-result">8</p>
+                <a class="waves-effect waves-light btn yj-btn-green stat-btn">View All</a>
               </div>
             </div>
           </div>
@@ -117,32 +131,48 @@
     </section>
     <!-- END Stats -->
 
-    <!-- Tabs -->
+    <!-- Simple Tabs -->
+    <section class="yj-tabs">
+      <div class="container">
+        <div class="row">
+          <div class="col s8">
+            <ul class="yj-tabs-simple">
+              <li><a href="#" class="waves-effect waves-light">Jobs</a></li>
+              <li><a href="#" class="waves-effect waves-light alt">Businesses</a></li>
+            </ul>
+          </div>
+          <div class="col s4">
+            <ul>
+              <li><a href="postajob.html" class="waves-effect waves-light btn btn-large yj-btn-classy right">Post Another Job</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Simple Tabs -->
+
+    <!-- Tabs 
     <div class="yj-tabs">
       <div class="container">
         <div class="row">
           <div class="col s12 m6 l4">
             <ul class="tabs">
-              <li class="tab yj-tab col s6"><a href="#test1">Jobs</a></li>
-              <li class="tab yj-tab col s6"><a class="active" href="#test2">Businesses</a></li>
+              <li class="tab yj-tab col s6"><a class="active" href="#test1">Jobs</a></li>
+              <li class="tab yj-tab col s6"><a href="#test2">Businesses</a></li>
             </ul>
           </div>
-          <!-- <div id="test1" class="col s12">Test 1</div>
-          <div id="test2" class="col s12">Test 2</div>
-          <div id="test3" class="col s12">Test 3</div>
-          <div id="test4" class="col s12">Test 4</div> -->
         </div>
         <div class="row">
           <div class="col s12">
             <div class="yj-breaker"></div>
           </div>
-        </div>
+        </div>  
       </div>
     </div>
     <!-- END Tabs -->
 
     <!-- Page Title -->
-    <section class="page-title alt">
+    <!-- <section class="page-title alt">
       <div class="container">
         <div class="row">
           <div class="col l12">
@@ -150,13 +180,13 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- END Page Title -->
 
     <!-- Create stats row -->
 
     <!-- Current Positions -->
-    <section class="current-positions">
+    <!-- <section class="current-positions">
       <div class="container">
         <div class="row">
           <div class="col l4 m12 s12">
@@ -230,8 +260,8 @@
                   </div>
                 </div>
                 <div class="yj-breaker"></div>
-                <!-- <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.</p> -->
+                <p>I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively.</p>
                 <div class="row">
                   <div class="col l6 s12">
                     <a href="postajob.html" class="waves-effect waves-light btn yj-btn-db">Edit Job</a>
@@ -273,8 +303,8 @@
                   </div>
                 </div>
                 <div class="yj-breaker"></div>
-                <!-- <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.</p> -->
+                <p>I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively.</p>
                 <div class="row">
                   <div class="col l6 s12">
                     <a href="postajob.html" class="waves-effect waves-light btn yj-btn-db">Edit Job</a>
@@ -288,8 +318,340 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- END Current Positions -->
+
+    <!-- Jobs Table -->
+    <section class="jobs-list">
+      <div class="container yj-table-container">
+        <div class="row row-clean">
+          <div class="col s6 m6 l2">
+            <p class="table-title">Current Positions</p>
+          </div>
+          <div class="col s6 m6 l2">
+            <select class="browser-default yj-table-select">
+              <option value="1" selected>Published</option>
+              <option value="2">Unpublished</option>
+            </select>
+          </div>
+          <div class="col s6 m6 l2 offset-l4">
+            <form action="#">
+              <p class="right-align">
+                <input type="checkbox" id="check1" />
+                <label for="check1">Select All</label>
+              </p>
+            </form>
+          </div>
+          <div class="col s6 m6 l2">
+            <ul class="table-actions">
+              <!-- Dropdown Trigger -->
+              <li><a class="dropdown-button yj-btn-db yj-btn-bulk-actions" href="#!" data-activates="bulk-applicant-actions">Bulk Actions <span class="icon-chevron-down yj-icon xsm icon-space alt right yj-icon-bulk-action"></span></a></li>
+            </ul>
+          </div>
+          <!-- <div class="col s6 m6 l3 offset-l7">
+            <ul class="pagination yj-pagination">
+              <li class="disabled"><a href="#!"><span class="icon-chevron-left"></span></a></li>
+              <li class="active"><a href="#!">1</a></li>
+              <li class="waves-effect"><a href="#!">2</a></li>
+              <li class="waves-effect"><a href="#!">3</a></li>
+              <li class="waves-effect"><a href="#!">4</a></li>
+              <li class="waves-effect"><a href="#!">5</a></li>
+              <li><a href="#!"><span class="icon-chevron-right"></span></a></li>
+            </ul>
+          </div> -->
+        </div>
+        <!-- <div class="row">
+          <div class="col s12">
+            <div class="yj-breaker alt"></div>
+          </div>
+        </div> -->
+        <!-- <div class="row">
+          <div class="col s6 m6 l2">
+            <select class="browser-default">
+              <option value="" disabled selected>Published</option>
+              <option value="1">Unpublished</option>
+            </select>
+          </div>
+          <div class="col s6 m6 l3 offset-l5">
+            <ul class="pagination yj-pagination">
+              <li class="disabled"><a href="#!"><span class="icon-chevron-left"></span></a></li>
+              <li class="active"><a href="#!">1</a></li>
+              <li class="waves-effect"><a href="#!">2</a></li>
+              <li class="waves-effect"><a href="#!">3</a></li>
+              <li class="waves-effect"><a href="#!">4</a></li>
+              <li class="waves-effect"><a href="#!">5</a></li>
+              <li><a href="#!"><span class="icon-chevron-right"></span></a></li>
+            </ul>
+          </div>
+          <div class="col s6 m6 l2 offset-l8">
+            <select class="browser-default">
+              <option value="" disabled selected>Bulk Actions</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>
+          </div>
+        </div> -->
+        <div class="row row-clean">
+          <div class="col s12">
+            <table class="hoverable responsive-table yj-table">
+              <thead>
+                <tr>
+                    <th data-field="id">Position</th>
+                    <th data-field="name">Date Posted</th>
+                    <th data-field="price">Hourly Rate</th>
+                    <th data-field="price">Applicants</th>
+                    <th data-field="price">Start Date</th>
+                    <th data-field="price">Contract Type</th>
+                    <th data-field="price">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="icon-glass-cocktail yj-icon yj-icon-green job-icon"></span> Bartender</td>
+                  <td>11/08/15</td>
+                  <td>£9</td>
+                  <td>10 <a class="waves-effect waves-light btn yj-btn-green yj-btn-global-sm alt">View All</a></td>
+                  <td>11/08/15</td>
+                  <td>Full Time</td>
+                  <td>
+                    <!-- <select class="browser-default yj-table-select">
+                      <option value="" disabled selected>Actions</option>
+                      <option value="1">Edit Job</option>
+                      <option value="2"><a class="modal-trigger" href="#unpublish">Unpublish</option>
+                    </select> -->
+                    <ul class="table-actions">
+                      <!-- Dropdown Trigger -->
+                      <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Actions <span class="icon-chevron-down yj-icon xsm icon-space alt"></span></a></li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="icon-glass-cocktail yj-icon yj-icon-green job-icon"></span> Bartender</td>
+                  <td>11/08/15</td>
+                  <td>£9</td>
+                  <td>10 <a class="waves-effect waves-light btn yj-btn-green yj-btn-global-sm alt">View All</a></td>
+                  <td>11/08/15</td>
+                  <td>Full Time</td>
+                  <td>
+                    <ul class="table-actions">
+                      <!-- Dropdown Trigger -->
+                      <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Actions <span class="icon-chevron-down yj-icon xsm icon-space alt"></span></a></li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="icon-glass-cocktail yj-icon yj-icon-green job-icon"></span> Bartender</td>
+                  <td>11/08/15</td>
+                  <td>£9</td>
+                  <td>10 <a class="waves-effect waves-light btn yj-btn-green yj-btn-global-sm alt">View All</a></td>
+                  <td>11/08/15</td>
+                  <td>Full Time</td>
+                  <td>
+                    <ul class="table-actions">
+                      <!-- Dropdown Trigger -->
+                      <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Actions <span class="icon-chevron-down yj-icon xsm icon-space alt"></span></a></li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="icon-glass-cocktail yj-icon yj-icon-green job-icon"></span> Bartender</td>
+                  <td>11/08/15</td>
+                  <td>£9</td>
+                  <td>10 <a class="waves-effect waves-light btn yj-btn-green yj-btn-global-sm alt">View All</a></td>
+                  <td>11/08/15</td>
+                  <td>Full Time</td>
+                  <td>
+                    <ul class="table-actions">
+                      <!-- Dropdown Trigger -->
+                      <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Actions <span class="icon-chevron-down yj-icon xsm icon-space alt"></span></a></li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="icon-glass-cocktail yj-icon yj-icon-green job-icon"></span> Bartender</td>
+                  <td>11/08/15</td>
+                  <td>£9</td>
+                  <td>10 <a class="waves-effect waves-light btn yj-btn-green yj-btn-global-sm alt">View All</a></td>
+                  <td>11/08/15</td>
+                  <td>Full Time</td>
+                  <td>
+                    <ul class="table-actions">
+                      <!-- Dropdown Trigger -->
+                      <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Actions <span class="icon-chevron-down yj-icon xsm icon-space alt"></span></a></li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+              <tfoot class="load-more">
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td class="load-more right-align"><a class="waves-effect waves-light btn yj-btn-classy">Load More</a></td>
+                  <!-- <td>
+                    <ul class="pagination yj-pagination alt right-align">
+                      <li class="disabled"><a href="#!"><span class="icon-chevron-left"></span></a></li>
+                      <li class="active"><a href="#!">1</a></li>
+                      <li class="waves-effect"><a href="#!">2</a></li>
+                      <li class="waves-effect"><a href="#!">3</a></li>
+                      <li class="waves-effect"><a href="#!">4</a></li>
+                      <li class="waves-effect"><a href="#!">5</a></li>
+                      <li><a href="#!"><span class="icon-chevron-right"></span></a></li>
+                    </ul>
+                  </td> -->
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Jobs Table -->
+
+    <!-- Table Dropdowns -->
+    <ul id="dropdown2" class="dropdown-content yj-dropdown-content">
+      <li><a href="#publish-success" class="modal-trigger">Publish</a></li>
+      <li class="divider"></li>
+      <li><a href="#unpublish-modal" class="modal-trigger">Unpublish</a></li>
+      <li class="divider"></li>
+      <li><a href="editjob.html">Edit Job</a></li>
+      <li><a href="jobpage.html">View Job</a></li>
+    </ul>
+
+    <ul id="bulk-applicant-actions" class="dropdown-content yj-dropdown-content">
+      <li><a href="#!">Publish All</a></li>
+      <li class="divider"></li>
+      <li><a href="#unpublish-modal">Unpublish All</a></li>
+    </ul>
+    <!-- END Table Dropdowns -->
+
+    <!-- Modals -->
+    <div id="unpublish-modal" class="modal center-align table-global-modal">
+      <div class="modal-content">
+        <div class="modal-header alt center-align">
+          <img class="yj-logo alt" src="images/yapjobs-logo-white.svg">
+        </div>
+        <h4>Did you hire successfully?</h4>
+        <ul class="modal-btn-list">
+          <li><a href="#hire-failure"class="waves-effect waves-light btn yj-btn-blue modal-trigger modal-close">No</a></li>
+          <li><a href="#hire-success" class="waves-effect waves-light btn yj-btn-green modal-trigger modal-close">Yes</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="hire-success" class="modal center-align table-global-modal jobs-list">
+      <div class="modal-content">
+        <div class="modal-header alt center-align">
+          <img class="yj-logo alt" src="images/yapjobs-logo-white.svg">
+        </div>
+        <h4>Which applicant did you hire?</h4>
+        <!-- <div class="yj-search-form-wrapper">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col col-clean alt s12">
+                <input placeholder="Enter applicant name here" id="first_name" type="text" class="validate">
+                <label class="alt" for="first_name">Search</label>
+              </div>
+            </div>
+          </form>
+        </div> -->
+        <table class="responsive-table yj-table">
+          <thead>
+            <tr>
+                <th data-field="id">Photo</th>
+                <th data-field="name">Name</th>
+                <th data-field="price">Location</th>
+                <!-- <th data-field="price">Response Time</th> -->
+                <th data-field="price">Hired?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img class="circle" src="images/shahzad.jpg" width="40px" height="40px"></td>
+              <td>Shahzad</td>
+              <td>Central London</td>
+              <td>
+                <a href="#hired-success-message" class="waves-effect waves-light btn yj-btn-green modal-trigger modal-close">Hired</a>
+              </td>
+            </tr>
+            <tr>
+              <td><img class="circle" src="images/shahzad.jpg" width="40px" height="40px"></td>
+              <td>Shahzad</td>
+              <td>Central London</td>
+              <td>
+                <a href="#hired-success-message" class="waves-effect waves-light btn yj-btn-green modal-trigger modal-close">Hired</a>
+              </td>
+            </tr>
+            <tr>
+              <td><img class="circle" src="images/shahzad.jpg" width="40px" height="40px"></td>
+              <td>Shahzad</td>
+              <td>Central London</td>
+              <td>
+                <a href="#hired-success-message" class="waves-effect waves-light btn yj-btn-green modal-trigger modal-close">Hired</a>
+              </td>
+            </tr>
+            <tr>
+              <td><img class="circle" src="images/shahzad.jpg" width="40px" height="40px"></td>
+              <td>Shahzad</td>
+              <td>Central London</td>
+              <td>
+                <a href="#hired-success-message" class="waves-effect waves-light btn yj-btn-green modal-trigger modal-close">Hired</a>
+              </td>
+            </tr>
+            <tr>
+              <td><img class="circle" src="images/shahzad.jpg" width="40px" height="40px"></td>
+              <td>Shahzad</td>
+              <td>Central London</td>
+              <td>
+                <a href="#hired-success-message" class="waves-effect waves-light btn yj-btn-green modal-trigger modal-close">Hired</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="hired-success-message" class="modal center-align table-global-modal">
+      <div class="modal-content">
+        <div class="modal-header alt center-align">
+          <img class="yj-logo alt" src="images/yapjobs-logo-white.svg">
+        </div>
+        <h4>Awesome! How did we do?</h4>
+        <ul class="modal-btn-list">
+        <li><a class="waves-effect waves-light btn yj-btn-blue modal-close">Close</a></li>
+          <li><a class="waves-effect waves-light btn yj-btn-green modal-close">Feedback</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="hire-failure" class="modal center-align table-global-modal">
+      <div class="modal-content">
+        <div class="modal-header alt center-align">
+          <img class="yj-logo alt" src="images/yapjobs-logo-white.svg">
+        </div>
+        <h4>Not to worry, we can help!</h4>
+        <ul class="modal-btn-list">
+          <li><a class="waves-effect waves-light btn yj-btn-green modal-close">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="publish-success" class="modal center-align table-global-modal">
+      <div class="modal-content">
+        <div class="modal-header alt center-align">
+          <img class="yj-logo alt" src="images/yapjobs-logo-white.svg">
+        </div>
+        <h4>Job published Successfully, your on fire!</h4>
+        <ul class="modal-btn-list">
+          <li><a href="jobpage.html"class="waves-effect waves-light btn yj-btn-green modal-close">View Job Post</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- END Modals -->
 
     <!-- Footer -->
     <footer class="page-footer yj-footer">
@@ -354,6 +716,12 @@
           closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
         }
       );
+
+      $(document).ready(function(){
+        // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+        $('.modal-trigger').leanModal();
+        $(".dropdown-button").dropdown();
+      });
     </script>
     <!-- END JS for the page
 </body>

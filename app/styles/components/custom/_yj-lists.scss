@@ -60,3 +60,137 @@
 			}
 		}
 	}
+
+	ul.table-actions {
+		margin: 0;
+
+		&.alt {
+			margin-top: 0.6rem;
+		}
+
+		li {
+			a {
+				background: $yj-blue;
+				padding: 0.5rem;
+				color: white;
+				border-radius: 3px;
+			}
+		}
+	}
+
+	ul.yj-dropdown-content {
+		min-width: 115px;
+		border-radius: 3px;
+
+		li {
+			&.divider {
+				background-color: lighten($yj-blue, 5%);
+			}
+
+			a {
+				font-size: 1rem;
+				border-radius: 0;
+				@include transition(.2s);
+
+				&:hover {
+					background: darken($yj-blue, 5%);
+					@include transition(.2s);
+				}
+			}
+		}
+	}
+
+	ul.modal-btn-list {
+		margin-bottom: 0;
+
+		li {
+			display: inline-block;
+			a {
+
+			}
+		}
+	}
+
+	ul.applicant-nav {
+		margin-top: 0;
+		background: $yj-light-grey;
+		border-radius: 3px;
+
+		li {
+
+			a {
+				display: block;
+				padding: 0.8rem 1rem;
+				color: $yj-grey;
+				@include transition(.2s);
+
+				&:hover {
+					background: $yj-blue;
+					color: white;
+					@include transition(.2s);
+				}
+			}
+		}
+	}
+
+	p.nav-desc {
+		margin-top: 0;
+	}
+
+	.applicant-list-container {
+		padding: 2rem;
+		border: 1px solid $yj-light-grey;
+	}
+
+	.dropdown-min-width {
+		min-width: 160px;
+	}
+
+	ul.yj-contact-list {
+		padding: 1rem;
+		border: 1px solid $primary-color;
+		border-radius: 3px;
+		
+		li {
+
+			a {
+				display: block;
+				color: $primary-color;
+				padding: 0.5rem 0;
+				text-transform: uppercase;
+				@include transition(.2s);
+
+				&:hover {
+					color: darken($primary-color, 15%);
+					@include transition(.2s);
+				}
+			}
+		}
+	}
+
+	ul.contact-details {
+		margin-top: 0;
+		margin-bottom: 3rem;
+
+		li {
+
+			a {
+				display: block;
+				padding: 0.25rem 0;
+				font-size: 1.2rem;
+				color: $yj-grey;
+				font-weight: 400;
+				@include transition(.2s);
+
+				&:hover {
+					color: $primary-color;
+					@include transition(.2s);
+				}
+			}
+		}
+
+		span, i {
+			display: inline-block;
+			width: 30px;
+		}
+	}

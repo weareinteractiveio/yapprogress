@@ -13,4 +13,35 @@
 				}
 			}
 		}
+
+		ul.yj-tabs-simple {
+			li {
+				display: inline-block;
+				margin-right: 5px;
+				a {
+					display: block;
+					padding: 1rem;
+					background: $primary-color;
+					color: white;
+					border-radius: 3px;
+					font-weight: 300;
+					@include transition(.2s);
+
+					&:hover {
+						background: darken($primary-color, 15%);
+						@include transition(.2s);
+					}
+
+					&.alt {
+						background: $yj-blue;
+						@include transition(.2s);
+
+						&:hover {
+							background: darken($yj-blue, 15%);
+							@include transition(.2s);
+						}
+					}
+				}
+			}
+		}
 	}

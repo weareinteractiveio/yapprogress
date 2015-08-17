@@ -25,11 +25,6 @@
 			}
 		}
 
-		.modal-header {
-			background: $primary-color;
-			padding: 1rem;
-		}
-
 		.modal-btns {
 
 			a {
@@ -67,4 +62,34 @@
 			margin: 0;
 		}
 
+	}
+
+	.modal-header {
+		background: $primary-color;
+		padding: 1rem;
+
+		&.alt {
+			margin-bottom: 2rem;
+		}
+	}
+
+	.table-global-modal {
+		max-width: 500px;
+
+		h4 {
+			margin-bottom: 2rem;
+			font-weight: 200;
+		}
+	}
+
+	.credit-amount {
+		color: $primary-color;
+		font-weight: 400;
+		font-size: 1.2rem;
+	}
+
+	.modal-date-time-wrapper {
+		margin-bottom: 2rem;
+		border: 1px solid $yj-light-grey;
+		padding: 1rem;
 	}

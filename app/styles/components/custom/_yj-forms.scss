@@ -46,6 +46,11 @@
 				}
 			}
 		}
+
+		&.alt {
+			float: none;
+			margin: 0;
+		}
 	}
 
 	.post-form {
@@ -70,4 +75,17 @@
 
 	.input-field-clean {
 		padding-right: 0!important;
+	}
+
+	.input-field label {
+
+		&.alt {
+			left: 0;
+		}
+	}
+
+	.yj-search-form-wrapper {
+		padding: 1rem 1rem 0 1rem;
+		margin-bottom: 2rem;
+		border: 1px solid $yj-light-grey;
 	}

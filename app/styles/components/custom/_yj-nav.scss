@@ -130,6 +130,7 @@
 
 	.dashboard-nav {
 		box-shadow: none;
+		background-color: $yj-grey;
 
 		ul {
 
@@ -142,8 +143,8 @@
 					letter-spacing: 1px;
 
 					span {
-						font-size: 1.4rem;
-						padding-top: 10px;
+						// font-size: 16px;
+						// padding-top: 10px;
 						// line-height: 4.1rem;
 
 						&.alt {
