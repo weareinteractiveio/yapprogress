@@ -31,21 +31,38 @@
       <li class="divider"></li>
       <li><a href="index.html"><span class="icon-exit yj-icon icon-space sm"></span>Sign Out</a></li>
     </ul>
+
+    <ul id="dropdown-notifications" class="dropdown-content dropdown-min-width alt">
+      <li class="notification-li"><a href="edit-profile.html">You have <span class="notification-number">5</span> new applicants for the job <span class="notification-job">Bartender at Cabana Covent Garden</span></a></li>
+      <li class="divider"></li>
+      <li class="notification-li"><a href="edit-profile.html">You have <span class="notification-number">3</span> new applicants for the job <span class="notification-job">Waiter/Waitress at Cabana Brixton</span></a></li>
+      <li class="divider"></li>
+      <li class="notification-li"><a href="edit-profile.html">You have <span class="notification-number">2</span> new applicants for the job <span class="notification-job">Cleaner at Cabana Islington</span></a></li>
+    </ul>
+    
     <!-- Nav -->
-    <nav class="dashboard-nav">
-    <div class="container">
-      <div class="nav-wrapper">
-        <a href="index.html" class="brand-logo yj-logo"><img src="images/yapjobs-logo-white.svg"></a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="index.html"><span class="icon-home2 yj-icon icon-space"></span> Home</a></li>
-          <li><a href="employer-dashboard.html"><span class="icon-icons2 yj-icon icon-space"></span> Dashboard</a></li>
-          <!-- <li><a href="sass.html"><span class="icon-speed-medium"></span></a></li> -->
-          <!-- Dropdown Trigger -->
-          <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Cabana <span class="icon-chevron-down alt"></span></a></li>
-        </ul>
-      </div>
+    <div class="navbar-fixed">
+      <nav class="dashboard-nav">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo yj-logo"><img src="images/yapjobs-logo-white.svg"></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="index.html"><span class="icon-home2 yj-icon icon-space"></span> Home</a></li>
+              <li><a href="employer-dashboard.html"><span class="icon-icons2 yj-icon icon-space"></span> Dashboard</a></li>
+              <li>
+                <a class="dropdown-button nav-notification" href="#!" data-activates="dropdown-notifications">
+                  <span class="icon-alarm yj-icon icon-space"></span>
+                  <p class="yj-notification">10</p>
+                </a>
+              </li>
+              <!-- <li><a href="sass.html"><span class="icon-speed-medium"></span></a></li> -->
+              <!-- Dropdown Trigger -->
+              <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Cabana <span class="icon-chevron-down alt"></span></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
-    </nav>
     <!-- END Dashboard Nav -->
 
     <!-- Nav hidden for this page -->
@@ -92,10 +109,10 @@
             <div class="card yj-card-alt">
               <div class="card-content center-align">
                 <span class="icon-users yj-icon lg"></span>
-                <h5>All Applicants</h5>
+                <h5>Reviewed Applicants</h5>
                 <!-- <div class="yj-breaker"></div> -->
                 <p class="stat-result">20</p>
-                <a  href="employer-dashboard-applicants.html" class="waves-effect waves-light btn yj-btn-green stat-btn">View All</a>
+                <a href="employer-dashboard-applicants-reviewed.html" class="waves-effect waves-light btn yj-btn-green stat-btn">View All</a>
               </div>
             </div>
           </div>
@@ -106,7 +123,7 @@
                 <h5>Scheduled Interviews</h5>
                 <!-- <div class="yj-breaker"></div> -->
                 <p class="stat-result">4</p>
-                <a class="waves-effect waves-light btn yj-btn-green stat-btn">View All</a>
+                <a href="employer-dashboard-applicants-scheduled-interviews.html" class="waves-effect waves-light btn yj-btn-green stat-btn">View All</a>
               </div>
             </div>
           </div>
@@ -117,14 +134,14 @@
                 <h5>Shortlisted Applicants</h5>
                 <!-- <div class="yj-breaker"></div> -->
                 <p class="stat-result">8</p>
-                <a class="waves-effect waves-light btn yj-btn-green stat-btn">View All</a>
+                <a href="employer-dashboard-applicants-shortlist.html" class="waves-effect waves-light btn yj-btn-green stat-btn">View All</a>
               </div>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col s12">
-            <div class="yj-breaker"></div>
+            <div class="yj-breaker mobile-breaker"></div>
           </div>
         </div>
       </div>
@@ -132,7 +149,7 @@
     <!-- END Stats -->
 
     <!-- Simple Tabs -->
-    <section class="yj-tabs">
+<!--     <section class="yj-tabs">
       <div class="container">
         <div class="row">
           <div class="col s8">
@@ -148,7 +165,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- END Simple Tabs -->
 
     <!-- Tabs 
@@ -321,28 +338,71 @@
     </section> -->
     <!-- END Current Positions -->
 
+    <!-- Page Title -->
+    <section class="page-title">
+      <div class="container">
+        <div class="row">
+          <div class="col l12">
+            <h5 class="yj-page-title alt">Your Jobs</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Page Title -->
+
     <!-- Jobs Table -->
-    <section class="jobs-list">
+    <section class="jobs-list hide-on-small-only">
       <div class="container yj-table-container">
-        <div class="row row-clean">
-          <div class="col s6 m6 l2">
+        <div class="row">
+          <!-- <div class="col s6 m6 l2">
             <p class="table-title">Current Positions</p>
+          </div> -->
+          <div class="col s6 m6 l2">
+            <select class="browser-default yj-table-select">
+              <option value="" disabled selected>Business</option>
+              <option value="1">Cabanan Covent Garden</option>
+              <option value="2">Cabanan Brixton</option>
+              <option value="3">Cabanan Islington</option>
+            </select>
           </div>
           <div class="col s6 m6 l2">
             <select class="browser-default yj-table-select">
-              <option value="1" selected>Published</option>
+              <option value="" disabled selected>Job</option>
+              <option value="1">Bartender</option>
+              <option value="2">Waiter/Waitress</option>
+              <option value="3">Cleaner</option>
+            </select>
+          </div>
+          <div class="col s6 m6 l2">
+            <!-- <form action="#">
+              <ul class="table-selects right-align">
+                <li>
+                  <input type="checkbox" id="check1" />
+                  <label for="check1">Published</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="check1" />
+                  <label for="check1">Unpublished</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="check1" />
+                  <label for="check1">Select All</label>
+                </li>
+              </ul>
+            </form> -->
+            <select class="browser-default yj-table-select">
+            <option value="3" selected>Show All</option>
+              <option value="1">Published</option>
               <option value="2">Unpublished</option>
             </select>
           </div>
-          <div class="col s6 m6 l2 offset-l4">
-            <form action="#">
-              <p class="right-align">
-                <input type="checkbox" id="check1" />
-                <label for="check1">Select All</label>
-              </p>
-            </form>
+          <div class="col s6 m6 l3">
+            <p class="right-align">
+              <input type="checkbox" id="check1" />
+              <label for="check1">Select All</label>
+            </p>
           </div>
-          <div class="col s6 m6 l2">
+          <div class="col s6 m6 l3">
             <ul class="table-actions">
               <!-- Dropdown Trigger -->
               <li><a class="dropdown-button yj-btn-db yj-btn-bulk-actions" href="#!" data-activates="bulk-applicant-actions">Bulk Actions <span class="icon-chevron-down yj-icon xsm icon-space alt right yj-icon-bulk-action"></span></a></li>
@@ -360,6 +420,14 @@
             </ul>
           </div> -->
         </div>
+      <!--   <div class="row">
+          <div class="col s6 m6 l3 offset-l9">
+            <p class="right-align">
+              <input type="checkbox" id="check1" />
+              <label for="check1">Select All</label>
+            </p>
+          </div>
+        </div> -->
         <!-- <div class="row">
           <div class="col s12">
             <div class="yj-breaker alt"></div>
@@ -407,79 +475,104 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td><span class="icon-glass-cocktail yj-icon yj-icon-green job-icon"></span> Bartender</td>
+                <tr class="published">
+                  <td>
+                    <span class="icon-glass-cocktail yj-icon yj-icon-green job-icon"></span> Bartender
+                    <p class="table-business-name">Cabana Covent Garden</p>
+                  </td>
                   <td>11/08/15</td>
                   <td>£9</td>
-                  <td>10 <a class="waves-effect waves-light btn yj-btn-green yj-btn-global-sm alt">View All</a></td>
+                  <td class="center-align">10 <span class="yj-notification table-notification">3</span><a href="employer-dashboard-applicants.html" class="waves-effect waves-light btn yj-btn-green yj-btn-global-sm alt">View All</a></td>
                   <td>11/08/15</td>
                   <td>Full Time</td>
-                  <td>
-                    <!-- <select class="browser-default yj-table-select">
-                      <option value="" disabled selected>Actions</option>
-                      <option value="1">Edit Job</option>
-                      <option value="2"><a class="modal-trigger" href="#unpublish">Unpublish</option>
-                    </select> -->
-                    <ul class="table-actions">
+                  <td class="valign-wrapper">
+                    <ul class="table-actions alt dib valign">
                       <!-- Dropdown Trigger -->
-                      <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Actions <span class="icon-chevron-down yj-icon xsm icon-space alt"></span></a></li>
+                      <li>
+                        <a class="dropdown-button" href="#!" data-activates="dropdown2">Actions <span class="icon-chevron-down yj-icon xsm icon-space alt"></span></a>
+                      </li>
                     </ul>
+                    <p class="share alt valign"><a href="#share" class="modal-trigger valign-wrapper"><span class="icon-share yj-icon valign"></span></a></p>
+                  </td>
+                </tr>
+                <tr class="published">
+                  <td>
+                    <span class="icon-glass-cocktail yj-icon yj-icon-green job-icon"></span> Bartender
+                    <p class="table-business-name">Cabana Brixton</p>
+                  </td>
+                  <td>11/08/15</td>
+                  <td>£9</td>
+                  <td class="center-align">10 <span class="yj-notification table-notification">3</span><a href="employer-dashboard-applicants.html" class="waves-effect waves-light btn yj-btn-green yj-btn-global-sm alt">View All</a></td>
+                  <td>11/08/15</td>
+                  <td>Full Time</td>
+                  <td class="valign-wrapper">
+                    <ul class="table-actions alt dib valign">
+                      <!-- Dropdown Trigger -->
+                      <li>
+                        <a class="dropdown-button" href="#!" data-activates="dropdown2">Actions <span class="icon-chevron-down yj-icon xsm icon-space alt"></span></a>
+                      </li>
+                    </ul>
+                    <p class="share alt valign"><a href="#share" class="modal-trigger valign-wrapper"><span class="icon-share yj-icon valign"></span></a></p>
+                  </td>
+                </tr>
+                <tr class="published">
+                  <td>
+                    <span class="icon-glass-cocktail yj-icon yj-icon-green job-icon"></span> Bartender
+                    <p class="table-business-name">Cabana Covent Islington</p>
+                  </td>
+                  <td>11/08/15</td>
+                  <td>£9</td>
+                  <td class="center-align">10 <span class="yj-notification table-notification">3</span><a href="employer-dashboard-applicants.html" class="waves-effect waves-light btn yj-btn-green yj-btn-global-sm alt">View All</a></td>
+                  <td>11/08/15</td>
+                  <td>Full Time</td>
+                  <td class="valign-wrapper">
+                    <ul class="table-actions alt dib valign">
+                      <!-- Dropdown Trigger -->
+                      <li>
+                        <a class="dropdown-button" href="#!" data-activates="dropdown2">Actions <span class="icon-chevron-down yj-icon xsm icon-space alt"></span></a>
+                      </li>
+                    </ul>
+                    <p class="share alt valign"><a href="#share" class="modal-trigger valign-wrapper"><span class="icon-share yj-icon valign"></span></a></p>
                   </td>
                 </tr>
                 <tr>
-                  <td><span class="icon-glass-cocktail yj-icon yj-icon-green job-icon"></span> Bartender</td>
+                  <td>
+                    <span class="icon-glass-cocktail yj-icon yj-icon-green job-icon"></span> Bartender
+                    <p class="table-business-name">Cabana Covent Brixton</p>
+                  </td>
                   <td>11/08/15</td>
                   <td>£9</td>
-                  <td>10 <a class="waves-effect waves-light btn yj-btn-green yj-btn-global-sm alt">View All</a></td>
+                  <td class="center-align">10 <a href="employer-dashboard-applicants.html" class="waves-effect waves-light btn yj-btn-green yj-btn-global-sm alt">View All</a></td>
                   <td>11/08/15</td>
                   <td>Full Time</td>
-                  <td>
-                    <ul class="table-actions">
+                  <td class="valign-wrapper">
+                    <ul class="table-actions alt dib valign">
                       <!-- Dropdown Trigger -->
-                      <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Actions <span class="icon-chevron-down yj-icon xsm icon-space alt"></span></a></li>
+                      <li>
+                        <a class="dropdown-button" href="#!" data-activates="dropdown2">Actions <span class="icon-chevron-down yj-icon xsm icon-space alt"></span></a>
+                      </li>
                     </ul>
+                    <p class="share alt valign"><a href="#share" class="modal-trigger valign-wrapper"><span class="icon-share yj-icon valign"></span></a></p>
                   </td>
                 </tr>
                 <tr>
-                  <td><span class="icon-glass-cocktail yj-icon yj-icon-green job-icon"></span> Bartender</td>
-                  <td>11/08/15</td>
-                  <td>£9</td>
-                  <td>10 <a class="waves-effect waves-light btn yj-btn-green yj-btn-global-sm alt">View All</a></td>
-                  <td>11/08/15</td>
-                  <td>Full Time</td>
                   <td>
-                    <ul class="table-actions">
-                      <!-- Dropdown Trigger -->
-                      <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Actions <span class="icon-chevron-down yj-icon xsm icon-space alt"></span></a></li>
-                    </ul>
+                    <span class="icon-glass-cocktail yj-icon yj-icon-green job-icon"></span> Bartender
+                    <p class="table-business-name">Cabana Covent Garden</p>
                   </td>
-                </tr>
-                <tr>
-                  <td><span class="icon-glass-cocktail yj-icon yj-icon-green job-icon"></span> Bartender</td>
                   <td>11/08/15</td>
                   <td>£9</td>
-                  <td>10 <a class="waves-effect waves-light btn yj-btn-green yj-btn-global-sm alt">View All</a></td>
+                  <td class="center-align">10 <a href="employer-dashboard-applicants.html" class="waves-effect waves-light btn yj-btn-green yj-btn-global-sm alt">View All</a></td>
                   <td>11/08/15</td>
                   <td>Full Time</td>
-                  <td>
-                    <ul class="table-actions">
+                  <td class="valign-wrapper">
+                    <ul class="table-actions alt dib valign">
                       <!-- Dropdown Trigger -->
-                      <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Actions <span class="icon-chevron-down yj-icon xsm icon-space alt"></span></a></li>
+                      <li>
+                        <a class="dropdown-button" href="#!" data-activates="dropdown2">Actions <span class="icon-chevron-down yj-icon xsm icon-space alt"></span></a>
+                      </li>
                     </ul>
-                  </td>
-                </tr>
-                <tr>
-                  <td><span class="icon-glass-cocktail yj-icon yj-icon-green job-icon"></span> Bartender</td>
-                  <td>11/08/15</td>
-                  <td>£9</td>
-                  <td>10 <a class="waves-effect waves-light btn yj-btn-green yj-btn-global-sm alt">View All</a></td>
-                  <td>11/08/15</td>
-                  <td>Full Time</td>
-                  <td>
-                    <ul class="table-actions">
-                      <!-- Dropdown Trigger -->
-                      <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Actions <span class="icon-chevron-down yj-icon xsm icon-space alt"></span></a></li>
-                    </ul>
+                    <p class="share alt valign"><a href="#share" class="modal-trigger valign-wrapper"><span class="icon-share yj-icon valign"></span></a></p>
                   </td>
                 </tr>
               </tbody>
@@ -512,9 +605,115 @@
     </section>
     <!-- END Jobs Table -->
 
+    <!-- Jobs Table Mobile Only -->
+    <section class="results hide-on-med-and-up">
+      <div class="container yj-results-container">
+        <div class="row">      
+          <div class="col s12">
+            <div class="row">
+              <div class="col s12">
+                <div class="card yj-card">
+                  <div class="card-content">
+                    <div class="row clean">
+                      <div class="col m1 s2"><p class="icon-adjust center-align"><span class="icon-dinner results-icon"></span></p></div>
+                      <div class="col m2 s10"><p>Waiter/Waitress</p><p>Cabana Covent Garden</p></div>
+                      <!-- <div class="col m3 s12"><p><a class="waves-effect waves-light btn yj-btn-classy yj-btn-db btn-adjust">CABANA</a></p></div> -->
+                      <div class="col m1 s4 center-align">
+                        <div class="blue-panel center-align">
+                          <span class="icon-calendar-full"></span>
+                          <p>21/08/15</p>
+                        </div>
+                      </div>
+                      <div class="col m1 s4 center-align">
+                        <div class="blue-panel center-align">
+                          <span class="icon-coin-pound"></span>
+                          <p>£9ph</p>
+                        </div>
+                      </div>
+                      <div class="col m1 s4 center-align">
+                        <div class="blue-panel center-align">
+                          <span class="icon-map-marker"></span>
+                          <p>11.6miles</p>
+                        </div>
+                      </div>
+                      <div class="col m3 s12"><p><a href="employer-dashboard-applicants.html" class="waves-effect waves-light btn yj-btn-green yj-btn-db btn-adjust">View Applicants</a></p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col s12">
+                <div class="card yj-card">
+                  <div class="card-content">
+                    <div class="row clean">
+                      <div class="col m1 s2"><p class="icon-adjust center-align"><span class="icon-dinner results-icon"></span></p></div>
+                      <div class="col m2 s10"><p>Waiter/Waitress</p><p>Cabana Covent Garden</p></div>
+                      <!-- <div class="col m3 s12"><p><a class="waves-effect waves-light btn yj-btn-classy yj-btn-db btn-adjust">CABANA</a></p></div> -->
+                      <div class="col m1 s4 center-align">
+                        <div class="blue-panel center-align">
+                          <span class="icon-calendar-full"></span>
+                          <p>21/08/15</p>
+                        </div>
+                      </div>
+                      <div class="col m1 s4 center-align">
+                        <div class="blue-panel center-align">
+                          <span class="icon-coin-pound"></span>
+                          <p>£9ph</p>
+                        </div>
+                      </div>
+                      <div class="col m1 s4 center-align">
+                        <div class="blue-panel center-align">
+                          <span class="icon-map-marker"></span>
+                          <p>11.6miles</p>
+                        </div>
+                      </div>
+                      <div class="col m3 s12"><p><a href="employer-dashboard-applicants.html" class="waves-effect waves-light btn yj-btn-green yj-btn-db btn-adjust">View Applicants</a></p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col s12">
+                <div class="card yj-card">
+                  <div class="card-content">
+                    <div class="row clean">
+                      <div class="col m1 s2"><p class="icon-adjust center-align"><span class="icon-dinner results-icon"></span></p></div>
+                      <div class="col m2 s10"><p>Waiter/Waitress</p><p>Cabana Covent Garden</p></div>
+                      <!-- <div class="col m3 s12"><p><a class="waves-effect waves-light btn yj-btn-classy yj-btn-db btn-adjust">CABANA</a></p></div> -->
+                      <div class="col m1 s4 center-align">
+                        <div class="blue-panel center-align">
+                          <span class="icon-calendar-full"></span>
+                          <p>21/08/15</p>
+                        </div>
+                      </div>
+                      <div class="col m1 s4 center-align">
+                        <div class="blue-panel center-align">
+                          <span class="icon-coin-pound"></span>
+                          <p>£9ph</p>
+                        </div>
+                      </div>
+                      <div class="col m1 s4 center-align">
+                        <div class="blue-panel center-align">
+                          <span class="icon-map-marker"></span>
+                          <p>11.6miles</p>
+                        </div>
+                      </div>
+                      <div class="col m3 s12"><p><a href="employer-dashboard-applicants.html" class="waves-effect waves-light btn yj-btn-green yj-btn-db btn-adjust">View Applicants</a></p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Jobs Table Mobile Only -->
+
     <!-- Table Dropdowns -->
     <ul id="dropdown2" class="dropdown-content yj-dropdown-content">
-      <li><a href="#publish-success" class="modal-trigger">Publish</a></li>
+      <li><a href="#publish-success" class="modal-trigger publishJobSuccess">Publish</a></li>
       <li class="divider"></li>
       <li><a href="#unpublish-modal" class="modal-trigger">Unpublish</a></li>
       <li class="divider"></li>
@@ -530,25 +729,51 @@
     <!-- END Table Dropdowns -->
 
     <!-- Modals -->
-    <div id="unpublish-modal" class="modal center-align table-global-modal">
+    <div id="unpublish-modal" class="modal yj-modal table-global-modal">
       <div class="modal-content">
+        <div class="exit">
+          <div class="row row-clean">
+            <div class="col s6"><p>Experience</p></div>
+            <div class="col s6"><p class="right-align"><a href="#!"><span class="icon-cross2 modal-close"></span></a></p></div>
+          </div>
+        </div>
         <div class="modal-header alt center-align">
           <img class="yj-logo alt" src="images/yapjobs-logo-white.svg">
         </div>
-        <h4>Did you hire successfully?</h4>
-        <ul class="modal-btn-list">
-          <li><a href="#hire-failure"class="waves-effect waves-light btn yj-btn-blue modal-trigger modal-close">No</a></li>
-          <li><a href="#hire-success" class="waves-effect waves-light btn yj-btn-green modal-trigger modal-close">Yes</a></li>
+        <h4>How did you get on?</h4>
+        <ul class="unpublish-list">
+          <li>
+            <a href="#hired-success-message" class="modal-trigger modal-close">
+              <input type="checkbox" id="unpublish-1" />
+              <label for="unpublish-1">Hired Successfully</label>
+            </a>
+          </li>
+          <li>
+            <a href="#need-more-applicants" class="modal-trigger modal-close">
+              <input type="checkbox" id="unpublish-2" />
+              <label for="unpublish-2">Need more applicants</label>
+            </a>
+          </li>
+          <li>
+            <a href="#hire-failure" class="modal-trigger modal-close">
+              <input type="checkbox" id="unpublish-3" />
+              <label for="unpublish-3">No longer recruiting for this position</label>
+            </a>
+          </li>
         </ul>
+        <!-- <ul class="modal-btn-list center-align">
+          <li><a href="#hire-failure"class="waves-effect waves-light btn yj-btn-blue modal-trigger modal-close">Cancel</a></li>
+          <li><a href="#hire-success" class="waves-effect waves-light btn yj-btn-green modal-trigger modal-close">Submit</a></li>
+        </ul> -->
       </div>
     </div>
 
-    <div id="hire-success" class="modal center-align table-global-modal jobs-list">
+    <div id="need-more-applicants" class="modal center-align table-global-modal jobs-list">
       <div class="modal-content">
         <div class="modal-header alt center-align">
           <img class="yj-logo alt" src="images/yapjobs-logo-white.svg">
         </div>
-        <h4>Which applicant did you hire?</h4>
+        <h4>Choose from your matched applicants</h4>
         <!-- <div class="yj-search-form-wrapper">
           <form class="col s12">
             <div class="row">
@@ -564,66 +789,104 @@
             <tr>
                 <th data-field="id">Photo</th>
                 <th data-field="name">Name</th>
-                <th data-field="price">Location</th>
+                <th data-field="price">Match Score</th>
                 <!-- <th data-field="price">Response Time</th> -->
-                <th data-field="price">Hired?</th>
+                <th data-field="price" class="right-align">
+                  <input type="checkbox" id="invite-select-all" />
+                  <label for="invite-select-all">Select All</label>
+                </th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td><img class="circle" src="images/shahzad.jpg" width="40px" height="40px"></td>
               <td>Shahzad</td>
-              <td>Central London</td>
               <td>
-                <a href="#hired-success-message" class="waves-effect waves-light btn yj-btn-green modal-trigger modal-close">Hired</a>
+                <div class="progress yj-progress">
+                  <div class="determinate yj-determinate" style="width: 90%"></div>
+                </div>
+              </td>
+              <td class="right-align">
+                <input type="checkbox" id="select-1" />
+                <label for="select-1">Select</label>
               </td>
             </tr>
             <tr>
               <td><img class="circle" src="images/shahzad.jpg" width="40px" height="40px"></td>
               <td>Shahzad</td>
-              <td>Central London</td>
               <td>
-                <a href="#hired-success-message" class="waves-effect waves-light btn yj-btn-green modal-trigger modal-close">Hired</a>
+                <div class="progress yj-progress">
+                  <div class="determinate yj-determinate" style="width: 80%"></div>
+                </div>
+              </td>
+              <td class="right-align">
+                <input type="checkbox" id="select-2" />
+                <label for="select-2">Select</label>
               </td>
             </tr>
             <tr>
               <td><img class="circle" src="images/shahzad.jpg" width="40px" height="40px"></td>
               <td>Shahzad</td>
-              <td>Central London</td>
               <td>
-                <a href="#hired-success-message" class="waves-effect waves-light btn yj-btn-green modal-trigger modal-close">Hired</a>
+                <div class="progress yj-progress">
+                  <div class="determinate yj-determinate" style="width: 70%"></div>
+                </div>
+              </td>
+              <td class="right-align">
+                <input type="checkbox" id="select-3" />
+                <label for="select-3">Select</label>
               </td>
             </tr>
             <tr>
               <td><img class="circle" src="images/shahzad.jpg" width="40px" height="40px"></td>
               <td>Shahzad</td>
-              <td>Central London</td>
               <td>
-                <a href="#hired-success-message" class="waves-effect waves-light btn yj-btn-green modal-trigger modal-close">Hired</a>
+                <div class="progress yj-progress">
+                  <div class="determinate yj-determinate" style="width: 70%"></div>
+                </div>
+              </td>
+              <td class="right-align">
+                <input type="checkbox" id="select-4" />
+                <label for="select-4">Select</label>
               </td>
             </tr>
             <tr>
               <td><img class="circle" src="images/shahzad.jpg" width="40px" height="40px"></td>
               <td>Shahzad</td>
-              <td>Central London</td>
               <td>
-                <a href="#hired-success-message" class="waves-effect waves-light btn yj-btn-green modal-trigger modal-close">Hired</a>
+                <div class="progress yj-progress">
+                  <div class="determinate yj-determinate" style="width: 60%"></div>
+                </div>
+              </td>
+              <td class="right-align">
+                <input type="checkbox" id="select-5" />
+                <label for="select-5">Select</label>
               </td>
             </tr>
           </tbody>
         </table>
+        <div class="modal-btns">
+          <a href="#!" class="waves-effect waves-light btn yj-btn-blue modal-close"> Cancel</a>
+          <a href="#invite-success" class="waves-effect waves-light btn yj-btn-green modal-trigger modal-close"> Invite</a>
+        </div>
       </div>
     </div>
 
-    <div id="hired-success-message" class="modal center-align table-global-modal">
+    <div id="hired-success-message" class="modal yj-modal center-align table-global-modal">
       <div class="modal-content">
+        <div class="exit">
+          <div class="row row-clean">
+            <div class="col s6"><p class="left-align">Feedback</p></div>
+            <div class="col s6"><p class="right-align"><a href="#!"><span class="icon-cross2 modal-close"></span></a></p></div>
+          </div>
+        </div>
         <div class="modal-header alt center-align">
           <img class="yj-logo alt" src="images/yapjobs-logo-white.svg">
         </div>
         <h4>Awesome! How did we do?</h4>
         <ul class="modal-btn-list">
-        <li><a class="waves-effect waves-light btn yj-btn-blue modal-close">Close</a></li>
-          <li><a class="waves-effect waves-light btn yj-btn-green modal-close">Feedback</a></li>
+          <!-- <li><a class="waves-effect waves-light btn yj-btn-blue modal-close">Close</a></li> -->
+          <li><a href="feedback-employer.html" class="waves-effect waves-light btn yj-btn-green modal-close">Feedback</a></li>
         </ul>
       </div>
     </div>
@@ -633,22 +896,61 @@
         <div class="modal-header alt center-align">
           <img class="yj-logo alt" src="images/yapjobs-logo-white.svg">
         </div>
-        <h4>Not to worry, we can help!</h4>
+        <h4>Sorry to hear that, need a little help?</h4>
         <ul class="modal-btn-list">
           <li><a class="waves-effect waves-light btn yj-btn-green modal-close">Contact Us</a></li>
         </ul>
       </div>
     </div>
 
-    <div id="publish-success" class="modal center-align table-global-modal">
+    <div id="publish-success" class="modal yj-modal center-align table-global-modal">
       <div class="modal-content">
+        <div class="exit">
+          <div class="row row-clean">
+            <div class="col s6"><p class="left-align">Publish</p></div>
+            <div class="col s6"><p class="right-align"><a href="#!"><span class="icon-cross2 modal-close"></span></a></p></div>
+          </div>
+        </div>
         <div class="modal-header alt center-align">
           <img class="yj-logo alt" src="images/yapjobs-logo-white.svg">
         </div>
         <h4>Job published Successfully, your on fire!</h4>
         <ul class="modal-btn-list">
-          <li><a href="jobpage.html"class="waves-effect waves-light btn yj-btn-green modal-close">View Job Post</a></li>
+          <li><a href="#need-more-applicants" class="waves-effect waves-light btn yj-btn-green modal-trigger modal-close">Invite Applicants</a></li>
         </ul>
+        <!-- <ul class="modal-btn-list">
+          <li><a class="waves-effect waves-light btn yj-btn-blue modal-close">Close</a></li>
+          <li><a href="jobpage.html"class="waves-effect waves-light btn yj-btn-green modal-close">View Job Post</a></li>
+        </ul> -->
+      </div>
+    </div>
+
+    <div id="invite-success" class="modal yj-modal center-align table-global-modal">
+      <div class="modal-content">
+        <div class="modal-header alt center-align">
+          <img class="yj-logo alt" src="images/yapjobs-logo-white.svg">
+        </div>
+        <h4 class="modal-h4-fix">10 applicants successfully invited!</h4>
+      </div>
+    </div>
+
+    <div id="share" class="modal yj-modal table-global-modal">
+      <div class="modal-content">
+        <div class="exit">
+          <div class="row row-clean">
+            <div class="col s6"><p>Share</p></div>
+            <div class="col s6"><p class="right-align"><a href="#!"><span class="icon-cross2 modal-close"></span></a></p></div>
+          </div>
+        </div>
+        <div class="modal-header alt center-align">
+          <img class="yj-logo alt" src="images/yapjobs-logo-white.svg">
+        </div>
+        <h4 class="center-align">Share this Job</h4>
+        <div class="modal-btns">
+          <a href="#!" class="waves-effect waves-light btn yj-btn-db yj-btn-facebook"><i class="fa fa-facebook"></i> Facebook</a>
+          <a href="#!" class="waves-effect waves-light btn yj-btn-db yj-btn-twitter"><i class="fa fa-twitter"></i> Twitter</a>
+          <a href="#!" class="waves-effect waves-light btn yj-btn-db yj-btn-blue"><span class="icon-link yj-icon copy-link"></span> Copy link (paste anywhere)</a>
+        </div>
       </div>
     </div>
     <!-- END Modals -->
@@ -673,6 +975,7 @@
               <li><a class="grey-text text-lighten-3" href="search-results.html">Jobs</a></li>
               <li><a class="grey-text text-lighten-3 modal-trigger" href="#sign-in">Sign In</a></li>
               <li><a class="grey-text text-lighten-3 modal-trigger" href="#sign-up">Sign Up</a></li>
+              <li><a class="grey-text text-lighten-3" href="contact-us.html">Contact Us</a></li>
               <li><a class="grey-text text-lighten-3" href="terms.html">Terms and Conditions</a></li>
               <li><a class="grey-text text-lighten-3" href="privacy.html">Privacy Policy</a></li>
             </ul>

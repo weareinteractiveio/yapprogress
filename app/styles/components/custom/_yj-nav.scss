@@ -46,21 +46,6 @@
 			}
 		}
 
-		ul.social {
-			margin-top: 30px;
-			padding: 0 15px;
-			
-			li {
-				padding: 0;
-				float: left;
-				margin-right: 20px;
-
-				a {
-					padding: 0;
-				}
-			}
-		}
-
 		// .yj-logo {
 		// 	z-index: 1;
 		// 	position: relative;
@@ -77,6 +62,8 @@
 	}
 
 	.yj-sidenav {
+		z-index: 1000;
+
 		li {
 			
 			&.li-push {
@@ -92,6 +79,7 @@
 			}
 
 			a {
+				color: $secondary-color;
 				@include transition(.2s);
 
 				&:hover {
@@ -102,8 +90,40 @@
 				&.yj-close {
 
 					&:hover {
-						color: $error-color;
+						color: $yj-blue;
 					}
+				}
+
+				&.yj-nav-btn {
+					color: white;
+					margin: 30px 15px 0 15px;
+					height: 40px;
+					width: 140px;
+					line-height: 2.8rem;
+
+					&:hover {
+						color: white;
+					}
+
+					&.yj-nav-btn-alt {
+						margin: 12px 20px 0 0;
+						min-width: 150px;
+					}
+				}
+			}
+		}
+
+		ul.social {
+			margin-top: 30px;
+			padding: 0 15px;
+			
+			li {
+				padding: 0;
+				float: left;
+				margin-right: 20px;
+
+				a {
+					padding: 0;
 				}
 			}
 		}
@@ -160,4 +180,93 @@
 	.yj-navbar-fixed {
 		background: white;
 		opacity: 0.95;
+	}
+
+	.nav-notification {
+		min-width: 70px;
+		position: relative;
+	}
+
+	.yj-notification {
+		// display: inline-block;
+		position: absolute;
+		top: 10px;
+		left: 33px;
+		padding: 0.2rem;
+		background-color: $error-color;
+		color: white;
+		border-radius: 100px;
+		font-size: 0.6rem;
+		width: 22px;
+		height: 22px;
+		text-align: center;
+		line-height: 1.1rem;
+
+		&.table-notification {
+			display: inline-block;
+			position: relative;
+			top: -2px;
+			left: 0;
+			width: 15px;
+			height: 15px;
+			line-height: 0.7rem;
+		}
+	}
+
+	.yj-navbar-list {
+		height: 4.3rem;
+
+		li {
+			height: 4.3rem;
+
+			&:hover {
+				background: none;
+
+				a {
+					display: inline-block;
+				}
+			}
+		}
+	}
+
+	.yj-nav-new {
+		background: white;
+
+		ul {
+
+			li {
+				background: none!important;
+
+				 a {
+
+				 	&.yj-navlink {
+				 		text-transform: uppercase;
+				 		font-size: 0.9rem;
+				 		color: $primary-color;
+				 		@include transition(.2s);
+
+				 		&:hover {
+				 			color: darken($primary-color, 15%);
+				 			@include transition(.2s);
+				 		}
+				 	}
+				 }
+			}
+		}
+
+		.yj-brand-logo {
+			top: 0.6rem;
+
+			@media #{$medium-and-down} {
+				left: 45px;
+			}
+
+			@media #{$small-and-down} {
+				top: 0.4rem;
+			}
+		}
+
+		.yj-nav-slideout-btn {
+			margin-left: 1rem;
+		}
 	}

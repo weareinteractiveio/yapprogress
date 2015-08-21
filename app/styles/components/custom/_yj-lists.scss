@@ -65,7 +65,7 @@
 		margin: 0;
 
 		&.alt {
-			margin-top: 0.6rem;
+			margin-top: 0.5rem;
 		}
 
 		li {
@@ -75,6 +75,11 @@
 				color: white;
 				border-radius: 3px;
 			}
+		}
+
+		&.dib {
+			display: inline-block;
+			min-width: 90px;
 		}
 	}
 
@@ -131,6 +136,20 @@
 				}
 			}
 		}
+
+		a.interact-highlight {
+			background: $primary-color;
+			color: white;
+		}
+
+		a.applicant-nav-highlight {
+			background: $error-color;
+			color: white;
+
+			&:hover {
+				background: darken($error-color, 15%);
+			}
+		}
 	}
 
 	p.nav-desc {
@@ -144,6 +163,10 @@
 
 	.dropdown-min-width {
 		min-width: 160px;
+
+		&.alt {
+			min-width: 300px;
+		}
 	}
 
 	ul.yj-contact-list {
@@ -169,17 +192,23 @@
 	}
 
 	ul.contact-details {
-		margin-top: 0;
-		margin-bottom: 3rem;
+		// margin-top: 0;
+		// margin-bottom: 3rem;
 
 		li {
+			display: inline-block;
+			margin-left: 1rem;
+
+			&:first-child {
+				margin-left: 0;
+			}
 
 			a {
 				display: block;
-				padding: 0.25rem 0;
+				padding: 0;
 				font-size: 1.2rem;
-				color: $yj-grey;
-				font-weight: 400;
+				color: white;
+				font-weight: 200;
 				@include transition(.2s);
 
 				&:hover {
@@ -192,5 +221,62 @@
 		span, i {
 			display: inline-block;
 			width: 30px;
+		}
+	}
+
+	ul.table-selects {
+		li {
+			display: inline-block;
+		}
+	}
+
+	ul.unpublish-list {
+		// padding: 0 0 2rem 0;
+
+		li {
+			padding-top: 0.3rem;
+
+			&:first-child {
+				padding-top: 0;
+			}
+		}
+	}
+
+	ul.profile-hero-btn-list {
+
+		li {
+			display: inline-block;
+		}
+	}
+
+	ul.star-list {
+		margin-top: 0;
+
+		li {
+			display: inline-block;
+
+			a {
+				color: $yj-blue;
+				@include transition(.2s);
+
+				&:hover {
+					color: darken($yj-blue, 15%);
+					@include transition(.2s);
+				}
+			}
+		}
+	}
+
+	.notification-li {
+
+		a {
+
+			span {
+				font-weight: 500;
+
+				&.notification-number {
+					color: $primary-color;
+				}
+			}
 		}
 	}

@@ -35,6 +35,11 @@
 			i {
 				min-width: 30px;
 			}
+
+			span.copy-link {
+				display: inline-block;
+				min-width: 30px;
+			}
 		}
 
 		.yj-modal-footer {
@@ -62,6 +67,15 @@
 			margin: 0;
 		}
 
+		.modal-content {
+			h4 {
+
+				&.modal-h4-fix {
+					margin-bottom: 0.4rem;
+				}
+			}
+		}
+
 	}
 
 	.modal-header {
@@ -79,6 +93,14 @@
 		h4 {
 			margin-bottom: 2rem;
 			font-weight: 200;
+
+			&.alt {
+				margin-bottom: 0;
+			}
+		}
+
+		p.change-address-btn {
+			margin-bottom: 2rem;
 		}
 	}
 

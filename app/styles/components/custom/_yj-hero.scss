@@ -115,6 +115,11 @@
 			background-size: cover;
 		}
 
+		&.austin-black {
+			background: url(images/austin-black.jpg) no-repeat center center;
+			background-size: cover;
+		}
+
 		.notify-wrapper {
 			background: white;
 			padding: 2rem;
@@ -125,6 +130,8 @@
 		}
 
 		&.hero-profile {
+			padding: 2rem;
+
 			.yj-circle {
 				border: 2px solid white;
 			}
@@ -147,6 +154,33 @@
 				color: white;
 				font-weight: 200;
 				font-size: 2rem;
+				margin: 1rem 0;
+			}
+
+			.next-profile {
+				margin-top: 5rem;
+
+				a {
+					color: white;
+					@include transition(.2s);
+
+					&:hover {
+						color: $primary-color;
+						@include transition(.2s);
+					}
+				}
+
+				@media #{$small-and-down} {
+					margin: 0.4rem 0;
+				}
+			}
+
+			.currently-viewing {
+				color: white;
+
+				span {
+					font-weight: 500;
+				}
 			}
 		}
 	}
@@ -155,4 +189,17 @@
 		font-weight: 500;
 		font-size: 1.4rem;
 		color: $yj-blue;
+	}
+
+	.profile-play {
+
+		a {
+			color: white;
+			@include transition(.2s);
+
+			&:hover {
+				color: $primary-color;
+				@include transition(.2s);
+			}
+		}
 	}

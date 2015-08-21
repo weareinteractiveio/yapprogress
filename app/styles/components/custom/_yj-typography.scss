@@ -39,6 +39,14 @@
 		&.alt {
 			color: white;
 		}
+
+		&.yj-title-clean {
+			margin-top: 0;
+		}
+
+		&.yj-title-adjust {
+			margin-top: 2rem;
+		}
 	}
 
 	.yj-title-icon {
@@ -129,5 +137,67 @@
 	}
 
 	.link-message {
+		font-size: 1.2rem;
+	}
+
+	.p-highlight {
+		color: $primary-color;
+		font-weight: 400;
+		font-size: 1.2rem;
+	}
+
+	.next-profile-desc {
+		margin: 0;
+		color: white;
+		font-size: 0.8rem;
+	}
+
+	.applicants-current-job {
+
+		span {
+			font-weight: 400;
+		}
+
+		.job-green {
+			// font-weight: 300;
+			// color: $primary-color;
+		}
+	}
+
+	.compatibility {
+		text-transform: uppercase;
+		font-size: 0.8rem;
+		letter-spacing: 1px;
+		color: white;
+	}
+
+	.compatibility-score {
+		margin: 0;
+		color: $primary-color;
+		font-size: 1.4rem;
+	}
+
+	.rate-title {
+		font-weight: 400;
+		margin-bottom: 0;
+	}
+
+	.no-problem {
+		margin-bottom: 1.4rem;
+	}
+
+	.address {
+		margin: 0;
+
+		&.address-last {
+			margin-bottom: 1rem;
+		}
+	}
+
+	.contact-title {
+		color: $primary-color;
+	}
+
+	.contact-details-lrg {
 		font-size: 1.2rem;
 	}

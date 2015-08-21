@@ -21,6 +21,10 @@
 		&.alt-dark {
 			background-color: $yj-even-less-light-grey;
 		}
+
+		&.mobile-breaker {
+			margin-bottom: 0;
+		}
 	}
 
 	.row-clean {
@@ -40,12 +44,16 @@
 		}
 	}
 
-	.yj-results-container {
+	.yj-results-container, .yj-dashboard-container {
 		width: 70%;
 
 		@media screen and (max-width: 1440px) {
 			width: 90%;
 		}
+
+		// @media #{$medium-and-down} {
+		// 	width: 90%;
+		// }
 	}
 
 	footer.yj-footer {
@@ -64,4 +72,17 @@
 
 	a {
 		color: $yj-blue;
+	}
+
+	.circle-img-max {
+		max-width: 200px!important;
+	}
+
+	.yj-progress {
+		margin: 1rem 0;
+		background-color: $yj-less-light-grey;
+
+		.yj-determinate {
+			background-color: $primary-color;
+		}
 	}

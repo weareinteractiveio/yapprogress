@@ -223,7 +223,7 @@
         <p>This will cost only <span class="credit-amount">1</span> credit! Once you have clicked on proceed&hellip; <br><span class="p-highlight">YAP!</span> like magic, the contact details will be revealed.</p>
         <ul class="modal-btn-list">
           <li><a class="waves-effect waves-light btn yj-btn-blue modal-close">Cancel</a></li>
-          <li><a href="employee-profile-dashboard-logged-in-contact-details.html" class="waves-effect waves-light btn yj-btn-green modal-close">Proceed</a></li>
+          <li><a href="employee-profile-contact-details-reveal" class="waves-effect waves-light btn yj-btn-green modal-close">Proceed</a></li>
         </ul>
       </div>
     </div>
@@ -235,10 +235,10 @@
           <img class="yj-logo alt" src="images/yapjobs-logo-white.svg">
         </div>
         <h4>Great Choice!</h4>
-        <p>This will cost only <span class="credit-amount">2</span> credits! Once you have clicked on proceed&hellip; <br><span class="p-highlight">YAP!</span> like magic, the contact details will be revealed and your direct messaging to the applicant will be available immediately.</p>
+        <p>This will cost only <span class="credit-amount">1</span> credits! Once you have clicked on proceed&hellip; <br><span class="p-highlight">YAP!</span> like magic, your direct messaging to the applicant will be available immediately.</p>
         <ul class="modal-btn-list">
           <li><a class="waves-effect waves-light btn yj-btn-blue modal-close">Cancel</a></li>
-          <li><a href="employee-profile-dashboard-logged-in-contact-details.html" class="waves-effect waves-light btn yj-btn-green modal-close">Proceed</a></li>
+          <li><a class="waves-effect waves-light btn yj-btn-green modal-close">Proceed</a></li>
         </ul>
       </div>
     </div>
@@ -305,7 +305,9 @@
         <div class="modal-header alt center-align">
           <img class="yj-logo alt" src="images/yapjobs-logo-white.svg">
         </div>
-        <h4>Invite Shahzad for an Interview</h4>
+        <h4 class="alt">Invite Shahzad for an interview</h4>
+        <p>7 Central St Giles Piazza, St Giles High Street, London, WC2H 8AB</p>
+        <p class="change-address-btn"><a href="#" class="waves-effect waves-light btn yj-btn-blue yj-btn-global-sm lrg-max">Change Address</a></p>
         <div class="modal-date-time-wrapper">
           <div class="row">
             <div class="input-field col s12">
@@ -322,7 +324,7 @@
           </div>
         </div>
         <ul class="modal-btn-list">
-          <li><a href="#invite-success" class="waves-effect waves-light btn yj-btn-green modal-trigger modal-close">Invite</a></li>
+          <li><a href="#invite-success" class="waves-effect waves-light btn yj-btn-green modal-trigger modal-close" id="interview-interaction">Invite</a></li>
         </ul>
       </div>
     </div>
@@ -409,6 +411,18 @@
             <p class="profile-play"><a href="#!"><span class="icon-play-circle yj-icon xlg"></span></a></p>
           </div>
         </div>
+        <div class="contact-employee">
+          <div class="row row-clean">
+            <div class="col s12">
+              <ul class="contact-details">
+                <li><a href="#!"><span class="icon-smartphone yj-icon yj-icon-green icon-space md"></span> 07123 456789</a></li>
+                <li><a href="#!"><span class="icon-envelope yj-icon yj-icon-green icon-space md"></span> someone@something.com</a></li>
+                <li><a href="#!"><i class="fa fa-skype yj-icon yj-icon-green icon-space md"></i> shahzadAli</a></li>
+                <!-- <li><a href="#contact-extra-one-step" class="modal-trigger"><span class="icon-bubble-dots yj-icon yj-icon-green icon-space md"></span> Reveal&hellip;</a></li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
         <div class="row">
           <div class="col s12 m12 l2 offset-l5">
             <p class="compatibility">Match Score</p>
@@ -434,7 +448,7 @@
             </ul>
           </div> -->
         </div>
-        <div class="row row-clean">
+        <!-- <div class="row row-clean">
           <div class="col s12">
             <ul class="profile-hero-btn-list">
               <li>
@@ -445,7 +459,7 @@
               </li>
             </ul>
           </div>
-        </div>
+        </div> -->
         <div class="row row-clean">
           <div class="col s12">
             <p>
@@ -538,22 +552,22 @@
             <!-- <div class="row">
               <a class="waves-effect waves-light btn yj-btn yj-btn-green yj-btn-rsp">Invite Applicant</a>
             </div> -->
-            <div class="row">
+            <!-- <div class="row">
               <div class="col col-clean alt s6">
                 <a href="#reject" class="waves-effect waves-light btn yj-btn btn-large modal-trigger yj-btn-db"><span class="icon-warning yj-icon icon-space"></span>Reject</a>
               </div>
                <div class="col col-clean s6">
                 <a href="#contact-credit" class="waves-effect waves-light btn yj-btn btn-large yj-btn-green modal-trigger yj-btn-db"><span class="icon-smartphone yj-icon icon-space"></span>Contact</a>
               </div>
-            </div>
+            </div> -->
             <div class="row">
               <ul class="yj-contact-list">
                 <!-- <li><a href="#contact-extra" class="modal-trigger"><i class="fa fa-skype yj-icon-i"></i> Skype</a></li> -->
                 <!-- <li class="divider"></li> -->
                 <!-- <li><a href="#contact-extra" class="modal-trigger"><span class="icon-bubble-dots yj-icon icon-space"></span> Start Chat</a></li>
                 <li class="divider"></li> -->
-                <!-- <li><a href="#interview-modal" class="modal-trigger"><span class="icon-users2 yj-icon icon-space"></span> Invite for Interview</a></li>
-                <li class="divider"></li> -->
+                <li><a href="#interview-modal" class="modal-trigger"><span class="icon-users2 yj-icon icon-space"></span> Invite for Interview</a></li>
+                <li class="divider"></li>
                 <li><a href="#shortlist" class="modal-trigger"><span class="icon-list yj-icon icon-space"></span> Shortlist</a></li>
                 <!-- <li class="divider"></li>
                 <li><a href="#"><span class="icon-pencil yj-icon icon-space"></span> Add Notes</a></li> -->

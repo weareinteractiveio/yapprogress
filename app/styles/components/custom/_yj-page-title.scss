@@ -6,4 +6,8 @@
 		&.alt {
 			margin-top: 0;
 		}
+
+		@media #{$small-and-down} {
+			margin-top: 4rem;
+		}
 	}

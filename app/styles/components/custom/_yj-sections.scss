@@ -187,3 +187,22 @@
 	.results {
 		margin-bottom: 5rem;
 	}
+
+	.how-it-works {
+		background-color: $yj-light-grey;
+
+		h5.how-it-works-h5 {
+			margin-top: 2rem;
+			font-weight: 300;
+		}
+
+		.step-wrapper	{
+			background-color: white;
+			padding: 2rem;
+			border-bottom: 2px solid $yj-blue;
+
+			@media #{$medium-and-down} {
+				margin-top: 1.5rem;
+			}
+		}
+	}

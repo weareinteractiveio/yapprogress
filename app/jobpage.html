@@ -25,7 +25,7 @@
     <![endif]-->
 
     <!-- Nav -->
-    <nav class="yj-nav">
+    <!-- <nav class="yj-nav">
       <div class="container">
         <ul id="slide-out" class="side-nav yj-sidenav">
           <li class="close"><a href="#!" class="yj-close"><span class="icon-cross yj-icon lg"></span></a></li>
@@ -47,8 +47,43 @@
         <a href="#" data-activates="slide-out" class="button-collapse show-on-large right yj-icon-animate"><span class="icon-menu yj-icon lg yj-icon-green"></span></a>
         <a href="postajob.html" class="waves-effect waves-light btn yj-btn-green yj-nav-btn yj-nav-btn-alt yj-btn-small right hide-on-small-only">Post A Job</a></li>
       </div>
-    </nav>
+    </nav> -->
     <!-- END Nav -->
+
+    <!-- Rebuilt nav -->
+    <div class="navbar-fixed">
+      <nav class="yj-nav-new">
+        <div class="container">
+          <!-- Slide out menu -->
+          <ul id="slide-out" class="side-nav yj-sidenav">
+            <li class="close"><a href="#!" class="yj-close"><span class="icon-cross yj-icon lg"></span></a></li>
+            <li class="li-push"><a href="employer-dashboard.html">Dashboard</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="search-results.html">Jobs</a></li>
+            <li><a class="modal-trigger" href="#sign-in">Sign In</a></li>
+            <li><a class="modal-trigger" href="#sign-up">Sign Up</a></li>
+            <li><a href="postajob.html" class="waves-effect waves-light btn yj-nav-btn yj-btn-small yj-btn-green">Post A Job</a>
+            <li>
+              <ul class="social">
+                <li><a href="https://www.facebook.com/yapjobs"><i class="fa fa-facebook fa-lg"></i></a></li>
+                <li><a href="https://twitter.com/yapjobs"><i class="fa fa-twitter fa-lg"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/yapjobs"><i class="fa fa-linkedin fa-lg"></i></a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- End slide out menu -->
+          <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo yj-brand-logo yj-logo-switch"><img src="images/yapjobs-logo-green.svg" width="88px" height="47px" /></a>
+            <a href="#" data-activates="slide-out" class="button-collapse show-on-large yj-icon-animate right yj-nav-slideout-btn"><span class="icon-menu yj-icon lg yj-icon-green"></span></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="employer-dashboard.html" class="yj-navlink">Dashboard</a></li>
+              <li><a href="postajob.html" class="waves-effect waves-light btn yj-btn-green yj-nav-btn-alt">Post A Job</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- END rebuilt nav -->
 
     <!-- Modals -->
     <div id="sign-in" class="modal yj-modal">
@@ -112,13 +147,15 @@
         </div>
         <div class="modal-form">
           <div class="row">
-            <div class="col s6">
+            <div class="col s12">
               <div class="input-field col s12">
                 <input placeholder="Enter first name here" id="first_name" type="text" class="validate">
                 <label for="first_name">First Name</label>
               </div>
             </div>
-            <div class="col s6">
+          </div>
+          <div class="row">
+            <div class="col s12">
               <div class="input-field col s12">
                 <input placeholder="Enter last name here" id="first_name" type="text" class="validate">
                 <label for="first_name">Last Name</label>
@@ -126,13 +163,15 @@
             </div>
           </div>
           <div class="row">
-            <div class="col s6">
+            <div class="col s12">
               <div class="input-field col s12">
                 <input placeholder="Enter email here" id="first_name" type="text" class="validate">
                 <label for="first_name">Email</label>
               </div>
             </div>
-            <div class="col s6">
+          </div>
+          <div class="row">
+            <div class="col s12">
               <div class="input-field col s12">
                 <input placeholder="Confirm email here" id="first_name" type="text" class="validate">
                 <label for="first_name">Confirm Email</label>
@@ -140,13 +179,15 @@
             </div>
           </div>
           <div class="row">
-            <div class="col s6">
+            <div class="col s12">
               <div class="input-field">
                 <input id="password" type="password" class="validate" placeholder="Enter password here">
                 <label for="password">Password</label>
               </div>
             </div>
-            <div class="col s6">
+          </div>
+          <div class="row">
+            <div class="col s12">
               <div class="input-field">
                 <input id="password" type="password" class="validate" placeholder="Confirm password here">
                 <label for="password">Confirm Password</label>
@@ -304,6 +345,7 @@
               <li><a class="grey-text text-lighten-3" href="search-results.html">Jobs</a></li>
               <li><a class="grey-text text-lighten-3 modal-trigger" href="#sign-in">Sign In</a></li>
               <li><a class="grey-text text-lighten-3 modal-trigger" href="#sign-up">Sign Up</a></li>
+              <li><a class="grey-text text-lighten-3" href="contact-us.html">Contact Us</a></li>
               <li><a class="grey-text text-lighten-3" href="terms.html">Terms and Conditions</a></li>
               <li><a class="grey-text text-lighten-3" href="privacy.html">Privacy Policy</a></li>
             </ul>
