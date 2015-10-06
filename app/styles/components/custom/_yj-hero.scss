@@ -110,6 +110,17 @@
 			}
 		}
 
+		&.pricing-hero {
+			background: url(images/pricing-hero.jpg) no-repeat center center;
+			background-size: cover;
+
+			span {
+				font-weight: 600;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+			}
+		}
+
 		&.austin {
 			background: url(images/austin.jpg) no-repeat center center;
 			background-size: cover;

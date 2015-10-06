@@ -212,6 +212,50 @@
         </div>
       </div>
     </div>
+
+    <div id="pricing-plan-modal" class="modal yj-modal">
+      <div class="modal-content modal-content-alt">
+        <div class="exit exit-border">
+          <div class="row row-clean">
+            <div class="col s6"><p>Choose your plan</p></div>
+            <div class="col s6"><p class="right-align"><a href="#!"><span class="icon-cross2 modal-close"></span></a></p></div>
+          </div>
+        </div>
+        <div class="modal-message-wrapper">
+          <div class="row">
+            <div class="col s12 col-modal-clean">
+              <div class="credit-banner credit-banner-white">
+                <p>You have 50 FREE Credits</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 col-modal-clean">
+              <p>Select a plan</p>
+              <select class="browser-default">
+                <option value="1" selected>FREE</option>
+                <option value="2">Add Credits</option>
+                <option value="3">Standard</option>
+                <option value="4">Enterpise</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 col-modal-clean">
+              <h6>Compare plans and features <a href="pricing-page.html">Pricing Page</a></h6>
+            </div>
+          </div>
+          <div class="row row-clean">
+            <div class="col s12 col-modal-clean">
+              <ul class="ctc-list-hero right-align">
+              <li><a class="waves-effect waves-light btn yj-btn yj-btn-grey modal-close">Cancel</a></li>
+                <li><a href="billing.html" class="waves-effect waves-light btn yj-btn yj-btn-green modal-close">Continue</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- END Modals -->
 
     <!-- Hero -->
@@ -292,11 +336,19 @@
                   <a href="#"><span class="icon-plus yj-icon md yj-icon-green right-form-icon"></span></a>
                 </div>
               </div>
-              <div class="row">
+              <div class="row row-clean">
                 <div class="input-field col s12">
                   <span class="icon-coin-pound yj-icon yj-icon-green prefix"></span>
                   <input placeholder="Enter hourly rate here" id="first_name" type="text" class="validate">
                   <label for="first_name">Hourly Rate</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field">
+                  <p>
+                    <input type="checkbox" id="tips" />
+                    <label for="tips">Plus tips</label>
+                  </p>
                 </div>
               </div>
               <div class="row">
@@ -341,7 +393,7 @@
               </div>
               <div class="row row-clean">
                 <div class="col s6"><a class="waves-effect waves-light btn btn-large yj-btn-db">Cancel</a></div>
-                <div class="col s6"><a href="employer-dashboard.html" class="waves-effect waves-light btn btn-large yj-btn-db yj-btn-green">Post</a></div>
+                <div class="col s6"><a href="#pricing-plan-modal" class="waves-effect waves-light btn btn-large yj-btn-db yj-btn-green modal-trigger">Post</a></div>
               </div>
             </div>
           </div>

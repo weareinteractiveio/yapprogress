@@ -1,0 +1,803 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yap Jobs</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/linear-icons.css">
+    <link rel="stylesheet" href="styles/font-awesome.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Nav -->
+    <!-- <nav class="yj-nav">
+      <div class="container">
+        <ul id="slide-out" class="side-nav yj-sidenav">
+          <li class="close"><a href="#!" class="yj-close"><span class="icon-cross yj-icon lg"></span></a></li>
+          <li class="li-push"><a href="employer-dashboard.html">Dashboard</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="search-results.html">Jobs</a></li>
+          <li><a class="modal-trigger" href="#sign-in">Sign In</a></li>
+          <li><a class="modal-trigger" href="#sign-up">Sign Up</a></li>
+          <li><a href="postajob.html" class="waves-effect waves-light btn yj-btn-green yj-nav-btn yj-btn-small">Post A Job</a>
+          <li>
+            <ul class="social">
+              <li><a href="https://www.facebook.com/yapjobs"><i class="fa fa-facebook fa-lg"></i></a></li>
+              <li><a href="https://twitter.com/yapjobs"><i class="fa fa-twitter fa-lg"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/yapjobs"><i class="fa fa-linkedin fa-lg"></i></a></li>
+            </ul>
+          </li>
+        </ul>
+        <a href="index.html" class="show-on-large left yj-logo"><img src="images/yapjobs-logo-green.svg"></a>
+        <a href="#" data-activates="slide-out" class="button-collapse show-on-large right yj-icon-animate"><span class="icon-menu yj-icon lg yj-icon-green"></span></a>
+        <a href="postajob.html" class="waves-effect waves-light btn yj-btn-green yj-nav-btn yj-nav-btn-alt yj-btn-small right hide-on-small-only">Post A Job</a></li>
+      </div>
+    </nav> -->
+    <!-- END Nav -->
+
+    <!-- Dashboard Nav -->
+    <!-- Dropdowns -->
+    <ul id="dropdown1" class="dropdown-content dropdown-min-width">
+      <li><a href="edit-profile.html"><span class="icon-cog yj-icon icon-space sm"></span>Edit Profile</a></li>
+      <li><a href="billing.html"><span class="icon-archive2 yj-icon icon-space sm"></span>Billing</a></li>
+      <li class="divider"></li>
+      <li><a href="index.html"><span class="icon-exit yj-icon icon-space sm"></span>Sign Out</a></li>
+    </ul>
+
+    <ul id="dropdown-notifications" class="dropdown-content dropdown-min-width alt">
+      <li class="notification-li"><a href="edit-profile.html">You have <span class="notification-number">5</span> new applicants for the job <span class="notification-job">Bartender at Cabana Covent Garden</span></a></li>
+      <li class="divider"></li>
+      <li class="notification-li"><a href="edit-profile.html">You have <span class="notification-number">3</span> new applicants for the job <span class="notification-job">Waiter/Waitress at Cabana Brixton</span></a></li>
+      <li class="divider"></li>
+      <li class="notification-li"><a href="edit-profile.html">You have <span class="notification-number">2</span> new applicants for the job <span class="notification-job">Cleaner at Cabana Islington</span></a></li>
+    </ul>
+    
+    <!-- Nav -->
+    <div class="navbar-fixed">
+      <nav class="dashboard-nav">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo yj-logo"><img src="images/yapjobs-logo-white.svg"></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="index.html"><span class="icon-home2 yj-icon icon-space"></span> Home</a></li>
+              <li><a href="employer-dashboard.html"><span class="icon-icons2 yj-icon icon-space"></span> Dashboard</a></li>
+              <li><a href="billing.html"><span class="icon-coin-pound yj-icon icon-space"></span> 50 Credits</a></li>
+              <li>
+                <a class="nav-notification" href="messaging.html">
+                  <span class="icon-envelope yj-icon icon-space"></span>
+                  <p class="yj-notification">4</p>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-button nav-notification" href="#!" data-activates="dropdown-notifications">
+                  <span class="icon-alarm yj-icon icon-space"></span>
+                  <p class="yj-notification">10</p>
+                </a>
+              </li>
+              <!-- <li><a href="sass.html"><span class="icon-speed-medium"></span></a></li> -->
+              <!-- Dropdown Trigger -->
+              <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Cabana <span class="icon-chevron-down alt"></span></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- END Dashboard Nav -->
+
+    <!-- Modals -->
+    <div id="sign-in" class="modal yj-modal">
+      <div class="modal-content">
+        <div class="exit">
+          <div class="row row-clean">
+            <div class="col s6"><p>Sign In</p></div>
+            <div class="col s6"><p class="right-align"><a href="#!"><span class="icon-cross2 modal-close"></span></a></p></div>
+          </div>
+        </div>
+        <div class="modal-header center-align">
+          <img class="yj-logo alt" src="images/yapjobs-logo-white.svg">
+        </div>
+        <div class="modal-btns">
+          <a href="#!" class="waves-effect waves-light btn yj-btn-db yj-btn-facebook"><i class="fa fa-facebook"></i> Facebook</a>
+          <a href="#!" class="waves-effect waves-light btn yj-btn-db yj-btn-google"><i class="fa fa-google-plus"></i> Google</a>
+          <a href="#!" class="waves-effect waves-light btn yj-btn-db yj-btn-linkedin"><i class="fa fa-linkedin"></i> LinkedIn</a>
+          <a href="#!" class="waves-effect waves-light btn yj-btn-db yj-btn-blue"><i class="fa fa-envelope"></i> Email</a>
+        </div>
+        <div class="yj-modal-footer center-align">
+          <p>Don't have an account yet?</p>
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn yj-btn-green">Sign Up</a>
+        </div>
+      </div>
+    </div>
+    
+    <div id="sign-up" class="modal yj-modal">
+      <div class="modal-content">
+        <div class="exit">
+          <div class="row row-clean">
+            <div class="col s6"><p>Sign Up</p></div>
+            <div class="col s6"><p class="right-align"><a href="#!"><span class="icon-cross2 modal-close"></span></a></p></div>
+          </div>
+        </div>
+        <div class="modal-header center-align">
+          <img class="yj-logo alt" src="images/yapjobs-logo-white.svg">
+        </div>
+        <div class="modal-btns">
+          <a href="#!" class="waves-effect waves-light btn yj-btn-db yj-btn-facebook"><i class="fa fa-facebook"></i> Facebook</a>
+          <a href="#!" class="waves-effect waves-light btn yj-btn-db yj-btn-google"><i class="fa fa-google-plus"></i> Google</a>
+          <a href="#!" class="waves-effect waves-light btn yj-btn-db yj-btn-linkedin"><i class="fa fa-linkedin"></i> LinkedIn</a>
+          <a href="#sign-up-form" class="waves-effect waves-light btn yj-btn-db yj-btn-blue modal-trigger modal-close"><i class="fa fa-envelope"></i> Email</a>
+        </div>
+        <div class="yj-modal-footer center-align">
+          <p>By signing up for Yap Jobs, you acknowledge that you have read and agree to yap Jobs Career's <a class="yj-simple-link" href="#!">Terms of Use</a> and <a class="yj-simple-link" href="#!">Privacy Policy.</a></p>
+          <!-- <a href="#!" class=" modal-action modal-close waves-effect waves-green btn yj-btn-green">Sign Up</a> -->
+        </div>
+      </div>
+    </div>
+
+    <div id="credits" class="modal yj-modal">
+      <div class="modal-content">
+        <div class="exit">
+          <div class="row row-clean">
+            <div class="col s6"><p>Credits</p></div>
+            <div class="col s6"><p class="right-align"><a href="#!"><span class="icon-cross2 modal-close"></span></a></p></div>
+          </div>
+        </div>
+        <div class="modal-header center-align">
+          <img class="yj-logo alt" src="images/yapjobs-logo-white.svg">
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <form action="#">
+              <p>Please select from the following options</p>
+              <p>
+                <input name="group1" type="radio" id="credit_one" />
+                <label for="credit_one">Add 50 Credits</label>
+              </p>
+              <p>
+                <input name="group1" type="radio" id="credit_two" />
+                <label for="credit_two">Add 100 Credits</label>
+              </p>
+              <p>
+                <input name="group1" type="radio" id="credit_three" />
+                <label for="credit_three">Add 200 Credits</label>
+              </p>
+              <p><a class="waves-effect waves-light btn yj-btn-grey yj-btn-signup-fix">Proceed</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sign-up-form" class="modal yj-modal">
+      <div class="modal-content">
+        <div class="exit">
+          <div class="row row-clean">
+            <div class="col s6"><p>Email Sign Up</p></div>
+            <div class="col s6"><p class="right-align"><a href="#!"><span class="icon-cross2 modal-close"></span></a></p></div>
+          </div>
+        </div>
+        <div class="modal-header center-align">
+          <img class="yj-logo alt" src="images/yapjobs-logo-white.svg">
+        </div>
+        <div class="modal-form">
+          <div class="row">
+            <div class="col s12">
+              <div class="input-field col s12">
+                <input placeholder="Enter first name here" id="first_name" type="text" class="validate">
+                <label for="first_name">First Name</label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              <div class="input-field col s12">
+                <input placeholder="Enter last name here" id="first_name" type="text" class="validate">
+                <label for="first_name">Last Name</label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              <div class="input-field col s12">
+                <input placeholder="Enter email here" id="first_name" type="text" class="validate">
+                <label for="first_name">Email</label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              <div class="input-field col s12">
+                <input placeholder="Confirm email here" id="first_name" type="text" class="validate">
+                <label for="first_name">Confirm Email</label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              <div class="input-field">
+                <input id="password" type="password" class="validate" placeholder="Enter password here">
+                <label for="password">Password</label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              <div class="input-field">
+                <input id="password" type="password" class="validate" placeholder="Confirm password here">
+                <label for="password">Confirm Password</label>
+              </div>
+            </div>
+          </div>
+          <div class="row clean">
+            <div class="col s12">
+              <form action="#">
+                <p class="p-terms">
+                  <input name="group1" type="radio" id="test1" />
+                  <label for="test1">I Agree to the <a class="yj-simple-link" href="#!">Terms of Use</a> and <a class="yj-simple-link" href="#!">Privacy Policy.</a></label>
+                </p>
+              </form>
+            </div>
+          </div>
+          <div class="row row-clean">
+            <div class="col s12">
+              <a class="waves-effect waves-light btn yj-btn-green yj-btn-db btn-large yj-btn-signup-fix">Sign Up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="thankyou-modal" class="modal yj-modal">
+      <div class="modal-content modal-content-alt">
+        <div class="exit exit-border">
+          <div class="row row-clean">
+            <div class="col s6"><p>Thankyou</p></div>
+            <div class="col s6"><p class="right-align"><a href="#!"><span class="icon-cross2 modal-close"></span></a></p></div>
+          </div>
+        </div>
+        <div class="modal-message-wrapper">
+        <div class="row row-clean">
+          <h5>Thankyou</h5>
+          <p>Your account has been upgraded</p>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div id="cancel-account" class="modal yj-modal">
+      <div class="modal-content modal-content-alt">
+        <div class="exit exit-border">
+          <div class="row row-clean">
+            <div class="col s6"><p>Cancel Account</p></div>
+            <div class="col s6"><p class="right-align"><a href="#!"><span class="icon-cross2 modal-close"></span></a></p></div>
+          </div>
+        </div>
+        <div class="modal-message-wrapper">
+          <div class="row row-clean">
+            <div class="col s12">
+              <p>Sorry to see you go, was it something we said :( Thank you for using our service and we hope to see you back soon.</p>
+            </div>
+          </div>
+          <div class="row row-clean">
+            <div class="col s12 col-modal-clean">
+              <ul class="ctc-list-hero right-align">
+              <li><a class="waves-effect waves-light btn yj-btn yj-btn-grey modal-close">Cancel</a></li>
+                <li><a class="waves-effect waves-light btn yj-btn yj-btn-red modal-close">Confirm</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END Modals -->
+
+    <!-- Hero -->
+    <!-- <section class="hero hero-yap-team valign-wrapper">
+      <div class="container center-align valign">
+        <div class="row">
+          <div class="col s12">
+            <h1 class="yj-hero-title flow-text">WELCOME TO YAP JOBS</h1>
+          </div>
+        </div>
+        <div class="row hide-on-small-only">
+          <div class="col s12">
+            <p class="hero-subtag alt">get the right candidates for your business
+            simply fill out our <span>simple job form below</span></p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- END Hero -->
+
+    <!-- Page Title -->
+    <section class="page-title">
+      <div class="container">
+        <div class="row">
+          <div class="col l12">
+            <h5 class="yj-page-title alt">Billing Settings</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Page Title -->
+
+    <!-- Billing Section -->
+    <section class="billing">
+      <div class="container yj-billing-container">
+        <div class="row">
+          <div class="col s12">
+            <ul class="tabs yj-tabs">
+              <li class="tab col s2"><a href="#overview" class="active yj-tabs-blue">Overview</a></li>
+              <li class="tab col s2"><a href="#history" class="yj-tabs-blue">History</a></li>
+              <li class="tab col s2"><a href="#settings" class="yj-tabs-blue">Settings</a></li>
+              <li class="tab col s2"><a href="#contacts" class="yj-tabs-blue">Contacts</a></li>
+              <li class="tab col s2"><a href="#plans" class="yj-tabs-blue">Plans</a></li>
+              <li class="tab col s2"><a href="#cards" class="yj-tabs-blue">Cards</a></li>
+            </ul>
+          </div>
+          <div id="overview" class="col l6 offset-l3 s12 billing-content-container">
+            <div class="row row-clean">
+              <div class="col s12">
+                <ul class="ctc-list-hero">
+                  <li><p class="plan">You currently have <span>50 Yap credits remaining</span></p></li>
+                  <li><a href="#plans" class="waves-effect waves-light btn yj-btn yj-btn-green yj-btn-global-sm">Add Credits</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12">
+                <h5>Upgrade</h5>
+                <ul class="billing-list billing-list-margin">
+                  <li>Unlimited job posts</li>
+                  <li>Unlimited Applicants</li>
+                  <li>Unlimited locations</li>
+                </ul>
+                <p><a class="waves-effect waves-light btn yj-btn yj-btn-green yj-btn-md">Upgrade</a></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12">
+                <h5>Account Status</h5>
+                <ul class="billing-list billing-list-clean">
+                  <li>Your account will re-new on the <span>10th October 2015</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12">
+                <p><a href="#cancel-account" class="waves-effect waves-light btn yj-btn yj-btn-grey modal-trigger">Cancel Account</a></p>
+              </div>
+            </div>
+            <!-- <div class="row">
+              <div class="col s12">
+                <h5>Billing Actions</h5>
+                <ul class="billing-list billing-list-clean">
+                  <li>Il exerum veriatiossim sinihil lendis ipsam rernat fugitium utenisqui cupta quatur acest, toria pori delis dunt il evene nem ipsunt officipsa volupta sit, ad esequas eatatusdanti as et provitatiam hicidendae con re et ut aut dolore pro minctam laborias essint in rect.</li>
+                  <li>Il exerum veriatiossim sinihil lendis ipsam rernat fugitium utenisqui cupta quatur acest.</li>
+                </ul>
+              </div>
+            </div> -->
+          </div>
+          <div id="history" class="col l6 offset-l3 s12 billing-table">
+            <h5>Payment History</h5>
+            <table class="responsive-table yj-table yj-billing-table">
+              <thead>
+                <tr>
+                    <th data-field="id">Date</th>
+                    <th data-field="name">Item</th>
+                    <th data-field="price" class="right-align">Invoice <!-- <i class="fa fa-file-pdf-o fa-lg"></i> --></th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>12/10/15</td>
+                  <td>Standard package</td>
+                  <td class="right-align">£149 <i class="fa fa-file-pdf-o fa-lg yj-icon yj-icon-green"></i><!-- <i class="fa fa-download yj-icon yj-icon-green"></i> --></td>
+                </tr>
+                <tr>
+                  <td>12/11/15</td>
+                  <td>Standard package</td>
+                  <td class="right-align">£149 <i class="fa fa-file-pdf-o fa-lg yj-icon yj-icon-green"></i><!-- <i class="fa fa-download yj-icon yj-icon-green"></i> --></td>
+                </tr>
+                <tr>
+                  <td>12/12/15</td>
+                  <td>Standard package</td>
+                  <td class="right-align">£149 <i class="fa fa-file-pdf-o fa-lg yj-icon yj-icon-green"></i><!-- <i class="fa fa-download yj-icon yj-icon-green"></i> --></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div id="settings" class="col l6 offset-l3 s12 billing-content-container">
+            <div class="row">
+              <div class="col s12">
+                <h5>Business Name and Address</h5>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input placeholder="Enter business name here" id="business_name" type="text" class="validate">
+                <label for="business_name">Business Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input placeholder="Enter first line of address here" id="address_1" type="text" class="validate">
+                <label for="address_1">Address (line one)</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input placeholder="Enter second line of address here" id="address_2" type="text" class="validate">
+                <label for="address_2">Address (line two)</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input placeholder="Enter city here" id="city" type="text" class="validate">
+                <label for="city">City</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input placeholder="Enter postcode here" id="postcode" type="text" class="validate">
+                <label for="city">Postcode</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12">
+                <h5>Email Notifications</h5>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12">
+                <form action="#">
+                  <p>
+                    <input type="checkbox" id="email_preference" />
+                    <label for="email_preference">Send email once a month</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="email_preference_2" />
+                    <label for="email_preference_2">Send email when settings change</label>
+                  </p>
+                </form>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12">
+                <p><a class="waves-effect waves-light btn yj-btn yj-btn-green yj-btn-md">Save Settings</a></p>
+              </div>
+            </div>
+          </div>
+          <div id="contacts" class="col l8 offset-l2 s12 billing-content-container">
+            <div class="row">
+              <div class="col s12">
+                <h5>Contacts</h5>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s6">
+                <ul class="ctc-list-hero clear-margins">
+                  <li>Shahzad Ali</li>
+                  <li><a class="waves-effect waves-light btn yj-btn yj-btn-grey yj-btn-global-sm">Edit</a></li>
+                </ul>
+              </div>
+              <div class="col s6">
+                <form action="#">
+                  <p class="right-align p-clean">
+                    <input type="checkbox" id="primaryemail" />
+                    <label for="primaryemail">Send billing emails to <span class="highlight-text">shahzad@yapjobs.com</span></label>
+                  </p>
+                </form>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12">
+                <div class="yj-breaker alt"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s6">
+                <ul class="ctc-list-hero clear-margins">
+                  <li>Shahzad Ali</li>
+                  <li><a class="waves-effect waves-light btn yj-btn yj-btn-grey yj-btn-global-sm">Edit</a></li>
+                </ul>
+              </div>
+              <div class="col s6">
+                <form action="#">
+                  <p class="right-align p-clean">
+                    <input type="checkbox" id="primaryemail2" />
+                    <label for="primaryemail2">Send billing emails to <span class="highlight-text">shahzad@yapjobs.com</span></label>
+                  </p>
+                </form>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12">
+                <div class="yj-breaker alt"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12">
+                <a class="waves-effect waves-light btn yj-btn yj-btn-green">Add Contact</a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s5">
+                <input id="first_name" type="text" class="validate">
+                <label for="first_name">Name</label>
+              </div>
+              <div class="input-field col s5">
+                <input id="last_name" type="text" class="validate">
+                <label for="last_name">Email Address</label>
+              </div>
+              <div class="col s2">
+                <a class="waves-effect waves-light btn yj-btn yj-btn-green yj-form-btn">Add</a>
+              </div>
+            </div>
+          </div>
+          <div id="plans" class="col s12 billing-content-container">
+            <div class="row">
+              <div class="col l6 offset-l3 s12">
+                <div class="credit-banner">
+                  <p>You currently have 50 Credits</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col l6 offset-l3 s12">
+                <h5>Add credits or select a plan</h5>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col l6 offset-l3 s12">
+                <form action="#">
+                  <p>Select credit option</p>
+                  <p>
+                    <input name="group1" type="radio" id="credit1" />
+                    <label for="credit1">Add 50 credits for £10</label>
+                  </p>
+                  <p>
+                    <input name="group1" type="radio" id="credit2" />
+                    <label for="credit2">Add 100 credits for £20</label>
+                  </p>
+                  <p>
+                    <input name="group1" type="radio" id="credit3" />
+                    <label for="credit3">Add 200 credits £39</label>
+                  </p>
+                  <div class="yj-breaker"></div>
+                  <div class="row">
+                    <div class="col s12">
+                      <h6>Compare plans and features <a href="pricing-page.html">Pricing Page</a></h6>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col s12">
+                      <p>Select a plan</p>
+                      <select class="browser-default">
+                        <option value="1" selected>Standard</option>
+                        <option value="2">Enterpise</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="yj-breaker"></div>
+                  <div class="row">
+                    <div class="col s12">
+                      <p>Select billing frequency</p>
+                      <select class="browser-default">
+                        <option value="1" selected>Annualy £1500</option>
+                        <option value="2">Monthly £149</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="yj-breaker"></div>
+                  <div class="row">
+                    <div class="col s12">
+                      <p><span class="icon-lock yj-icon yj-icon-green"></span> Select payment card</p>
+                      <ul class="ctc-list-hero">
+                        <li><i class="fa fa-cc-visa fa-lg"></i></li>
+                        <li><i class="fa fa-cc-mastercard fa-lg"></i></li>
+                        <li><i class="fa fa-cc-amex fa-lg"></i></li>
+                        <li><a class="waves-effect waves-light btn yj-btn yj-btn-green yj-btn-global-sm">Add Card</a></li>
+                      </ul>
+                      <select class="browser-default">
+                        <option value="1" selected>Card ending in xxxx-2244</option>
+                        <option value="2">Card ending in xxxx-1648</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="yj-breaker"></div>
+                  <div class="row">
+                    <div class="col s12">
+                      <p>Total:</p>
+                      <p class="total">£149 billed monthly</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col sm12">
+                      <p class="billing-btn-push"><a href="#thankyou-modal" class="waves-effect waves-light btn yj-btn yj-btn-green modal-trigger">Confirm Payment</a></p>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div id="cards" class="col s12 billing-content-container">
+            <div class="row">
+              <div class="col l8">
+                <div class="row">
+                  <div class="col s12">
+                    <h5>Current Cards</h5>
+                  </div>
+                </div>
+                <div class="row row-clean">
+                  <div class="col s1">
+                    <div class="fa fa-cc-amex fa-2x yj-icon yj-icon-blue"></div>
+                  </div>
+                  <div class="col s11">
+                    <h6>Shahzad Ali</h6>
+                  </div>
+                </div>
+                <div class="row row-clean">
+                  <div class="col s11 offset-s1">
+                    <p class="p-clean">American Express ending in 2014 - 01/2020</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s11 offset-s1">
+                    <ul class="ctc-list-hero">
+                      <li><a class="waves-effect waves-light btn yj-btn yj-btn-green">Activate Card</a></li>
+                      <li><a class="waves-effect waves-light btn yj-btn yj-btn-red">Remove Card</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <form class="col l4">
+                <div class="row">
+                  <div class="col s12">
+                    <h5>Add Card Securely <i class="fa fa-lock yj-icon yj-icon-green"></i></h5>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input placeholder="Enter name on card here" id="card_name" type="text" class="validate">
+                    <label for="card_name">Name on Card</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input placeholder="Enter card number here" id="card_number" type="text" class="validate">
+                    <label for="card_number">Card Number</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s6">
+                    <label>Expirary Month</label>
+                    <select class="browser-default">
+                      <option value="" disabled selected>Select month</option>
+                      <option value="1">Option 1</option>
+                      <option value="2">Option 2</option>
+                      <option value="3">Option 3</option>
+                    </select>
+                  </div>
+                  <div class="col s6">
+                    <label>Expirary Year</label>
+                    <select class="browser-default">
+                      <option value="" disabled selected>Select year</option>
+                      <option value="1">Option 1</option>
+                      <option value="2">Option 2</option>
+                      <option value="3">Option 3</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <span class="icon-credit-card yj-icon yj-icon-green prefix"></span>
+                    <input placeholder="Enter CVV number here" id="cvv_number" type="text" class="validate">
+                    <label for="cvv_number">CVV Number</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s12">
+                    <a class="waves-effect waves-light btn yj-btn yj-btn-green yj-btn-db yj-btn-md">ADD CARD</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer yj-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <a href="index.html"><img class="footer-logo" src="images/yapjobs-logo-white.svg" width="90px" height="45px"></a>
+            <h5 class="white-text">Find your job in London today</h5>
+            <ul class="footer-social">
+              <li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin fa-lg"></i></a></li>
+            </ul>
+            <!-- <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p> -->
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="about-us.html">About Us</a></li>
+              <li><a class="grey-text text-lighten-3" href="search-results.html">Jobs</a></li>
+              <li><a class="grey-text text-lighten-3 modal-trigger" href="#sign-in">Sign In</a></li>
+              <li><a class="grey-text text-lighten-3 modal-trigger" href="#sign-up">Sign Up</a></li>
+              <li><a class="grey-text text-lighten-3" href="contact-us.html">Contact Us</a></li>
+              <li><a class="grey-text text-lighten-3" href="terms.html">Terms and Conditions</a></li>
+              <li><a class="grey-text text-lighten-3" href="privacy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2015 Yap Jobs Limited
+        <!-- <a class="grey-text text-lighten-4 right footer-logo" href="#!"><img src="images/yapjobs-logo-white.svg" width="70px" height="35px"></a> -->
+        </div>
+      </div>
+    </footer>
+    <!-- END footer -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+
+    <!-- JS for the page -->
+    <script>
+      $('.button-collapse').sideNav({
+          menuWidth: 260, // Default is 240
+          edge: 'right', // Choose the horizontal origin
+          closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+        }
+      );
+
+      $('.datepicker').pickadate({
+        selectMonths: true, // Creates a dropdown to control month
+        selectYears: 15 // Creates a dropdown of 15 years to control year
+      });
+
+      $(document).ready(function(){
+        // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+        $('.modal-trigger').leanModal();
+      });
+    </script>
+    <!-- END JS for the page
+</body>
+</html>

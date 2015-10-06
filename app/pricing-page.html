@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yap Jobs</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/linear-icons.css">
+    <link rel="stylesheet" href="styles/font-awesome.css">
+    <link rel="stylesheet" href="styles/animate.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Nav -->
+   <!--  <nav class="yj-nav">
+      <div class="container">
+        <ul id="slide-out" class="side-nav yj-sidenav">
+          <li class="close"><a href="#!" class="yj-close"><span class="icon-cross yj-icon lg"></span></a></li>
+          <li class="li-push"><a href="employer-dashboard.html">Dashboard</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="search-results.html">Jobs</a></li>
+          <li><a class="modal-trigger" href="#sign-in">Sign In</a></li>
+          <li><a class="modal-trigger" href="#sign-up">Sign Up</a></li>
+          <li><a href="postajob.html" class="waves-effect waves-light btn yj-btn-green yj-nav-btn yj-btn-small">Post A Job</a>
+          <li>
+            <ul class="social">
+              <li><a href="https://www.facebook.com/yapjobs"><i class="fa fa-facebook fa-lg"></i></a></li>
+              <li><a href="https://twitter.com/yapjobs"><i class="fa fa-twitter fa-lg"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/yapjobs"><i class="fa fa-linkedin fa-lg"></i></a></li>
+            </ul>
+          </li>
+        </ul>
+        <a href="index.html" class="show-on-large left yj-logo"><img src="images/yapjobs-logo-green.svg"></a>
+        <a href="#" data-activates="slide-out" class="button-collapse show-on-large right yj-icon-animate"><span class="icon-menu yj-icon lg yj-icon-green"></span></a>
+        <a href="postajob.html" class="waves-effect waves-light btn yj-btn-green yj-nav-btn yj-nav-btn-alt yj-btn-small right hide-on-small-only">Post A Job</a></li>
+      </div>
+    </nav> -->
+    <!-- END Nav -->
+
+    <!-- Rebuilt nav -->
+    <div class="navbar-fixed">
+      <nav class="yj-nav-new">
+        <div class="container">
+          <!-- Slide out menu -->
+          <ul id="slide-out" class="side-nav yj-sidenav">
+            <li class="close"><a href="#!" class="yj-close"><span class="icon-cross yj-icon lg"></span></a></li>
+            <li class="li-push"><a href="employer-dashboard.html">Dashboard</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="search-results.html">Jobs</a></li>
+            <li><a class="modal-trigger" href="#sign-in">Sign In</a></li>
+            <li><a class="modal-trigger" href="#sign-up">Sign Up</a></li>
+            <li><a href="postajob.html" class="waves-effect waves-light btn yj-nav-btn yj-btn-small yj-btn-green">Post A Job</a>
+            <li>
+              <ul class="social">
+                <li><a href="https://www.facebook.com/yapjobs"><i class="fa fa-facebook fa-lg"></i></a></li>
+                <li><a href="https://twitter.com/yapjobs"><i class="fa fa-twitter fa-lg"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/yapjobs"><i class="fa fa-linkedin fa-lg"></i></a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- End slide out menu -->
+          <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo yj-brand-logo yj-logo-switch"><img src="images/yapjobs-logo-green.svg" width="88px" height="47px" /></a>
+            <a href="#" data-activates="slide-out" class="button-collapse show-on-large yj-icon-animate right yj-nav-slideout-btn"><span class="icon-menu yj-icon lg yj-icon-green"></span></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="employer-dashboard.html" class="yj-navlink">Dashboard</a></li>
+              <li><a href="postajob.html" class="waves-effect waves-light btn yj-btn-green yj-nav-btn-alt">Post A Job</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- END rebuilt nav -->
+
+    <!-- Modals -->
+    <div id="sign-in" class="modal yj-modal">
+      <div class="modal-content">
+        <div class="exit">
+          <div class="row row-clean">
+            <div class="col s6"><p>Sign In</p></div>
+            <div class="col s6"><p class="right-align"><a href="#!"><span class="icon-cross2 modal-close"></span></a></p></div>
+          </div>
+        </div>
+        <div class="modal-header center-align">
+          <img class="yj-logo alt" src="images/yapjobs-logo-white.svg">
+        </div>
+        <div class="modal-btns">
+          <a href="#!" class="waves-effect waves-light btn yj-btn-db yj-btn-facebook"><i class="fa fa-facebook"></i> Facebook</a>
+          <a href="#!" class="waves-effect waves-light btn yj-btn-db yj-btn-google"><i class="fa fa-google-plus"></i> Google</a>
+          <a href="#!" class="waves-effect waves-light btn yj-btn-db yj-btn-linkedin"><i class="fa fa-linkedin"></i> LinkedIn</a>
+          <a href="#!" class="waves-effect waves-light btn yj-btn-db yj-btn-blue"><i class="fa fa-envelope"></i> Email</a>
+        </div>
+        <div class="yj-modal-footer center-align">
+          <p>Don't have an account yet?</p>
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn yj-btn-green">Sign Up</a>
+        </div>
+      </div>
+    </div>
+    
+    <div id="sign-up" class="modal yj-modal">
+      <div class="modal-content">
+        <div class="exit">
+          <div class="row row-clean">
+            <div class="col s6"><p>Sign Up</p></div>
+            <div class="col s6"><p class="right-align"><a href="#!"><span class="icon-cross2 modal-close"></span></a></p></div>
+          </div>
+        </div>
+        <div class="modal-header center-align">
+          <img class="yj-logo alt" src="images/yapjobs-logo-white.svg">
+        </div>
+        <div class="modal-btns">
+          <a href="#!" class="waves-effect waves-light btn yj-btn-db yj-btn-facebook"><i class="fa fa-facebook"></i> Facebook</a>
+          <a href="#!" class="waves-effect waves-light btn yj-btn-db yj-btn-google"><i class="fa fa-google-plus"></i> Google</a>
+          <a href="#!" class="waves-effect waves-light btn yj-btn-db yj-btn-linkedin"><i class="fa fa-linkedin"></i> LinkedIn</a>
+          <a href="#sign-up-form" class="waves-effect waves-light btn yj-btn-db yj-btn-blue modal-trigger modal-close"><i class="fa fa-envelope"></i> Email</a>
+        </div>
+        <div class="yj-modal-footer center-align">
+          <p>By signing up for Yap Jobs, you acknowledge that you have read and agree to yap Jobs Career's <a class="yj-simple-link" href="#!">Terms of Use</a> and <a class="yj-simple-link" href="#!">Privacy Policy.</a></p>
+          <!-- <a href="#!" class=" modal-action modal-close waves-effect waves-green btn yj-btn-green">Sign Up</a> -->
+        </div>
+      </div>
+    </div>
+
+    <div id="sign-up-form" class="modal yj-modal">
+      <div class="modal-content">
+        <div class="exit">
+          <div class="row row-clean">
+            <div class="col s6"><p>Email Sign Up</p></div>
+            <div class="col s6"><p class="right-align"><a href="#!"><span class="icon-cross2 modal-close"></span></a></p></div>
+          </div>
+        </div>
+        <div class="modal-header center-align">
+          <img class="yj-logo alt" src="images/yapjobs-logo-white.svg">
+        </div>
+        <div class="modal-form">
+          <div class="row">
+            <div class="col s12">
+              <div class="input-field col s12">
+                <input placeholder="Enter first name here" id="first_name" type="text" class="validate">
+                <label for="first_name">First Name</label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              <div class="input-field col s12">
+                <input placeholder="Enter last name here" id="first_name" type="text" class="validate">
+                <label for="first_name">Last Name</label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              <div class="input-field col s12">
+                <input placeholder="Enter email here" id="first_name" type="text" class="validate">
+                <label for="first_name">Email</label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              <div class="input-field col s12">
+                <input placeholder="Confirm email here" id="first_name" type="text" class="validate">
+                <label for="first_name">Confirm Email</label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              <div class="input-field">
+                <input id="password" type="password" class="validate" placeholder="Enter password here">
+                <label for="password">Password</label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              <div class="input-field">
+                <input id="password" type="password" class="validate" placeholder="Confirm password here">
+                <label for="password">Confirm Password</label>
+              </div>
+            </div>
+          </div>
+          <div class="row clean">
+            <div class="col s12">
+              <form action="#">
+                <p class="p-terms">
+                  <input name="group1" type="radio" id="test1" />
+                  <label for="test1">I Agree to the <a class="yj-simple-link" href="#!">Terms of Use</a> and <a class="yj-simple-link" href="#!">Privacy Policy.</a></label>
+                </p>
+              </form>
+            </div>
+          </div>
+          <div class="row row-clean">
+            <div class="col s12">
+              <a class="waves-effect waves-light btn yj-btn-green yj-btn-db btn-large yj-btn-signup-fix">Sign Up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END Modals -->
+
+    <!-- Hero -->
+    <section class="hero pricing-hero valign-wrapper">
+      <div class="container center-align valign">
+        <div class="row">
+          <div class="col s12">
+            <h1 class="yj-hero-title flow-text">Pricing Plans</h1>
+          </div>
+        </div>
+        <div class="row hide-on-small-only">
+          <div class="col s12">
+            <p class="hero-subtag alt">It is <span>FREE</span> to use YapJobs but when your ready we have 3 pretty awesome plans for you.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Hero -->
+
+    <!-- Pricing -->
+    <section class="pricing">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <div class="credit-banner credit-banner-white">
+              <p>You have 50 credits remaining</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col l4">
+            <div class="pricing-card pricing-card-grey">
+              <div class="row">
+                <div class="col s12">
+                  <div class="pricing-card-header">
+                    <h5>Credit Plan</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="row row-clean">
+                <div class="col s12">
+                  <p class="price p-clean"><i class="fa fa-gbp"></i> Credits</p>
+                </div>
+              </div>
+              <div class="row row-clean">
+                <div class="col s12">
+                  <div class="pricing-card-intro">
+                    <p class="p-clean">This plan is suited for those wishing to use the service on an adhoc basis</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row row-clean">
+                <div class="col s12">
+                  <div class="feature-title">
+                    <p class="p-clean">FEATURES</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row row-clean">
+                <div class="col s12">
+                  <ul class="pricing-table">
+                    <li><span class="icon-check"></span> Lorem Ipsum lorem ipsum lore ipsum</li>
+                    <li><span class="icon-check"></span> Lorem Ipsum lorem ipsum lore ipsum</li>
+                    <li><span class="icon-check"></span> Lorem Ipsum lorem ipsum lore ipsum</li>
+                    <li><span class="icon-check"></span> Lorem Ipsum lorem ipsum lore ipsum</li>
+                    <li><span class="icon-check"></span> Lorem Ipsum lorem ipsum lore ipsum</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12">
+                  <div class="upgrade-button">
+                    <a href="billing.html" class="waves-effect waves-light btn yj-btn-green yj-btn-db btn-large">Get Credits</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col l4">
+            <div class="pricing-card">
+              <div class="row">
+                <div class="col s12">
+                  <div class="pricing-card-header">
+                    <h5>Standard Plan</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="row row-clean">
+                <div class="col s12">
+                  <p class="price p-clean"><i class="fa fa-gbp"></i> 149</p>
+                </div>
+              </div>
+              <div class="row row-clean">
+                <div class="col s12">
+                  <div class="pricing-card-intro">
+                    <p class="p-clean">This plan is suited for those wishing to use the service on an adhoc basis</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row row-clean">
+                <div class="col s12">
+                  <div class="feature-title">
+                    <p class="p-clean">FEATURES</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row row-clean">
+                <div class="col s12">
+                  <ul class="pricing-table">
+                    <li><span class="icon-check"></span> Lorem Ipsum lorem ipsum lore ipsum</li>
+                    <li><span class="icon-check"></span> Lorem Ipsum lorem ipsum lore ipsum</li>
+                    <li><span class="icon-check"></span> Lorem Ipsum lorem ipsum lore ipsum</li>
+                    <li><span class="icon-check"></span> Lorem Ipsum lorem ipsum lore ipsum</li>
+                    <li><span class="icon-check"></span> Lorem Ipsum lorem ipsum lore ipsum</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12">
+                  <div class="upgrade-button">
+                    <a href="billing.html" class="waves-effect waves-light btn yj-btn-green yj-btn-db btn-large">Upgrade</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col l4">
+            <div class="pricing-card pricing-card-blue">
+              <div class="row">
+                <div class="col s12">
+                  <div class="pricing-card-header">
+                    <h5>Enterprise Plan</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="row row-clean">
+                <div class="col s12">
+                  <p class="price p-clean"><i class="fa fa-gbp"></i> 249 </p>
+                </div>
+              </div>
+              <div class="row row-clean">
+                <div class="col s12">
+                  <div class="pricing-card-intro">
+                    <p class="p-clean">This plan is suited for those wishing to use the service on an adhoc basis</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row row-clean">
+                <div class="col s12">
+                  <div class="feature-title">
+                    <p class="p-clean">FEATURES</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row row-clean">
+                <div class="col s12">
+                  <ul class="pricing-table">
+                    <li><span class="icon-check"></span> Lorem Ipsum lorem ipsum lore ipsum</li>
+                    <li><span class="icon-check"></span> Lorem Ipsum lorem ipsum lore ipsum</li>
+                    <li><span class="icon-check"></span> Lorem Ipsum lorem ipsum lore ipsum</li>
+                    <li><span class="icon-check"></span> Lorem Ipsum lorem ipsum lore ipsum</li>
+                    <li><span class="icon-check"></span> Lorem Ipsum lorem ipsum lore ipsum</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12">
+                  <div class="upgrade-button">
+                    <a href="billing.html" class="waves-effect waves-light btn yj-btn-green yj-btn-db btn-large">Upgrade</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <p class="center-align">If you are a recruiter please <a href="contact-us.html" class="waves-effect waves-light btn yj-btn yj-btn-green recruiter-btn">Get in touch</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Pricing -->
+
+    <!-- Partners -->
+    <section class="partners">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 center-align">
+            <p class="partner-intro alt">Yapjobs is a powerful tool for hospitality recruitment.<br>
+            We are working with leading businesses to find and recruit the right talent.</p>
+          </div>
+        </div>
+        <div class="row partner-logos">
+          <div class="col l2">
+            <img class="responsive-img" src="images/holiday-inn-logo.png">
+          </div>
+          <div class="col l2">
+            <img class="responsive-img" src="images/subway-logo.png">
+          </div>
+          <div class="col l2">
+            <img class="responsive-img" src="images/hilton-logo.png">
+          </div>
+          <div class="col l2">
+            <img class="responsive-img" src="images/gails-logo.png">
+          </div>
+          <div class="col l2">
+            <img class="responsive-img" src="images/hush-logo.png">
+          </div>
+          <div class="col l2">
+            <img class="responsive-img" src="images/cabana-logo.png">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Partners -->
+
+    <!-- Footer -->
+    <footer class="page-footer yj-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <a href="index.html"><img class="footer-logo" src="images/yapjobs-logo-white.svg" width="90px" height="45px"></a>
+            <h5 class="white-text">Find your job in London today</h5>
+            <ul class="footer-social">
+              <li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin fa-lg"></i></a></li>
+            </ul>
+            <!-- <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p> -->
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="about-us.html">About Us</a></li>
+              <li><a class="grey-text text-lighten-3" href="search-results.html">Jobs</a></li>
+              <li><a class="grey-text text-lighten-3 modal-trigger" href="#sign-in">Sign In</a></li>
+              <li><a class="grey-text text-lighten-3 modal-trigger" href="#sign-up">Sign Up</a></li>
+              <li><a class="grey-text text-lighten-3" href="contact-us.html">Contact Us</a></li>
+              <li><a class="grey-text text-lighten-3" href="terms.html">Terms and Conditions</a></li>
+              <li><a class="grey-text text-lighten-3" href="privacy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2015 Yap Jobs Limited
+        <!-- <a class="grey-text text-lighten-4 right footer-logo" href="#!"><img src="images/yapjobs-logo-white.svg" width="70px" height="35px"></a> -->
+        </div>
+      </div>
+    </footer>
+    <!-- END footer -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <script src="scripts/wow.min.js"></script>
+        <!-- endbuild -->
+
+    <!-- JS for the page -->
+    <script>
+      $('.button-collapse').sideNav({
+          menuWidth: 260, // Default is 240
+          edge: 'right', // Choose the horizontal origin
+          closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+        }
+      );
+
+      $('.datepicker').pickadate({
+        selectMonths: true, // Creates a dropdown to control month
+        selectYears: 15 // Creates a dropdown of 15 years to control year
+      });
+
+      var wow = new WOW(
+        {
+          boxClass:     'wow',      // animated element css class (default is wow)
+          animateClass: 'animated', // animation css class (default is animated)
+          offset:       0,          // distance to the element when triggering the animation (default is 0)
+          mobile:       true,       // trigger animations on mobile devices (default is true)
+          live:         true,       // act on asynchronously loaded content (default is true)
+          callback:     function(box) {
+            // the callback is fired every time an animation is started
+            // the argument that is passed in is the DOM node being animated
+          }
+        }
+      );
+      wow.init();
+
+      $(document).ready(function(){
+        // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+        $('.modal-trigger').leanModal();
+      });
+    </script>
+    <!-- END JS for the page
+</body>
+</html>

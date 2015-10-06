@@ -23,6 +23,12 @@
 					@include transition(.2s);
 				}
 			}
+
+			&.exit-border {
+				margin-bottom: 2rem;
+				background: $yj-light-grey;
+				padding: 1rem 2rem;
+			}
 		}
 
 		.modal-btns {
@@ -72,6 +78,26 @@
 
 				&.modal-h4-fix {
 					margin-bottom: 0.4rem;
+				}
+			}
+
+			&.modal-content-alt {
+				padding: 0;
+
+				.col-modal-clean {
+					padding: 0;
+
+					.input-field-clean {
+						padding: 0;
+					}
+
+					label {
+						left: 0;
+					}
+				}
+
+				.modal-message-wrapper {
+					padding: 0 2rem 1.2rem 2rem;
 				}
 			}
 		}

@@ -1,6 +1,16 @@
 	/*Tabs*/
 
 	.yj-tabs {
+		li {
+			a.yj-tabs-blue {
+				color: $yj-blue;
+
+				&:hover {
+					color: lighten($yj-blue, 10%);
+				}
+			}
+		}
+
 		ul.tabs {
 			li.tab {
 

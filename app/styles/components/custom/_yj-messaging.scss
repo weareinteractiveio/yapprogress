@@ -1,0 +1,144 @@
+	/*Messsaging*/
+
+	section.messaging {
+
+		.yj-messaging-container {
+			position: relative;
+			margin-bottom: 6rem;
+			box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+			.header-col {
+				padding-right: 0;
+				border-right: 1px solid $yj-very-light-grey;
+
+				&.header-col-alt {
+					padding-left: 0;
+					border: 0;
+				}
+			}
+
+			.messaging-col {
+				height: 568px;
+				overflow: auto;
+				padding-right: 0;
+			}
+
+			.messaging-column-breaker  {
+				float: left;
+				width: 1px;
+				height: 568px;
+				margin-left: -1px;
+				background: $yj-very-light-grey;
+			}
+
+			.messaging-header {
+				padding: 0.5rem;
+				text-align: center;
+				border-bottom: 1px solid $yj-very-light-grey;
+
+				p {
+					text-transform: uppercase;
+					font-size: 0.9rem;
+					margin: 0;
+				}
+			}
+
+			ul.recent-list {
+				margin: 0;
+
+				li {
+					padding: 1rem;
+					border-bottom: 1px solid $yj-very-light-grey;
+
+					&:last-child {
+						border-bottom: 0;
+					}
+
+					&:hover {
+						background-color: $yj-very-light-grey;
+						cursor: pointer;
+					}
+
+					.recent-image {
+						float: left;
+						min-height: 80px;
+
+						img {
+							width: 40px;
+							height: 40px;
+							margin-right: 1rem;
+						}
+					}
+
+					.recent-text {
+						min-height: 80px;
+
+						p {
+							margin: 0;
+							font-size: 0.9rem;
+							line-height: 1.2rem;
+
+							span {
+								font-weight: 400;
+								color: $primary-color;
+							}
+
+							&.p-name {
+								margin-bottom: 0.3rem;
+								font-weight: 400;
+							}
+
+							&.p-job {
+								margin-bottom: 0.4rem;
+							}
+
+							&.p-convo {
+								font-size: 0.8rem;
+								color: $yj-even-less-light-grey;
+							}
+						}
+					}
+				}
+			}
+
+			.convo-col {
+				height: 568px;
+				padding-left: 0;
+				overflow-x: scroll;
+
+				.convo-footer {
+					position: absolute;
+					bottom: 0;
+					right: 0;
+					left: 25%;
+					padding: 0 1rem;
+					background: white;
+					border-top: 1px solid $yj-very-light-grey;
+				}
+
+				.convo-wrapper {
+				}
+
+				.convo-message-wrapper {
+					padding: 1rem;
+					border-top: 1px solid $yj-very-light-grey;
+
+					&:first-child {
+						border-top: 0;
+					}
+
+					.p-name-convo {
+						font-weight: 400;
+					}
+
+					.p-message-convo {
+						font-size: 0.9rem;
+					}
+
+					&.convo-message-wrapper-end {
+						margin-bottom: 90px;
+					}
+				}
+			}
+		}
+	}

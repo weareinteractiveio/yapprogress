@@ -1,0 +1,113 @@
+	/*Pricing*/
+
+	section.pricing {
+		padding: 4rem;
+		background-color: $yj-very-light-grey;
+
+		.pricing-card {
+			background-color: $primary-color;
+			color: white;
+			box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+			text-align: center;
+
+			&.pricing-card-grey {
+				background-color: $yj-grey;
+
+				.feature-title {
+					background-color: darken($yj-grey, 8%);
+					border-bottom: 1px solid darken($yj-grey, 10%);
+				}
+
+				ul.pricing-table {
+					background-color: darken($yj-grey, 5%);
+
+					li {
+						border-top: 1px solid darken($yj-grey, 10%);
+					}
+				}
+
+				.upgrade-button {
+					a {
+						background-color: darken($yj-grey, 20%);
+					}
+				}
+			}
+
+			&.pricing-card-blue {
+				background-color: $yj-blue;
+
+				.feature-title {
+					background-color: darken($yj-blue, 8%);
+					border-bottom: 1px solid darken($yj-blue, 10%);
+				}
+
+				ul.pricing-table {
+					background-color: darken($yj-blue, 5%);
+
+					li {
+						border-top: 1px solid darken($yj-blue, 10%);
+					}
+				}
+
+				.upgrade-button {
+					a {
+						background-color: darken($yj-blue, 20%);
+					}
+				}
+			}
+
+			h5 {
+				color: white;
+			}
+
+			.pricing-card-header {
+				padding: 1rem;
+			}
+
+			.pricing-card-intro {
+				padding: 2rem;
+			}
+
+			p.price {
+				font-size: 4rem;
+				font-weight: 500;
+			}
+
+			.feature-title {
+				background-color: darken($primary-color, 8%);
+				border-bottom: 1px solid darken($primary-color, 10%);
+				padding: 2rem;
+			}
+
+			ul.pricing-table {
+				margin: 0;
+				background-color: darken($primary-color, 5%);
+				text-align: left;
+
+				li {
+					padding: 1rem 3rem;
+					border-top: 1px solid darken($primary-color, 10%);
+
+					&:first-child {
+						border-top: 0;
+					}
+
+					span {
+						margin-right: 10px;
+					}
+				}
+			}
+
+			.upgrade-button {
+				padding: 2rem;
+
+				a {
+					background-color: darken($primary-color, 20%);
+				}
+			}
+		}
+
+		.recruiter-btn {
+			margin-left: 8px;
+		}
+	}
