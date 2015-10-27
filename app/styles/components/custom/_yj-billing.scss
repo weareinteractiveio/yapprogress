@@ -111,4 +111,16 @@
 			background-color: white;
 		}
 
+		&.credit-banner-red {
+			border-left: 3px solid $error-color;
+		}
+
+	}
+
+	.accepted {
+		margin-right: 5px;
+	}
+
+	.card-error {
+		color: $error-color;
 	}

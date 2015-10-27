@@ -93,16 +93,45 @@
 	}
 
 	.our-app {
+		position: relative;
 		background: url(images/our-app.jpg) no-repeat center center;
 		background-size: cover;
 		color: white;
+
+		&:after {
+			content: "";
+			background-color: black;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			opacity: 0.6;
+		}
 
 		.our-app-column {
 			padding: 20px;
 		}
 
-		img {
+		img.apple {
 			margin-bottom: -6px;
+		}
+
+		.app-image-container {
+			text-align: right;
+			margin-bottom: 6rem;
+
+			@media #{$small-and-down} {
+				text-align: center;
+				margin-bottom: 2rem;
+			}
+
+			img.app-image {
+				// margin-bottom: 6rem;
+				// -ms-transform: rotate(-9deg); /* IE 9 */
+	   //  		-webkit-transform: rotate(-9deg); /* Chrome, Safari, Opera */
+	   //  		transform: rotate(-9deg);
+			}
 		}
 
 		h5 {
@@ -205,4 +234,13 @@
 				margin-top: 1.5rem;
 			}
 		}
+	}
+
+	.fourzerofour {
+		margin: 2rem 0 4rem 0;
+	}
+
+	.yj-app-container {
+		position: relative;
+		z-index: 1;
 	}

@@ -76,22 +76,23 @@
             <ul class="right hide-on-med-and-down">
               <li><a href="index.html"><span class="icon-home2 yj-icon icon-space"></span> Home</a></li>
               <li><a href="employer-dashboard.html"><span class="icon-icons2 yj-icon icon-space"></span> Dashboard</a></li>
-              <li><a href="billing.html"><span class="icon-coin-pound yj-icon icon-space"></span> 50 Credits</a></li>
-              <li>
+              <li><a href="billing.html"><span class="icon-coin-pound yj-icon icon-space"></span> 20 Credits</a></li>
+              <!-- <li>
                 <a class="nav-notification" href="messaging.html">
                   <span class="icon-envelope yj-icon icon-space"></span>
                   <p class="yj-notification">4</p>
                 </a>
-              </li>
+              </li> -->
               <li>
                 <a class="dropdown-button nav-notification" href="#!" data-activates="dropdown-notifications">
                   <span class="icon-alarm yj-icon icon-space"></span>
-                  <p class="yj-notification">10</p>
+                  <p class="yj-notification" id="notificationAnimate">10</p>
                 </a>
               </li>
               <!-- <li><a href="sass.html"><span class="icon-speed-medium"></span></a></li> -->
               <!-- Dropdown Trigger -->
               <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Cabana <span class="icon-chevron-down alt"></span></a></li>
+              <li><a href="postajob.html" class="waves-effect waves-light btn yj-btn-green yj-nav-btn-alt">Post A Job</a></li>
             </ul>
           </div>
         </div>
@@ -271,8 +272,8 @@
         </div>
         <div class="modal-message-wrapper">
         <div class="row row-clean">
-          <h5>Thankyou</h5>
-          <p>Your account has been upgraded</p>
+          <h5 class="text-green">Yippie!</h5>
+          <p>Your account has been upgraded. Your next automatic payment will be on the 1st November 2015.</p>
         </div>
       </div>
       </div>
@@ -289,7 +290,8 @@
         <div class="modal-message-wrapper">
           <div class="row row-clean">
             <div class="col s12">
-              <p>Sorry to see you go, was it something we said :( Thank you for using our service and we hope to see you back soon.</p>
+              <p>Sorry to see you go, was it something we said <span class="icon-sad"></span>. Thank you for using our service and we hope to see you back soon.</p>
+              <p>Your last payment will be on the 1st November 2015.</p>
             </div>
           </div>
           <div class="row row-clean">
@@ -299,6 +301,26 @@
                 <li><a class="waves-effect waves-light btn yj-btn yj-btn-red modal-close">Confirm</a></li>
               </ul>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="welcome" class="modal yj-modal yj-modal-max-height">
+      <div class="modal-content modal-family center-align">
+        <div class="mf-content-on-top">
+          <p class="mf-modal-header">WELCOME!</p>
+          <p class="mf-intro-text intro-text-sad">Your payment was successful. Welcome to the family, great to have you on-board. Have a hug from the team&hellip;</p>
+          <!-- <p class="p-no-marin-top"><span class="icon-happy yj-icon yj-icon-green yj-icon lg"></span></p> -->
+          <!-- <div class="mf-value">
+            <p><span>£298</span> off <span>STANDARD</span> plan!</p>
+          </div> -->
+          <!-- <p class="mf-intro-text">Here is a high five in advance.</p> -->
+          <div class="mf-image mf-image-hug">
+            <!-- <span class="icon-play-circle"></span> -->
+          </div>
+          <div class="get-yapping">
+            <a href="employer-dashboard.html" class="waves-effect waves-light btn yj-btn yj-btn-db yj-btn-green btn-large">Go To Dashboard</a>
           </div>
         </div>
       </div>
@@ -341,40 +363,49 @@
         <div class="row">
           <div class="col s12">
             <ul class="tabs yj-tabs">
-              <li class="tab col s2"><a href="#overview" class="active yj-tabs-blue">Overview</a></li>
-              <li class="tab col s2"><a href="#history" class="yj-tabs-blue">History</a></li>
-              <li class="tab col s2"><a href="#settings" class="yj-tabs-blue">Settings</a></li>
-              <li class="tab col s2"><a href="#contacts" class="yj-tabs-blue">Contacts</a></li>
-              <li class="tab col s2"><a href="#plans" class="yj-tabs-blue">Plans</a></li>
-              <li class="tab col s2"><a href="#cards" class="yj-tabs-blue">Cards</a></li>
+              <!-- <li class="tab col l3 s1"><a href="#overview" class="active yj-tabs-blue">Overview</a></li> -->
+              <li class="tab col l4 s1"><a href="#plans" class="yj-tabs-blue">Plans &amp; Account</a></li>
+              <li class="tab col l4 s1"><a href="#settings" class="yj-tabs-blue">Business Details</a></li>
+              <li class="tab col l4 s1"><a href="#history" class="yj-tabs-blue">Transaction History</a></li>
+              <!-- <li class="tab col s2"><a href="#contacts" class="yj-tabs-blue">Contacts</a></li> -->
+              <!-- <li class="tab col s2"><a href="#cards" class="yj-tabs-blue">Cards</a></li> -->
             </ul>
           </div>
-          <div id="overview" class="col l6 offset-l3 s12 billing-content-container">
-            <div class="row row-clean">
+          <!-- <div id="overview" class="col l6 offset-l3 s12 billing-content-container">
+            <div class="row">
               <div class="col s12">
                 <ul class="ctc-list-hero">
                   <li><p class="plan">You currently have <span>50 Yap credits remaining</span></p></li>
                   <li><a href="#plans" class="waves-effect waves-light btn yj-btn yj-btn-green yj-btn-global-sm">Add Credits</a></li>
                 </ul>
+                <div class="credit-banner credit-banner-red">
+                  <p>You have 0 Credits on the Credit Plan</p>
+                </div>
               </div>
             </div>
             <div class="row">
               <div class="col s12">
-                <h5>Upgrade</h5>
+                <h5>Upgrade to Standard Plan</h5>
                 <ul class="billing-list billing-list-margin">
+                  <li>Save up to £298</li>
+                  <li>2 Months Free!</li>
                   <li>Unlimited job posts</li>
                   <li>Unlimited Applicants</li>
                   <li>Unlimited locations</li>
                 </ul>
-                <p><a class="waves-effect waves-light btn yj-btn yj-btn-green yj-btn-md">Upgrade</a></p>
+                <p><a class="waves-effect waves-light btn yj-btn yj-btn-green yj-btn-md">Upgrade to Standard</a></p>
               </div>
             </div>
             <div class="row">
               <div class="col s12">
                 <h5>Account Status</h5>
                 <ul class="billing-list billing-list-clean">
-                  <li>Your account will re-new on the <span>10th October 2015</span></li>
+                  <li>
+                    <input name="misc" type="radio" id="circle" checked/>
+                    <label for="circle">Active</label>
+                  </li>
                 </ul>
+                <p>Your next payment will be on the <span>10th October 2015</span></p>
               </div>
             </div>
             <div class="row">
@@ -390,10 +421,10 @@
                   <li>Il exerum veriatiossim sinihil lendis ipsam rernat fugitium utenisqui cupta quatur acest.</li>
                 </ul>
               </div>
-            </div> -->
-          </div>
+            </div>
+          </div> -->
           <div id="history" class="col l6 offset-l3 s12 billing-table">
-            <h5>Payment History</h5>
+            <h5>Transaction History</h5>
             <table class="responsive-table yj-table yj-billing-table">
               <thead>
                 <tr>
@@ -483,7 +514,7 @@
               </div>
             </div>
           </div>
-          <div id="contacts" class="col l8 offset-l2 s12 billing-content-container">
+          <!-- <div id="contacts" class="col l8 offset-l2 s12 billing-content-container">
             <div class="row">
               <div class="col s12">
                 <h5>Contacts</h5>
@@ -549,24 +580,24 @@
                 <a class="waves-effect waves-light btn yj-btn yj-btn-green yj-form-btn">Add</a>
               </div>
             </div>
-          </div>
+          </div> -->
           <div id="plans" class="col s12 billing-content-container">
-            <div class="row">
+            <!-- <div class="row">
               <div class="col l6 offset-l3 s12">
-                <div class="credit-banner">
-                  <p>You currently have 50 Credits</p>
+                <div class="credit-banner credit-banner-red">
+                  <p>You have 0 Credits</p>
                 </div>
               </div>
-            </div>
-            <div class="row">
+            </div> -->
+            <!-- <div class="row">
               <div class="col l6 offset-l3 s12">
                 <h5>Add credits or select a plan</h5>
               </div>
             </div>
-            <div class="row">
+            <div class="row"> -->
               <div class="col l6 offset-l3 s12">
                 <form action="#">
-                  <p>Select credit option</p>
+                  <!-- <p>Select credit option</p>
                   <p>
                     <input name="group1" type="radio" id="credit1" />
                     <label for="credit1">Add 50 credits for £10</label>
@@ -578,24 +609,80 @@
                   <p>
                     <input name="group1" type="radio" id="credit3" />
                     <label for="credit3">Add 200 credits £39</label>
-                  </p>
-                  <div class="yj-breaker"></div>
-                  <div class="row">
+                  </p> -->
+                  <!-- <div class="yj-breaker"></div> -->
+                  <!-- <div class="row">
                     <div class="col s12">
                       <h6>Compare plans and features <a href="pricing-page.html">Pricing Page</a></h6>
                     </div>
-                  </div>
+                  </div> -->
                   <div class="row">
                     <div class="col s12">
-                      <p>Select a plan</p>
-                      <select class="browser-default">
-                        <option value="1" selected>Standard</option>
-                        <option value="2">Enterpise</option>
-                      </select>
+                      <h5>Select a plan</h5>
                     </div>
                   </div>
-                  <div class="yj-breaker"></div>
+                  <!-- <div class="row">
+                    <div class="col s12">
+                      <select class="browser-default">
+                        <option value="1" selected>Standard Plan</option>
+                        <option value="2">Enterpise Plan</option>
+                        <option value="3">Credit Plan</option>
+                      </select>
+                    </div>
+                  </div> -->
                   <div class="row">
+                    <div class="col s12">
+                    <form action="#">
+                      <div class="switch yj-switch right-align">
+                        <label>
+                          Annual
+                          <input type="checkbox">
+                          <span class="lever"></span>
+                          Monthly
+                        </label>
+                      </div>
+                      <!-- <div class="yj-label-group">
+                        <p>
+                          <input name="group1" type="radio" id="plan1" />
+                          <label for="plan1" class="yj-label-ugly">Credit Plan (Current plan)</label>
+                        </p>
+                        <p class="plan-price plan-price-ugly p-clean"><span>£200</span> for 20 applicant credits</p>
+                      </div> -->
+                      <!-- <div class="yj-breaker dotted"></div> -->
+                      <div class="yj-label-group">
+                        <p>
+                          <input name="group1" type="radio" id="plan2" checked/>
+                          <label for="plan2" class="yj-label">Standard Plan (Upgrade)</label>
+                        </p>
+                        <p class="plan-price p-clean"><span>£124</span> a month - £298 discount</p>
+                        <p class="plan-detail">Unlimited job posts in upto 3 locations</p>
+                      </div>
+                      <div class="yj-label-group">
+                        <p>
+                          <input name="group1" type="radio" id="plan3" />
+                          <label for="plan3" class="yj-label">Enterprise Plan (Upgrade)</label>
+                        </p>
+                        <p class="plan-price p-clean"><span>£249</span> a month - £598 discount</p>
+                        <p class="plan-detail">Unlimited job posts in unlimited locations</p>
+                      </div>
+                      <div class="yj-breaker dotted"></div>
+                      <div class="yj-label-group">
+                        <p>
+                          <input name="group1" type="radio" id="plan1" />
+                          <label for="plan1" class="yj-label-ugly">Credit Plan (Current plan)</label>
+                        </p>
+                        <p class="plan-price plan-price-ugly p-clean"><span>£200</span> for 20 applicant credits</p>
+                      </div>
+                    </form>
+                    </div>
+                  </div>
+                  <!-- <div class="row">
+                    <div class="col s12">
+                      <h6>Compare plans and features <a href="pricing-page.html">Pricing Page</a></h6>
+                    </div>
+                  </div> -->
+                  <!-- <div class="yj-breaker"></div> -->
+                  <!-- <div class="row">
                     <div class="col s12">
                       <p>Select billing frequency</p>
                       <select class="browser-default">
@@ -603,9 +690,15 @@
                         <option value="2">Monthly £149</option>
                       </select>
                     </div>
-                  </div>
+                  </div> -->
+                  <!-- <div class="yj-breaker"></div> -->
+                  <!-- <div class="row">
+                    <div class="col s12">
+                      <a class="waves-effect waves-light btn yj-btn yj-btn-green">Upgrade</a>
+                    </div>
+                  </div> -->
                   <div class="yj-breaker"></div>
-                  <div class="row">
+                  <!-- <div class="row">
                     <div class="col s12">
                       <p><span class="icon-lock yj-icon yj-icon-green"></span> Select payment card</p>
                       <ul class="ctc-list-hero">
@@ -619,24 +712,132 @@
                         <option value="2">Card ending in xxxx-1648</option>
                       </select>
                     </div>
-                  </div>
+                  </div> -->
+                  <form class="#">
+                    <div class="row row-clean">
+                      <div class="col s12">
+                        <h5>Payment method <i class="fa fa-lock yj-icon yj-icon-green"></i></h5>
+                        <ul class="ctc-list-hero">
+                          <li><i class="fa fa-cc-visa fa-lg"></i></li>
+                          <li><i class="fa fa-cc-mastercard fa-lg"></i></li>
+                          <li><i class="fa fa-cc-amex fa-lg"></i></li>
+                          <li><i class="fa fa-cc-stripe fa-lg"></i></li>
+                          <li class="go-cardless"><span>Go</span>Cardless</li>
+                          <!-- <li><a class="waves-effect waves-light btn yj-btn yj-btn-green yj-btn-global-sm">Add Card</a></li> -->
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- <div class="row">
+                      <div class="col s12">
+                        <p class="card-error">Sorry the card has not been recognised. Please try again.</p>
+                      </div>
+                    </div> --> 
+                    <div class="row">
+                      <div class="col s12">
+                        <select class="browser-default" id="cards">
+                          <option value="1" selected>Select payment method</option>
+                          <option value="2">Credit card</option>
+                          <option value="3">Bank card</option>
+                          <option value="4">xxxx-xxxx-xxxx-0978</option>
+                        </select>
+                      </div>
+                    </div>
+                    <!-- <div class="row">
+                      <div class="col s12">
+                        <p>Or add a new card</p>
+                      </div>
+                    </div> -->
+                    <div class="card-details-wrapper">
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <input placeholder="Enter name on card here" id="card_name" type="text" class="validate">
+                          <label for="card_name">Name on Card</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <input placeholder="Enter card number here" id="card_number" type="text" class="validate">
+                          <label for="card_number">Card Number</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col s6">
+                          <label>Expiry Month</label>
+                          <select class="browser-default">
+                            <option value="" disabled selected>Select month</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                          </select>
+                        </div>
+                        <div class="col s6">
+                          <label>Expiry Year</label>
+                          <select class="browser-default">
+                            <option value="" disabled selected>Select year</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <span class="icon-credit-card yj-icon yj-icon-green prefix"></span>
+                          <input placeholder="Enter CVV number here" id="cvv_number" type="text" class="validate">
+                          <label for="cvv_number">CVV Number</label>
+                        </div>
+                      </div>  
+                    </div>
+                    <div class="row" id="nextPayment">
+                      <div class="col s12">
+                        <p class="p-clean">Next payment will be on <span>26/10/2015</span> for <span>£149/mo</span></p>
+                      </div>
+                    </div>
+                    <div class="row" id="deleteCard">
+                      <div class="col s12">
+                        <a class="waves-effect waves-light btn yj-btn sm yj-btn-classy yj-btn-classy-grey">delete payment method</a>
+                      </div>
+                    </div>
+                    <!-- <div class="yj-breaker"></div> -->
+                    <div class="row">
+                      <div class="col s12">
+                        <ul class="ctc-list-hero">
+                          <li><a class="waves-effect waves-light btn yj-btn yj-btn-grey" id="cardEdit">Edit</a></li>
+                          <li><a class="waves-effect waves-light btn yj-btn yj-btn-green" id="cardSave">Save</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- <div class="row">
+                      <div class="col s12">
+                        <p><span class="icon-check yj-icon yj-icon-green md accepted"></span> Card accepted</p>
+                      </div>
+                    </div> -->
+                  </form>
                   <div class="yj-breaker"></div>
                   <div class="row">
                     <div class="col s12">
-                      <p>Total:</p>
-                      <p class="total">£149 billed monthly</p>
+                      <p class="switch-text">Switch to annual to save <span>£298!</span></p>
+                      <div class="switch yj-switch">
+                        <label>
+                          Annual
+                          <input type="checkbox">
+                          <span class="lever"></span>
+                          Monthly
+                        </label>
+                      </div>
+                      <p class="total p-clean">Total: £1490 billed annually</p>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col sm12">
-                      <p class="billing-btn-push"><a href="#thankyou-modal" class="waves-effect waves-light btn yj-btn yj-btn-green modal-trigger">Confirm Payment</a></p>
+                      <p class="billing-btn-push"><a href="#welcome" class="waves-effect waves-light btn yj-btn yj-btn-green modal-trigger">Confirm Payment</a></p>
                     </div>
                   </div>
                 </form>
               </div>
             </div>
           </div>
-          <div id="cards" class="col s12 billing-content-container">
+          <!-- <div id="cards" class="col s12 billing-content-container">
             <div class="row">
               <div class="col l8">
                 <div class="row">
@@ -716,9 +917,9 @@
                     <a class="waves-effect waves-light btn yj-btn yj-btn-green yj-btn-db yj-btn-md">ADD CARD</a>
                   </div>
                 </div>
-              </div>
+              </form>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -777,6 +978,7 @@
 
         <!-- build:js scripts/main.js -->
         <script src="scripts/main.js"></script>
+        <script src="scripts/bootstrap.min.js"></script>
         <!-- endbuild -->
 
     <!-- JS for the page -->
@@ -796,6 +998,30 @@
       $(document).ready(function(){
         // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
         $('.modal-trigger').leanModal();
+
+        $('#cardSave').click(function() {
+          $('.card-details-wrapper').hide();
+          $('#cards').val(4);
+          $('#deleteCard').show();
+          $('#nextPayment').show();
+        });
+
+        $('#cardEdit').click(function() {
+          $('.card-details-wrapper').show();
+        });
+
+        $('#deleteCard').click(function() {
+          $('#cards').val(1);
+          $('#nextPayment').hide();
+          $(this).hide();
+        });
+         
+        $('#cards').change(function() {
+          $('select option:selected').each(function() {
+            $('.card-details-wrapper').show();
+            $('#deleteCard').hide();
+          });
+        });
       });
     </script>
     <!-- END JS for the page

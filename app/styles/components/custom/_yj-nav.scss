@@ -249,6 +249,10 @@
 				 			color: darken($primary-color, 15%);
 				 			@include transition(.2s);
 				 		}
+
+				 		&.yj-navlink-alt {
+				 			padding-right: 0;
+				 		}
 				 	}
 				 }
 			}
@@ -269,4 +273,10 @@
 		.yj-nav-slideout-btn {
 			margin-left: 1rem;
 		}
+	}
+
+	#notificationAnimate {
+		-moz-animation-iteration-count: 2;
+		-webkit-animation-iteration-count: 2;
+		animation-iteration-count: 2;
 	}

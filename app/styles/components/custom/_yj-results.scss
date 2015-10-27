@@ -129,4 +129,13 @@
 				margin-top: 40px;
 			}
 		}
+
+		p.business-name {
+			text-align: center;
+			a {
+				color: $primary-color;
+				text-decoration: underline;
+				text-transform: uppercase;
+			}
+		}
 	}

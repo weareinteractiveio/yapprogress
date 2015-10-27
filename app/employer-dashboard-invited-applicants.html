@@ -112,7 +112,7 @@
     <!-- END Page Title -->
 
     <!-- Jobs Table -->
-    <section class="applicants-list">
+    <section class="applicants-list hide-on-small-only">
       <div class="container yj-dashboard-container">
         <div class="row">
           <div class="col s12 m12 l9">
@@ -120,10 +120,10 @@
               <div class="row">
                 <div class="col s6 m6 l3">
                   <select class="browser-default yj-table-select">
-                    <option value="1">To Review</option>
+                    <option value="1" selected>To Review</option>
                     <option value="2">Reviewed</option>
                     <option value="3">Shortlist</option>
-                    <option value="4" selected>Rejected</option>
+                    <option value="4">Rejected</option>
                     <option value="5">Scheduled Interviews</option>
                     <!-- <option value="6">Contacted</option> -->
                   </select>
@@ -204,6 +204,10 @@
               </div> -->
               <div class="row row-clean">
                 <div class="col s12">
+                 <!--  <div class="invite-applicant-container">
+                    <p>Whilst you are waiting for your applicants to apply, why not invite them!</p>
+                    <a href="search-results-applicants.html" class="waves-effect waves-light btn yj-btn yj-btn-green">Invite Applicants</a>
+                  </div> -->
                   <table class="hoverable responsive-table yj-table">
                     <thead>
                       <tr>
@@ -212,7 +216,7 @@
                           <th data-field="location">Location</th>
                           <th data-field="response-time">Match Score</th>
                           <th data-field="availability">Availibility</th>
-                          <th data-field="actions">Actions</th>
+                          <th data-field="actions">Applied</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -227,10 +231,10 @@
                         </td>
                         <td>Full Time</td>
                         <td>
-                          <ul class="table-actions">
-                            <!-- Dropdown Trigger -->
+                          Not responded
+                          <!-- <ul class="table-actions">
                             <li><a class="dropdown-button" href="#!" data-activates="applicant-actions">Actions <span class="icon-chevron-down yj-icon xsm icon-space alt"></span></a></li>
-                          </ul>
+                          </ul> -->
                         </td>
                       </tr>
                       <tr>
@@ -239,15 +243,15 @@
                         <td>Central London</td>
                         <td>
                           <div class="progress yj-progress">
-                            <div class="determinate yj-determinate" style="width: 70%"></div>
+                            <div class="determinate yj-determinate" style="width: 50%"></div>
                           </div>
                         </td>
                         <td>Full Time</td>
                         <td>
-                          <ul class="table-actions">
-                            <!-- Dropdown Trigger -->
+                          Rejected
+                          <!-- <ul class="table-actions">
                             <li><a class="dropdown-button" href="#!" data-activates="applicant-actions">Actions <span class="icon-chevron-down yj-icon xsm icon-space alt"></span></a></li>
-                          </ul>
+                          </ul> -->
                         </td>
                       </tr>
                       <tr>
@@ -256,15 +260,15 @@
                         <td>Central London</td>
                         <td>
                           <div class="progress yj-progress">
-                            <div class="determinate yj-determinate" style="width: 70%"></div>
+                            <div class="determinate yj-determinate" style="width: 80%"></div>
                           </div>
                         </td>
                         <td>Full Time</td>
-                        <td>
-                          <ul class="table-actions">
-                            <!-- Dropdown Trigger -->
+                        <td class="invite-applied-success">
+                          Yes
+                          <!-- <ul class="table-actions">
                             <li><a class="dropdown-button" href="#!" data-activates="applicant-actions">Actions <span class="icon-chevron-down yj-icon xsm icon-space alt"></span></a></li>
-                          </ul>
+                          </ul> -->
                         </td>
                       </tr>
                     </tbody>
@@ -306,13 +310,13 @@
               <li class="divider"></li>
               <li><a href="employer-dashboard-applicants.html" class="applicant-nav-highlight">New Applicants <span class="right">18</span></a></li>
               <li class="divider"></li>
-              <li><a href="employer-dashboard-invited-applicants.html">Invited <span class="right">4</span></a></li>
+              <li><a href="employer-dashboard-invited-applicants.html" class="applicant-nav-active">Invited <span class="right">4</span></a></li>
               <li class="divider"></li>
               <li><a href="employer-dashboard-applicants-reviewed.html">Reviewed <span class="right">5</span></a></li>
               <li class="divider"></li>
               <li><a href="employer-dashboard-applicants-shortlist.html" id="shortlist-interaction-react">Shortlist <span class="right">3</span></a></li>
               <li class="divider"></li>
-              <li><a href="employer-dashboard-applicants-rejected.html" id="reject-interaction-react" class="applicant-nav-active">Rejected <span class="right">7</span></a></li>
+              <li><a href="employer-dashboard-applicants-rejected.html" id="reject-interaction-react">Rejected <span class="right">7</span></a></li>
               <li class="divider"></li>
               <li><a href="employer-dashboard-applicants-scheduled-interviews.html" id="interview-interaction-react">Scheduled Interviews <span class="right">2</span></a></li>
               <li class="divider"></li>
@@ -325,6 +329,112 @@
     </section>
     <!-- END Jobs Table -->
 
+    <!-- Applicant table mobile only -->
+    <section class="results hide-on-med-and-up">
+      <div class="container yj-results-container">
+        <div class="row">
+          <div class="col s12">
+            <div class="row">
+              <div class="col m12 s12">
+                <div class="card yj-card">
+                  <div class="card-content">
+                    <div class="row clean">
+                      <div class="col m1 s4"><img class="responsive-img circle" src="images/shahzad.jpg"></div>
+                      <div class="col m2 s8">
+                        <div class="yj-name">
+                          <p class="first-name">Shahzad</p><p class="last-name">Ali</p></div>
+                        </div>
+                      <div class="col m2 s12 center-align blue-panel-wrapper">
+                        <div class="blue-panel alt center-align">
+                          <p><span class="icon-map-marker yj-icon sm"></span> 11 miles away</p>
+                        </div>
+                      </div>
+                      <div class="col m4 s12 blue-panel-wrapper">
+                        <div class="blue-panel alt center-align">
+                          <p class="center-align">Match Score</p>
+                          <div class="progress yj-progress">
+                            <div class="determinate yj-determinate" style="width: 70%"></div>
+                          </div>
+                        </div>
+                        <div class="blue-panel alt center-align">
+                          <p>Available <span>Full Time</span></p>
+                        </div>
+                      </div>
+                      <div class="col m3 s12"><p><a href="#contact-credit" class="waves-effect waves-light btn yj-btn-green yj-btn-db btn-adjust modal-trigger">Contact</a></p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col m12 s12">
+                <div class="card yj-card">
+                  <div class="card-content">
+                    <div class="row clean">
+                      <div class="col m1 s4"><img class="responsive-img circle" src="images/shahzad.jpg"></div>
+                      <div class="col m2 s8">
+                        <div class="yj-name">
+                          <p class="first-name">Shahzad</p><p class="last-name">Ali</p></div>
+                        </div>
+                      <div class="col m2 s12 center-align blue-panel-wrapper">
+                        <div class="blue-panel alt center-align">
+                          <p><span class="icon-map-marker yj-icon sm"></span> 11 miles away</p>
+                        </div>
+                      </div>
+                      <div class="col m4 s12 blue-panel-wrapper">
+                        <div class="blue-panel alt center-align">
+                          <p class="center-align">Match Score</p>
+                          <div class="progress yj-progress">
+                            <div class="determinate yj-determinate" style="width: 70%"></div>
+                          </div>
+                        </div>
+                        <div class="blue-panel alt center-align">
+                          <p>Available <span>Full Time</span></p>
+                        </div>
+                      </div>
+                      <div class="col m3 s12"><p><a href="#contact-credit" class="waves-effect waves-light btn yj-btn-green yj-btn-db btn-adjust modal-trigger">Contact</a></p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col m12 s12">
+                <div class="card yj-card">
+                  <div class="card-content">
+                    <div class="row clean">
+                      <div class="col m1 s4"><img class="responsive-img circle" src="images/shahzad.jpg"></div>
+                      <div class="col m2 s8">
+                        <div class="yj-name">
+                          <p class="first-name">Shahzad</p><p class="last-name">Ali</p></div>
+                        </div>
+                      <div class="col m2 s12 center-align blue-panel-wrapper">
+                        <div class="blue-panel alt center-align">
+                          <p><span class="icon-map-marker yj-icon sm"></span> 11 miles away</p>
+                        </div>
+                      </div>
+                      <div class="col m4 s12 blue-panel-wrapper">
+                        <div class="blue-panel alt center-align">
+                          <p class="center-align">Match Score</p>
+                          <div class="progress yj-progress">
+                            <div class="determinate yj-determinate" style="width: 70%"></div>
+                          </div>
+                        </div>
+                        <div class="blue-panel alt center-align">
+                          <p>Available <span>Full Time</span></p>
+                        </div>
+                      </div>
+                      <div class="col m3 s12"><p><a href="#contact-credit" class="waves-effect waves-light btn yj-btn-green yj-btn-db btn-adjust modal-trigger">Contact</a></p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Applicant table mobile only -->
+
     <!-- Table Dropdowns -->
     <ul id="applicant-actions" class="dropdown-content yj-dropdown-content">
       <li><a href="employee-profile-dashboard-logged-in.html">Review</a></li>
@@ -332,11 +442,10 @@
       <!-- <li><a href="#shortlist-modal" class="modal-trigger" id="shortlist-interaction">Shortlist</a></li> -->
       <li><a id="shortlist-interaction">Shortlist</a></li>
       <li class="divider"></li>
-      <li><a>Delete</a></li>
       <!-- <li><a href="#reject-modal" class="modal-trigger">Reject</a></li> -->
-      <!-- <li><a id="reject-interaction">Reject</a></li>
-      <li class="divider"></li> -->
-      <!-- <li><a href="#interview-modal" class="modal-trigger">Interview</a></li> -->
+      <li><a id="reject-interaction">Reject</a></li>
+      <!-- <li class="divider"></li>
+      <li><a href="#interview-modal" class="modal-trigger">Interview</a></li> -->
       <!-- <li class="divider"></li>
       <li><a href="#interview-modal" class="modal-trigger">Notes</a></li> -->
       <!-- <li class="divider"></li>
@@ -421,6 +530,20 @@
         <h4>Applicant added to scheduled interviews list</h4>
         <ul class="modal-btn-list">
           <li><a href="#hire-failure"class="waves-effect waves-light btn yj-btn-blue modal-close">Close</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="contact-credit" class="modal center-align table-global-modal">
+      <div class="modal-content">
+        <div class="modal-header alt center-align">
+          <img class="yj-logo alt" src="images/yapjobs-logo-white.svg">
+        </div>
+        <h4>Great Choice!</h4>
+        <p>This will cost only <span class="credit-amount">1</span> credit! Once you have clicked on proceed&hellip; <br><span class="p-highlight">YAP!</span> like magic, the contact details will be revealed.</p>
+        <ul class="modal-btn-list">
+          <li><a class="waves-effect waves-light btn yj-btn-blue modal-close">Cancel</a></li>
+          <li><a href="employee-profile-dashboard-logged-in-contact-details.html" class="waves-effect waves-light btn yj-btn-green modal-close">Proceed</a></li>
         </ul>
       </div>
     </div>

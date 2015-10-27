@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/linear-icons.css">
     <link rel="stylesheet" href="styles/font-awesome.css">
+    <link rel="stylesheet" href="styles/animate.css">  
     <!-- endbuild -->
   </head>
   <body>
@@ -50,22 +51,23 @@
             <ul class="right hide-on-med-and-down">
               <li><a href="index.html"><span class="icon-home2 yj-icon icon-space"></span> Home</a></li>
               <li><a href="employer-dashboard.html"><span class="icon-icons2 yj-icon icon-space"></span> Dashboard</a></li>
-              <li><a href="billing.html"><span class="icon-coin-pound yj-icon icon-space"></span> 50 Credits</a></li>
-              <li>
+              <li><a href="billing.html"><span class="icon-coin-pound yj-icon icon-space"></span> 20 Credits</a></li>
+              <!-- <li>
                 <a class="nav-notification" href="messaging.html">
                   <span class="icon-envelope yj-icon icon-space"></span>
                   <p class="yj-notification">4</p>
                 </a>
-              </li>
+              </li> -->
               <li>
                 <a class="dropdown-button nav-notification" href="#!" data-activates="dropdown-notifications">
                   <span class="icon-alarm yj-icon icon-space"></span>
-                  <p class="yj-notification">10</p>
+                  <p class="yj-notification" id="notificationAnimate">10</p>
                 </a>
               </li>
               <!-- <li><a href="sass.html"><span class="icon-speed-medium"></span></a></li> -->
               <!-- Dropdown Trigger -->
               <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Cabana <span class="icon-chevron-down alt"></span></a></li>
+              <li><a href="postajob.html" class="waves-effect waves-light btn yj-btn-green yj-nav-btn-alt">Post A Job</a></li>
             </ul>
           </div>
         </div>
@@ -353,6 +355,9 @@
           <div class="col l12">
             <h5 class="yj-page-title alt">Your Jobs</h5>
           </div>
+          <!-- <div class="col l4 right-align">
+            <a class="waves-effect waves-light btn yj-btn-green">Post A Job</a>
+          </div> -->
         </div>
       </div>
     </section>
@@ -490,7 +495,7 @@
                   </td>
                   <td>11/08/15</td>
                   <td>£9</td>
-                  <td class="center-align">10 <span class="yj-notification table-notification">3</span><a href="employer-dashboard-applicants.html" class="waves-effect waves-light btn yj-btn-green yj-btn-global-sm alt">View All</a></td>
+                  <td class="center-align">10 <span class="yj-notification table-notification">3</span><a href="#no-credit-modal" class="waves-effect waves-light btn yj-btn-green yj-btn-global-sm alt modal-trigger">View All</a></td>
                   <td>11/08/15</td>
                   <td>Full Time</td>
                   <td class="valign-wrapper">
@@ -923,8 +928,9 @@
           <img class="yj-logo alt" src="images/yapjobs-logo-white.svg">
         </div>
         <h4>Job published Successfully, your on fire!</h4>
+        <p class="publish-stat">There are currently <span>25</span> matched applicants for you to review, interview and hire. So what you waiting for?</p>
         <ul class="modal-btn-list">
-          <li><a href="#need-more-applicants" class="waves-effect waves-light btn yj-btn-green modal-trigger modal-close">Invite Applicants</a></li>
+          <li><a href="employer-dashboard-matched-applicants.html" class="waves-effect waves-light btn yj-btn-green modal-close">View Applicant List</a></li>
         </ul>
         <!-- <ul class="modal-btn-list">
           <li><a class="waves-effect waves-light btn yj-btn-blue modal-close">Close</a></li>
@@ -961,6 +967,77 @@
         </div>
       </div>
     </div>
+
+    <div id="no-credit-modal" class="modal yj-modal yj-modal-max-height">
+      <div class="modal-content modal-family modal-family-sad center-align">
+        <div class="mf-content-on-top">
+          <p class="mf-modal-header">OOPSIE!</p>
+          <p class="mf-intro-text intro-text-sad">Looks like you have run out of awesome credits. Don't fear, the yap team are here. Is it your birthday? No? Well here is a present just because <span class="icon-happy yj-icon yj-icon-green yj-icon"></span></p>
+          <!-- <p class="p-no-marin-top"><span class="icon-happy yj-icon yj-icon-green yj-icon lg"></span></p> -->
+          <div class="mf-value">
+            <p><span>£298</span> off <span>STANDARD</span> plan!</p>
+          </div>
+          <p class="mf-intro-text">Here is a high five in advance.</p>
+          <div class="mf-image mf-image-high-five">
+            <!-- <span class="icon-play-circle"></span> -->
+          </div>
+          <div class="get-yapping">
+            <a href="billing.html" class="waves-effect waves-light btn yj-btn yj-btn-db yj-btn-green btn-large">Upgrade</a>
+            <p>Not ready? how about a little<a href="#"> feedback</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div id="no-credit-modal" class="modal yj-modal">
+      <div class="modal-content modal-content-alt">
+        <div class="exit exit-border">
+          <div class="row row-clean">
+            <div class="col s6"><p>Oops you've run out of credits</p></div>
+            <div class="col s6"><p class="right-align"><a href="#!"><span class="icon-cross2 modal-close"></span></a></p></div>
+          </div>
+        </div>
+        <div class="modal-message-wrapper">
+          <div class="row">
+            <div class="col s12 col-modal-clean">
+              <div class="credit-banner credit-banner-white credit-banner-red">
+                <p>No credits available</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 col-modal-clean">
+              <p>Select a plan</p>
+              <select class="browser-default">
+                <option value="1" selected>FREE</option>
+                <option value="2">Add Credits</option>
+                <option value="3">Standard</option>
+                <option value="4">Enterpise</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 col-modal-clean">
+              <h6>Compare plans and features <a href="pricing-page.html">Pricing Page</a></h6>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 col-modal-clean">
+              <h6>Oops!</h6>
+              <p>Looks like you have run out of credits <span class="icon-sad"></span> but don't fear, yap is here! Click continue to get more credits and take a look at out monthly plans.</p>
+            </div>
+          </div>
+          <div class="row row-clean">
+            <div class="col s12 col-modal-clean">
+              <ul class="ctc-list-hero right-align">
+                <li><a class="waves-effect waves-light btn yj-btn yj-btn-grey modal-close">Cancel</a></li>
+                <li><a href="billing.html" class="waves-effect waves-light btn yj-btn yj-btn-green modal-close">Continue</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
     <!-- END Modals -->
 
     <!-- Footer -->
@@ -1032,7 +1109,20 @@
         // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
         $('.modal-trigger').leanModal();
         $(".dropdown-button").dropdown();
+        $('#publish-success').openModal();
+
+        $('#notificationAnimate').addClass('animated flash');
+        // setTimeout(function () {
+        //     $('#notificationAnimate').removeClass('animated flash');
+        // }, 1200);
       });
+
+      // $('#notificationAnimate').hover(function() {
+      //   $('#notificationAnimate').addClass('animated flash');
+      //   setTimeout(function () {
+      //       $('#notificationAnimate').removeClass('animated flash');
+      //   }, 1200);
+      // });
     </script>
     <!-- END JS for the page
 </body>

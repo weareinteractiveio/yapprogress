@@ -130,7 +130,7 @@
 				@include transition(.2s);
 
 				&:hover {
-					background: $yj-blue;
+					background: $primary-color;
 					color: white;
 					@include transition(.2s);
 				}
@@ -149,6 +149,11 @@
 			&:hover {
 				background: darken($error-color, 15%);
 			}
+		}
+
+		.applicant-nav-active {
+			color: white;
+			background-color: $primary-color;
 		}
 	}
 
@@ -278,5 +283,14 @@
 					color: $primary-color;
 				}
 			}
+		}
+	}
+
+	.go-cardless {
+		font-size: 0.8rem;
+		text-transform: uppercase;
+
+		span {
+			font-weight: 500;
 		}
 	}

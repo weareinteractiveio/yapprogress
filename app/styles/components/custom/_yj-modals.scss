@@ -3,6 +3,10 @@
 	.yj-modal {
 		max-width: 500px;
 
+		&.yj-modal-max-height {
+			max-height: 80%;
+		}
+
 		.exit {
 			margin-bottom: 1rem;
 
@@ -140,4 +144,89 @@
 		margin-bottom: 2rem;
 		border: 1px solid $yj-light-grey;
 		padding: 1rem;
+	}
+
+	.modal-family {
+		padding: 0 4rem!important;
+
+		&:before {
+			content: "";
+			background: url(images/confetti.svg) no-repeat center center;
+			background-size: cover;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			opacity: 0.2;
+		}
+
+		&.modal-family-sad {
+
+			&:before {
+				content: "";
+				background: url(images/sad-faces.svg) no-repeat center center;
+				background-size: cover;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				opacity: 0.2;
+			}
+		}
+
+		.mf-modal-header {
+			margin-top: 5rem;
+			margin-bottom: 2rem;;
+			font-weight: 500;
+			font-size: 3.2rem;
+			color: $primary-color;
+		}
+
+		.mf-intro-text {
+			margin: 0 0 2rem 0;
+
+			&.intro-text-sad {
+				// margin-bottom: 0rem;
+			}
+		}
+
+		.mf-value {
+			margin: 0 0 2rem 0;
+			border: 1px solid $primary-color;
+			padding: 20px;
+
+			p {
+				margin: 0;
+				color: $primary-color;
+				font-size: 1.8rem;
+
+				span {
+					font-weight: 500;
+				}
+			}
+		}
+
+		.mf-image {
+			margin-bottom: 2rem;
+			width: 100%;
+			height: 150px;
+			background: url(images/party.jpg) no-repeat center center;
+			background-size: cover;
+
+			&.mf-image-high-five {
+				background: url(images/high-five.jpg) no-repeat center center;
+				background-size: cover;
+			}
+
+			&.mf-image-hug {
+				background: url(images/team-hug.jpg) no-repeat center center;
+				background-size: cover;
+			}
+		}
+
+		.get-yapping {
+			margin-bottom: 3rem;
+		}
 	}

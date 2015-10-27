@@ -89,3 +89,113 @@
 		margin-bottom: 2rem;
 		border: 1px solid $yj-light-grey;
 	}
+
+	.yj-highlight-form-text {
+		font-size: 1.2rem;
+		font-weight: 400;
+		color: $primary-color;
+	}
+
+	[type="radio"]:not(:checked) + label,
+	[type="radio"]:checked + label {
+	  position: relative;
+	  padding-left: 35px;
+	  cursor: pointer;
+	  display: inline-block;
+	  height: 25px;
+	  line-height: 25px;
+	  font-size: 1rem;
+	  @include transition(.28s ease);
+
+	  -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+	  -moz-user-select: none; /* mozilla browsers */
+	  -khtml-user-select: none; /* webkit (konqueror) browsers */
+	  -ms-user-select: none; /* IE10+ */
+
+	  &.yj-label {
+	  	color: $yj-grey;
+	  	font-weight: 400;
+	  	font-size: 1.2rem;
+	  }
+
+	  &.yj-label-ugly {
+	  	color: $yj-grey;
+	  	font-weight: 400;
+	  	font-size: 1.2rem;
+	  }
+	}
+
+	.yj-label-group {
+		margin-bottom: 2rem;
+
+		// &:last-child {
+		// 	margin-bottom: 0;
+		// }
+
+		.plan-price {
+			color: $primary-color;
+	  		font-size: 1.4rem;
+			padding-left: 35px;
+
+			span {
+				font-weight: 500;
+			}
+
+			&.plan-price-ugly {
+				color: $yj-grey;
+			}
+		}
+
+		.plan-detail {
+	  		font-size: 1rem;
+			padding-left: 35px;
+		}
+	}
+
+	.yj-switch {
+		margin: 0 0 2rem 0;
+	}
+
+	.switch label .lever {
+		background-color: $yj-light-grey;
+	}
+
+	.switch label .lever:after {
+		background-color: $primary-color;
+	}
+
+	.switch label input[type=checkbox]:checked + .lever {
+		background-color: $yj-light-grey;
+	}
+
+	.switch label input[type=checkbox]:checked + .lever:after {
+		background-color: $yj-blue;
+	}
+
+	.collapse {
+		display:none
+	}
+
+	.collapse.in{
+		display:block
+	}
+
+	#deleteCard {
+		display: none;
+	}
+
+	#nextPayment {
+		display: none;
+
+		span {
+			font-weight: 500;
+		}
+	}
+
+	.switch-text {
+		span {
+			color: $primary-color;
+			font-weight: 500;
+			font-size: 1.2rem;
+		}
+	}

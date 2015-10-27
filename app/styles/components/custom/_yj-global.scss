@@ -25,6 +25,11 @@
 		&.mobile-breaker {
 			margin-bottom: 0;
 		}
+
+		&.dotted {
+			background-color: none;
+			border: 1px dotted;
+		}
 	}
 
 	.row-clean {

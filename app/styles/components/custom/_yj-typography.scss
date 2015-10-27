@@ -23,7 +23,7 @@
 	.yj-hero-title {
 		margin: 20px 0 0 0;
 		font-size: 6rem;
-		font-weight: 600;
+		font-weight: 500;
 		color: white;
 		line-height: 7rem;
 
@@ -31,10 +31,14 @@
 			font-size: 3rem;
 			line-height: 4rem;
 		}
+
+		&.yj-hero-title-linetwo {
+			font-weight: 200;
+		}
 	}
 
 	.yj-title {
-		text-transform: uppercase;
+		// text-transform: uppercase;
 		margin: 90px 0 0 0;
 		font-weight: 300;
 		color: $yj-grey;
@@ -204,4 +208,37 @@
 
 	.contact-details-lrg {
 		font-size: 1.2rem;
+	}
+
+	.text-green {
+		color: $primary-color;
+	}
+
+	.icon-position-fix {
+		display: block;
+    	width: 20px;
+    	float: left;
+    	margin-top: 24px;
+	}
+
+	.tagline {
+		margin-left: 105px;
+		color: $yj-grey;
+
+		span {
+			font-weight: 500;
+		}
+
+		@media #{$small-and-down} {
+			display: none;
+		}
+	}
+
+	.publish-stat {
+		margin-bottom: 2rem;
+
+		span {
+			font-size: 1.2rem;
+			font-weight: 500;
+		}
 	}

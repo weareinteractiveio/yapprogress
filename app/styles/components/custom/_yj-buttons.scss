@@ -44,6 +44,26 @@
 		&.yj-btn-classy-lg {
 			min-width: 200px;
 		}
+
+		&.yj-btn-classy-red {
+			border: 1px solid $error-color;
+			color: $error-color;
+
+			&:hover {
+				background: $error-color;
+				color: white;
+			}
+		}
+
+		&.yj-btn-classy-grey {
+			border: 1px solid $yj-even-less-light-grey;
+			color: $yj-even-less-light-grey;
+
+			&:hover {
+				background: $yj-even-less-light-grey;
+				color: white;
+			}
+		}
 	}
 
 	.yj-btn-green {
