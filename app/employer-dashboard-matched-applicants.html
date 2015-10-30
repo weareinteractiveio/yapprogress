@@ -211,17 +211,47 @@
                   <table class="hoverable responsive-table yj-table">
                     <thead>
                       <tr>
+                          <th data-field="actions">Select</th>
                           <th data-field="photo">Photo</th>
                           <th data-field="name">Name</th>
                           <th data-field="location">Location</th>
                           <th data-field="response-time">Match Score</th>
                           <th data-field="availability">Availibility</th>
                           <th data-field="actions">Actions</th>
+                          <th data-field="actions">Remove</th>
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <td><img class="circle" src="images/shahzad.jpg" width="40px" height="40px"></td>
+                      <tr class="candidate-card">
+                        <td>
+                          <p>
+                            <input type="checkbox" id="selectCandidate1" />
+                            <label for="selectCandidate1"></label>
+                          </p>
+                        </td>
+                        <td class="mini-profile">
+                          <a href="employee-profile-dashboard-logged-in-invite.html" class="candidate-hover-initiate"><img class="circle" src="images/shahzad.jpg" width="40px" height="40px" /></a>
+                          <div class="candidate-mini-profile">
+                            <p class="p-clean mini-profile-name">Shahzad Ali</p>
+                            <p class="p-clean">Covent Garden</p>
+                            <p class="mini-profile-title">Job interests</p>
+                            <div class="interest">
+                              <p>Waitor</p>
+                            </div>
+                            <div class="interest">
+                              <p>Customer service</p>
+                            </div>
+                            <div class="interest">
+                              <p>Cashier</p>
+                            </div>
+                            <div class="eligible">
+                              <p class="p-no-marin-bottom"><span class="icon-check yj-icon icon-space yj-icon-green"></span> Eligible to work in the UK</p>
+                            </div>
+                            <!-- <div class="average-wage">
+                              <p class="p-clean">Avg hourly rate: <span>£8.90 p/h</span></p>
+                            </div> -->
+                          </div>
+                        </td>
                         <td>Shahzad</td>
                         <td>Central London</td>
                         <td>
@@ -231,52 +261,109 @@
                         </td>
                         <td>Full Time</td>
                         <td>
-                          <ul class="table-actions">
+                          <!-- <ul class="table-actions">
                             <li><a class="dropdown-button" href="#!" data-activates="applicant-actions">Actions <span class="icon-chevron-down yj-icon xsm icon-space alt"></span></a></li>
-                          </ul>
+                          </ul> -->
+                          <a href="#!" class="waves-effect waves-light btn yj-btn yj-btn-green tooltipped invite-interaction" data-position="top" data-tooltip="Invite candidate to apply" data-delay="0">Invite</a>
                         </td>
+                        <td><p class="remove-candidate"><a href="#!"><span class="icon-cross"></span></a></p></td>
                       </tr>
-                      <tr>
-                        <td><img class="circle" src="images/shahzad.jpg" width="40px" height="40px"></td>
+                      <tr class="candidate-card" href="employee-profile-dashboard-logged-in-invite.html">
+                        <td>
+                          <p>
+                            <input type="checkbox" id="selectCandidate2" />
+                            <label for="selectCandidate2"></label>
+                          </p>
+                        </td>
+                        <td class="mini-profile">
+                          <a href="employee-profile-dashboard-logged-in-invite.html" class="candidate-hover-initiate"><img class="circle" src="images/shahzad.jpg" width="40px" height="40px" /></a>
+                          <div class="candidate-mini-profile">
+                            <p class="p-clean mini-profile-name">Shahzad Ali</p>
+                            <p class="p-clean">Covent Garden</p>
+                            <p class="mini-profile-title">Job interests</p>
+                            <div class="interest">
+                              <p>Waitor</p>
+                            </div>
+                            <div class="interest">
+                              <p>Customer service</p>
+                            </div>
+                            <div class="interest">
+                              <p>Cashier</p>
+                            </div>
+                            <div class="eligible">
+                              <p><span class="icon-check yj-icon icon-space yj-icon-green"></span> Eligible to work in the UK</p>
+                            </div>
+                            <!-- <div class="average-wage">
+                              <p class="p-clean">Avg hourly rate: <span>£8.90 p/h</span></p>
+                            </div> -->
+                          </div>
+                        </td>
                         <td>Shahzad</td>
                         <td>Central London</td>
                         <td>
                           <div class="progress yj-progress">
-                            <div class="determinate yj-determinate" style="width: 50%"></div>
+                            <div class="determinate yj-determinate" style="width: 70%"></div>
                           </div>
                         </td>
                         <td>Full Time</td>
                         <td>
-                          <ul class="table-actions">
+                          <!-- <ul class="table-actions">
                             <li><a class="dropdown-button" href="#!" data-activates="applicant-actions">Actions <span class="icon-chevron-down yj-icon xsm icon-space alt"></span></a></li>
-                          </ul>
+                          </ul> -->
+                          <a href="#!" class="waves-effect waves-light btn yj-btn yj-btn-green tooltipped invite-interaction" data-position="top" data-tooltip="Invite candidate to apply" data-delay="0">Invite</a>
                         </td>
+                        <td><p class="remove-candidate"><a href="#!"><span class="icon-cross"></span></a></p></td>
                       </tr>
-                      <tr>
-                        <td><img class="circle" src="images/shahzad.jpg" width="40px" height="40px"></td>
+                      <tr class="candidate-card" href="employee-profile-dashboard-logged-in-invite.html">
+                        <td>
+                          <p>
+                            <input type="checkbox" id="selectCandidate3" />
+                            <label for="selectCandidate3"></label>
+                          </p>
+                        </td>
+                        <td class="mini-profile">
+                          <a href="employee-profile-dashboard-logged-in-invite.html" class="candidate-hover-initiate"><img class="circle" src="images/shahzad.jpg" width="40px" height="40px" /></a>
+                          <div class="candidate-mini-profile">
+                            <p class="p-clean mini-profile-name">Shahzad Ali</p>
+                            <p class="p-clean">Covent Garden</p>
+                            <p class="mini-profile-title">Job interests</p>
+                            <div class="interest">
+                              <p>Waitor</p>
+                            </div>
+                            <div class="interest">
+                              <p>Customer service</p>
+                            </div>
+                            <div class="interest">
+                              <p>Cashier</p>
+                            </div>
+                            <div class="eligible">
+                              <p><span class="icon-check yj-icon icon-space yj-icon-green"></span> Eligible to work in the UK</p>
+                            </div>
+                            <!-- <div class="average-wage">
+                              <p class="p-clean">Avg hourly rate: <span>£8.90 p/h</span></p>
+                            </div> -->
+                          </div>
+                        </td>
                         <td>Shahzad</td>
                         <td>Central London</td>
                         <td>
                           <div class="progress yj-progress">
-                            <div class="determinate yj-determinate" style="width: 80%"></div>
+                            <div class="determinate yj-determinate" style="width: 70%"></div>
                           </div>
                         </td>
                         <td>Full Time</td>
                         <td>
-                          <ul class="table-actions">
+                          <!-- <ul class="table-actions">
                             <li><a class="dropdown-button" href="#!" data-activates="applicant-actions">Actions <span class="icon-chevron-down yj-icon xsm icon-space alt"></span></a></li>
-                          </ul>
+                          </ul> -->
+                          <a href="#!" class="waves-effect waves-light btn yj-btn yj-btn-green tooltipped invite-interaction" data-position="top" data-tooltip="Invite candidate to apply" data-delay="0">Invite</a>
                         </td>
+                        <td><p class="remove-candidate"><a href="#!"><span class="icon-cross"></span></a></p></td>
                       </tr>
                     </tbody>
                     <tfoot class="load-more">
                       <tr>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td class="load-more right-align"><a class="waves-effect waves-light btn yj-btn-classy">Load More</a></td>
+                        <td class="load-more right-align" colspan="8"><a class="waves-effect waves-light btn yj-btn-classy">Load More</a></td>
                         <!-- <td>
                           <ul class="pagination yj-pagination alt right-align">
                             <li class="disabled"><a href="#!"><span class="icon-chevron-left"></span></a></li>
@@ -303,21 +390,21 @@
               </div>
             </div>
             <ul class="applicant-nav">
-              <li><a href="employer-dashboard-matched-applicants.html" class="applicant-nav-active">Matched Applicants <span class="right">20</span></a></li>
+              <li><a href="employer-dashboard-matched-applicants.html" class="applicant-nav-active">Recommended Candidates <span class="right">20</span></a></li>
               <li class="divider"></li>
               <li><a href="employer-dashboard-applicants.html" class="applicant-nav-highlight">New Applicants <span class="right">18</span></a></li>
               <li class="divider"></li>
-              <li><a href="employer-dashboard-invited-applicants.html" id="invite-interaction-react">Invited <span class="right">4</span></a></li>
+              <li><a href="employer-dashboard-invited-applicants.html" id="invite-interaction-react">Invited Candidates <span class="right">4</span></a></li>
               <li class="divider"></li>
-              <li><a href="employer-dashboard-applicants-reviewed.html">Reviewed <span class="right">5</span></a></li>
+              <li><a href="employer-dashboard-applicants-reviewed.html">Viewed Applicants <span class="right">5</span></a></li>
               <li class="divider"></li>
-              <li><a href="employer-dashboard-applicants-shortlist.html" id="shortlist-interaction-react">Shortlist <span class="right">3</span></a></li>
+              <li><a href="employer-dashboard-applicants-shortlist.html" id="shortlist-interaction-react">Shortlisted Applicants <span class="right">3</span></a></li>
               <li class="divider"></li>
-              <li><a href="employer-dashboard-applicants-rejected.html" id="reject-interaction-react">Rejected <span class="right">7</span></a></li>
-              <li class="divider"></li>
+              <!-- <li><a href="employer-dashboard-applicants-rejected.html" id="reject-interaction-react">Rejected <span class="right">7</span></a></li>
+              <li class="divider"></li> -->
               <li><a href="employer-dashboard-applicants-scheduled-interviews.html" id="interview-interaction-react">Scheduled Interviews <span class="right">2</span></a></li>
-              <li class="divider"></li>
-              <li><a href="employer-dashboard-applicants-hired.html">Hired <span class="right">4</span></a></li>
+              <!-- <li class="divider"></li>
+              <li><a href="employer-dashboard-applicants-hired.html">Hired <span class="right">4</span></a></li> -->
             </ul>
             <a href="search-results-applicants.html" class="waves-effect waves-light btn btn-large yj-btn-green yj-btn-db">Invite Applicants</a>
           </div>
@@ -458,10 +545,7 @@
       <li class="divider"></li> -->
       <li><a href="#" class="invite-interaction">Invite All</a></li>
       <li class="divider"></li>
-      <li><a href="#unpublish-modal">Shortlist</a></li>
-      <li class="divider"></li>
-      <li><a href="#unpublish-modal">Reject</a></li>
-      <li class="divider"></li>
+      <li><a href="#unpublish-modal">Remove All</a></li>
       <!-- <li><a href="#unpublish-modal">Contacted</a></li> -->
       <!-- <li><a href="#unpublish-modal">Interview</a></li> -->
     </ul>
@@ -648,6 +732,10 @@
               $('#invite-interaction-react').removeClass('animated pulse interact-highlight');
           }, 1200);
         });
+
+        // $(".candidate-card").click(function() {
+        //   window.location.href = $(this).attr("href");
+        // });
       });
     </script>
     <!-- END JS for the page

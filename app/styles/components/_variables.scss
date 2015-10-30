@@ -130,7 +130,7 @@ $table-striped-color: #f2f2f2 !default;
 
 /*** Toasts ***/
 $toast-height: 48px !default;
-$toast-color: #323232 !default;
+$toast-color: $primary-color !default;
 $toast-text-color: #fff !default;
 
 /*** Typography ***/

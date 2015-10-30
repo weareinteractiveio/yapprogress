@@ -128,3 +128,14 @@
 	.invite-applied-success {
 		color: $primary-color;
 	}
+
+	.remove-candidate {
+
+		a {
+			color: $yj-grey;
+
+			&:hover {
+				color: darken($yj-grey, 20%);
+			}
+		}
+	}

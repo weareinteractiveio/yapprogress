@@ -1,0 +1,110 @@
+	/*Hover Content*/
+
+	td.mini-profile {
+		position: relative;
+
+		.candidate-mini-profile {
+			position: absolute;
+			display: none;
+			width: 250px;
+			top: 10px;
+			left: 73px;
+			background: #ffffff;
+			border: 1px solid #a8c73e;
+			padding: 1.3rem;
+			z-index: 1001;
+			box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+			.mini-profile-name {
+				font-size: 1.1rem;
+				font-weight: 400;
+			}
+
+			.mini-profile-title {
+				font-weight: 400;
+			}
+
+			.interest {
+				background: $yj-blue;
+				color: white;
+				border-radius: 4px;
+
+				p {
+					display: block;
+					padding: 0.4rem;
+					margin: 0.3rem 0 0 0;
+				}
+			}
+
+			.eligible, .average-wage {
+				// font-size: 0.9rem;
+
+				span {
+					font-weight: 400;
+				}
+			}
+		}
+
+		.candidate-mini-profile:after, .candidate-mini-profile:before {
+			right: 100%;
+			top: 30px;
+			border: solid transparent;
+			content: " ";
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+		}
+
+		.candidate-mini-profile:after {
+			border-color: rgba(255, 255, 255, 0);
+			border-right-color: #ffffff;
+			border-width: 10px;
+			margin-top: -10px;
+		}
+
+		.candidate-mini-profile:before {
+			border-color: rgba(168, 199, 62, 0);
+			border-right-color: #a8c73e;
+			border-width: 11px;
+			margin-top: -11px;
+		}
+
+		a.candidate-hover-initiate {
+			position: relative;
+
+			&:hover + .candidate-mini-profile {
+				display: block;
+			}
+		}
+	}
+
+	// .arrow_box {
+	// 	position: relative;
+	// 	background: #ffffff;
+	// 	border: 2px solid #a8c73e;
+	// }
+
+	// .arrow_box:after, .arrow_box:before {
+	// 	right: 100%;
+	// 	top: 50%;
+	// 	border: solid transparent;
+	// 	content: " ";
+	// 	height: 0;
+	// 	width: 0;
+	// 	position: absolute;
+	// 	pointer-events: none;
+	// }
+
+	// .arrow_box:after {
+	// 	border-color: rgba(255, 255, 255, 0);
+	// 	border-right-color: #ffffff;
+	// 	border-width: 10px;
+	// 	margin-top: -10px;
+	// }
+	// .arrow_box:before {
+	// 	border-color: rgba(168, 199, 62, 0);
+	// 	border-right-color: #a8c73e;
+	// 	border-width: 13px;
+	// 	margin-top: -13px;
+	// }

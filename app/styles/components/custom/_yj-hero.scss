@@ -3,8 +3,8 @@
 	.hero {
 		position: relative;
 		min-width: 100%;
-		padding: 60px 0;
-		background: url(images/lady-cupcakes.jpg) no-repeat center center;
+		padding: 30px 0;
+		background: url(images/landing-page.jpg) no-repeat center center;
 		background-size: cover;
 
 		&:after {
@@ -44,6 +44,8 @@
 		// }
 
 		ul.hero-icons {
+			margin-top: 7rem;
+			margin-bottom: 0;
 
 			li {
 				display: inline-block;
@@ -70,6 +72,7 @@
 
 			&.alt {
 				font-weight: 200;
+				line-height: 2rem;
 			}
 		}
 
